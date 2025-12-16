@@ -1,0 +1,208 @@
+{
+    "name": "date-picker",
+    "title": "Date picker",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/date-picker",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Basic usage",
+            "content": "",
+            "examples": [
+                "<flux:date-picker value=\"2025-12-16\" />",
+                "<flux:date-picker wire:model=\"date\" />",
+                "<?phpuse Illuminate\\Support\\Carbon;use Livewire\\Component;use App\\Models\\Post;class CreatePost extends Component { public ?Carbon $date; public function save() { Post::create([ // ... 'published_at' => $this->date, ]) // ... }}"
+            ]
+        },
+        {
+            "title": "Input trigger",
+            "content": "",
+            "examples": [
+                "<flux:date-picker wire:model=\"date\"> <x-slot name=\"trigger\"> <flux:date-picker.input /> </x-slot></flux:date-picker>"
+            ]
+        },
+        {
+            "title": "Range picker",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\" />",
+                "<flux:date-picker mode=\"range\" value=\"2025-12-02/2025-12-06\" />",
+                "<flux:date-picker mode=\"range\" wire:model=\"range\" />",
+                "<?phpuse Illuminate\\Support\\Carbon;use Livewire\\Component;class Dashboard extends Component { public array $range; public function mount() { $this->range = [ 'start' => now()->subMonth()->format('Y-m-d'), 'end' => now()->format('Y-m-d'), ]; }}",
+                "<?phpuse Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { public DateRange $range; public function mount() { $this->range = new DateRange(now()->subMonth(), now()); }}"
+            ]
+        },
+        {
+            "title": "Range limits",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\" min-range=\"3\" />",
+                "<flux:date-picker mode=\"range\" max-range=\"10\" />"
+            ]
+        },
+        {
+            "title": "Range with inputs",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\"> <x-slot name=\"trigger\"> <div class=\"flex flex-col sm:flex-row gap-6 sm:gap-4\"> <flux:date-picker.input label=\"Start\" /> <flux:date-picker.input label=\"End\" /> </div> </x-slot></flux:date-picker>"
+            ]
+        },
+        {
+            "title": "Presets",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\" with-presets />",
+                "<flux:date-picker mode=\"range\" presets=\"today yesterday thisWeek last7Days thisMonth yearToDate allTime\"/>",
+                "<flux:date-picker mode=\"range\" presets=\"... allTime\" :min=\"auth()->user()->created_at->format('Y-m-d')\"/>",
+                "use Flux\\DateRange;$this->range = DateRange::allTime(start: auth()->user()->created_at);",
+                "$orders = Order::when($this->range->isNotAllTime(), function ($query) => { $query->whereBetween('created_at', $this->range);})->get();",
+                "<flux:date-picker mode=\"range\" presets=\"... custom\" />"
+            ]
+        },
+        {
+            "title": "Available presets",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "All time",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\" presets=\"... allTime\" :min=\"auth()->user()->created_at->format('Y-m-d')\"/>",
+                "use Flux\\DateRange;$this->range = DateRange::allTime(start: auth()->user()->created_at);",
+                "$orders = Order::when($this->range->isNotAllTime(), function ($query) => { $query->whereBetween('created_at', $this->range);})->get();"
+            ]
+        },
+        {
+            "title": "Custom range preset",
+            "content": "",
+            "examples": [
+                "<flux:date-picker mode=\"range\" presets=\"... custom\" />"
+            ]
+        },
+        {
+            "title": "Unavailable dates",
+            "content": "",
+            "examples": [
+                "<flux:date-picker unavailable=\"2025-12-15,2025-12-17\" />"
+            ]
+        },
+        {
+            "title": "With today shortcut",
+            "content": "",
+            "examples": [
+                "<flux:date-picker with-today />"
+            ]
+        },
+        {
+            "title": "Selectable header",
+            "content": "",
+            "examples": [
+                "<flux:date-picker selectable-header />"
+            ]
+        },
+        {
+            "title": "Fixed weeks",
+            "content": "",
+            "examples": [
+                "<flux:date-picker fixed-weeks />"
+            ]
+        },
+        {
+            "title": "Start day",
+            "content": "",
+            "examples": [
+                "<flux:date-picker start-day=\"1\" />"
+            ]
+        },
+        {
+            "title": "Open to",
+            "content": "",
+            "examples": [
+                "<flux:date-picker open-to=\"2027-01-01\" />",
+                "<flux:date-picker open-to=\"2027-01-01\" force-open-to />"
+            ]
+        },
+        {
+            "title": "Week numbers",
+            "content": "",
+            "examples": [
+                "<flux:date-picker week-numbers />"
+            ]
+        },
+        {
+            "title": "Localization",
+            "content": "",
+            "examples": [
+                "<flux:date-picker locale=\"ja-JP\" />"
+            ]
+        },
+        {
+            "title": "The DateRange object",
+            "content": "",
+            "examples": [
+                "<flux:calendar wire:model.live=\"range\" />",
+                "<?phpuse Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { public DateRange $range;}"
+            ]
+        },
+        {
+            "title": "Instantiation",
+            "content": "",
+            "examples": [
+                "<?phpuse Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { public DateRange $range; public function mount() { $this->range = new DateRange(now(), now()->addDays(7)); }}"
+            ]
+        },
+        {
+            "title": "Persisting to the session",
+            "content": "",
+            "examples": [
+                "<?phpuse Livewire\\Attributes\\Session;use Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { #[Session] public DateRange $range;}"
+            ]
+        },
+        {
+            "title": "Using with Eloquent",
+            "content": "",
+            "examples": [
+                "<?phpuse Livewire\\Attributes\\Computed;use Livewire\\Component;use App\\Models\\Order;use Flux\\DateRange;class Dashboard extends Component { public ?DateRange $range; #[Computed] public function orders() { return $this->range ? Order::whereBetween('created_at', $this->range)->get() : Order::all(); }}"
+            ]
+        },
+        {
+            "title": "Available methods",
+            "content": "",
+            "examples": [
+                "$range = new Flux\\DateRange( now()->subDays(1), now()->addDays(1),);// Get the start and end dates as Carbon instances...$start = $range->start();$end = $range->end();// Check if the range contains a date...$range->contains(now());// Get the number of days in the range...$range->length();// Loop over the range by day...foreach ($range as $date) { // $date is a Carbon instance...}// Get the range as an array of Carbon instances representing each day in the range...$range->toArray();",
+                "$orders = Order::whereBetween('created_at', $range)->get();"
+            ]
+        },
+        {
+            "title": "Range presets",
+            "content": "",
+            "examples": [
+                "[ 'start' => null, 'end' => null, 'preset' => 'lastMonth',]",
+                "<?phpuse Livewire\\Component;class Dashboard extends Component { public array $range; public function mount() { $this->range = [ 'start' => null, 'end' => null, 'preset' => 'lastMonth', ]; }}",
+                "<?phpuse Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { public DateRange $range; public function mount() { $this->range = DateRange::lastMonth(); }}",
+                "$this->range->preset();// This will return a value like `DateRangePreset::LastMonth`..."
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:56+00:00"
+}

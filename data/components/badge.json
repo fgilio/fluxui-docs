@@ -1,0 +1,85 @@
+{
+    "name": "badge",
+    "title": "Badge",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/badge",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Sizes",
+            "content": "",
+            "examples": [
+                "<flux:badge size=\"sm\">Small</flux:badge><flux:badge>Default</flux:badge><flux:badge size=\"lg\">Large</flux:badge>"
+            ]
+        },
+        {
+            "title": "Icons",
+            "content": "",
+            "examples": [
+                "<flux:badge icon=\"user-circle\">Users</flux:badge><flux:badge icon=\"document-text\">Files</flux:badge><flux:badge icon:trailing=\"video-camera\">Videos</flux:badge>"
+            ]
+        },
+        {
+            "title": "Pill variant",
+            "content": "",
+            "examples": [
+                "<flux:badge variant=\"pill\" icon=\"user\">Users</flux:badge>"
+            ]
+        },
+        {
+            "title": "As button",
+            "content": "",
+            "examples": [
+                "<flux:badge as=\"button\" variant=\"pill\" icon=\"plus\" size=\"lg\">Amount</flux:badge>"
+            ]
+        },
+        {
+            "title": "With close button",
+            "content": "",
+            "examples": [
+                "<flux:badge> Admin <flux:badge.close /></flux:badge>"
+            ]
+        },
+        {
+            "title": "Colors",
+            "content": "",
+            "examples": [
+                "<flux:badge color=\"zinc\">Zinc</flux:badge><flux:badge color=\"red\">Red</flux:badge><flux:badge color=\"orange\">Orange</flux:badge><flux:badge color=\"amber\">Amber</flux:badge><flux:badge color=\"yellow\">Yellow</flux:badge><flux:badge color=\"lime\">Lime</flux:badge><flux:badge color=\"green\">Green</flux:badge><flux:badge color=\"emerald\">Emerald</flux:badge><flux:badge color=\"teal\">Teal</flux:badge><flux:badge color=\"cyan\">Cyan</flux:badge><flux:badge color=\"sky\">Sky</flux:badge><flux:badge color=\"blue\">Blue</flux:badge><flux:badge color=\"indigo\">Indigo</flux:badge><flux:badge color=\"violet\">Violet</flux:badge><flux:badge color=\"purple\">Purple</flux:badge><flux:badge color=\"fuchsia\">Fuchsia</flux:badge><flux:badge color=\"pink\">Pink</flux:badge><flux:badge color=\"rose\">Rose</flux:badge>"
+            ]
+        },
+        {
+            "title": "Solid variant",
+            "content": "",
+            "examples": [
+                "<flux:badge variant=\"solid\" color=\"zinc\">Zinc</flux:badge><flux:badge variant=\"solid\" color=\"red\">Red</flux:badge><flux:badge variant=\"solid\" color=\"orange\">Orange</flux:badge><flux:badge variant=\"solid\" color=\"amber\">Amber</flux:badge><flux:badge variant=\"solid\" color=\"yellow\">Yellow</flux:badge><flux:badge variant=\"solid\" color=\"lime\">Lime</flux:badge><flux:badge variant=\"solid\" color=\"green\">Green</flux:badge><flux:badge variant=\"solid\" color=\"emerald\">Emerald</flux:badge><flux:badge variant=\"solid\" color=\"teal\">Teal</flux:badge><flux:badge variant=\"solid\" color=\"cyan\">Cyan</flux:badge><flux:badge variant=\"solid\" color=\"sky\">Sky</flux:badge><flux:badge variant=\"solid\" color=\"blue\">Blue</flux:badge><flux:badge variant=\"solid\" color=\"indigo\">Indigo</flux:badge><flux:badge variant=\"solid\" color=\"violet\">Violet</flux:badge><flux:badge variant=\"solid\" color=\"purple\">Purple</flux:badge><flux:badge variant=\"solid\" color=\"fuchsia\">Fuchsia</flux:badge><flux:badge variant=\"solid\" color=\"pink\">Pink</flux:badge><flux:badge variant=\"solid\" color=\"rose\">Rose</flux:badge>"
+            ]
+        },
+        {
+            "title": "Inset",
+            "content": "",
+            "examples": [
+                "<flux:heading> Page builder <flux:badge color=\"lime\" inset=\"top bottom\">New</flux:badge></flux:heading><flux:text class=\"mt-2\">Easily author new pages without leaving your browser.</flux:text>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:49+00:00"
+}

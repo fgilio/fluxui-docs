@@ -1,0 +1,43 @@
+{
+    "name": "skeleton",
+    "title": "Skeleton",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/skeleton",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Line of text",
+            "content": "",
+            "examples": [
+                "<flux:skeleton.group animate=\"shimmer\"> <flux:skeleton.line class=\"mb-2 w-1/4\" /> <flux:skeleton.line /> <flux:skeleton.line /> <flux:skeleton.line class=\"w-3/4\" /></flux:skeleton.group>"
+            ]
+        },
+        {
+            "title": "Animation",
+            "content": "",
+            "examples": [
+                "<flux:skeleton /><flux:skeleton animate=\"shimmer\" /><flux:skeleton animate=\"pulse\" />"
+            ]
+        },
+        {
+            "title": "Examples",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:08+00:00"
+}

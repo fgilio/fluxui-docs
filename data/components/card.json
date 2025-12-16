@@ -1,0 +1,50 @@
+{
+    "name": "card",
+    "title": "Card",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/card",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Small card",
+            "content": "",
+            "examples": [
+                "<a href=\"#\" aria-label=\"Latest on our blog\"> <flux:card size=\"sm\" class=\"hover:bg-zinc-50 dark:hover:bg-zinc-700\"> <flux:heading class=\"flex items-center gap-2\">Latest on our blog <flux:icon name=\"arrow-up-right\" class=\"ml-auto text-zinc-400\" variant=\"micro\" /></flux:heading> <flux:text class=\"mt-2\">Stay up to date with our latest insights, tutorials, and product updates.</flux:text> </flux:card></a>"
+            ]
+        },
+        {
+            "title": "Header actions",
+            "content": "",
+            "examples": [
+                "<flux:card class=\"space-y-6\"> <div class=\"flex\"> <div class=\"flex-1\"> <flux:heading size=\"lg\">Are you sure?</flux:heading> <flux:text class=\"mt-2\"> Your post will be deleted permanently.<br> This action cannot be undone. </flux:text> </div> <div class=\"-mx-2 -mt-2\"> <flux:button variant=\"ghost\" size=\"sm\" icon=\"x-mark\" inset=\"top right bottom\" /> </div> </div> <div class=\"flex gap-4\"> <flux:spacer /> <flux:button variant=\"ghost\">Undo</flux:button> <flux:button variant=\"danger\">Delete</flux:button> </div></flux:card>"
+            ]
+        },
+        {
+            "title": "Simple card",
+            "content": "",
+            "examples": [
+                "<flux:card> <flux:heading size=\"lg\">Are you sure?</flux:heading> <flux:text class=\"mt-2 mb-4\"> Your post will be deleted permanently.<br> This action cannot be undone. </flux:text> <flux:button variant=\"danger\">Delete</flux:button></flux:card>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:53+00:00"
+}

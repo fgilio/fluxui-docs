@@ -1,0 +1,100 @@
+{
+    "name": "dropdown",
+    "title": "Dropdown",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/dropdown",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Navigation menus",
+            "content": "",
+            "examples": [
+                "<flux:dropdown position=\"bottom\" align=\"end\"> <flux:profile avatar=\"/img/demo/user.png\" name=\"Olivia Martin\" /> <flux:navmenu> <flux:navmenu.item href=\"#\" icon=\"user\">Account</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"building-storefront\">Profile</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"credit-card\">Billing</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"arrow-right-start-on-rectangle\">Logout</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"trash\" variant=\"danger\">Delete</flux:navmenu.item> </flux:navmenu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Positioning",
+            "content": "",
+            "examples": [
+                "<flux:dropdown position=\"top\" align=\"start\"><!-- More positions... --><flux:dropdown position=\"right\" align=\"center\"><flux:dropdown position=\"bottom\" align=\"center\"><flux:dropdown position=\"left\" align=\"end\">"
+            ]
+        },
+        {
+            "title": "Offset & gap",
+            "content": "",
+            "examples": [
+                "<flux:dropdown offset=\"-15\" gap=\"2\">"
+            ]
+        },
+        {
+            "title": "Keyboard hints",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.item icon=\"pencil-square\" kbd=\"⌘S\">Save</flux:menu.item> <flux:menu.item icon=\"document-duplicate\" kbd=\"⌘D\">Duplicate</flux:menu.item> <flux:menu.item icon=\"trash\" variant=\"danger\" kbd=\"⌘⌫\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Checkbox items",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Permissions</flux:button> <flux:menu> <flux:menu.checkbox wire:model=\"read\" checked>Read</flux:menu.checkbox> <flux:menu.checkbox wire:model=\"write\" checked>Write</flux:menu.checkbox> <flux:menu.checkbox wire:model=\"delete\">Delete</flux:menu.checkbox> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Radio items",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Sort by</flux:button> <flux:menu> <flux:menu.radio.group wire:model=\"sortBy\"> <flux:menu.radio checked>Latest activity</flux:menu.radio> <flux:menu.radio>Date created</flux:menu.radio> <flux:menu.radio>Most popular</flux:menu.radio> </flux:menu.radio.group> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Groups",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.item>View</flux:menu.item> <flux:menu.item>Transfer</flux:menu.item> <flux:menu.separator /> <flux:menu.item>Publish</flux:menu.item> <flux:menu.item>Share</flux:menu.item> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Groups with headings",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.group heading=\"Account\"> <flux:menu.item>Profile</flux:menu.item> <flux:menu.item>Permissions</flux:menu.item> </flux:menu.group> <flux:menu.group heading=\"Billing\"> <flux:menu.item>Transactions</flux:menu.item> <flux:menu.item>Payouts</flux:menu.item> <flux:menu.item>Refunds</flux:menu.item> </flux:menu.group> <flux:menu.item>Logout</flux:menu.item> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Submenus",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.submenu heading=\"Sort by\"> <flux:menu.radio checked>Name</flux:menu.radio> <flux:menu.radio>Date</flux:menu.radio> <flux:menu.radio>Popularity</flux:menu.radio> </flux:menu.submenu> <flux:menu.submenu heading=\"Filter\"> <flux:menu.checkbox checked>Draft</flux:menu.checkbox> <flux:menu.checkbox checked>Published</flux:menu.checkbox> <flux:menu.checkbox>Archived</flux:menu.checkbox> </flux:menu.submenu> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Keep open",
+            "content": "",
+            "examples": [
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Filter</flux:button> <flux:menu keep-open> <flux:menu.checkbox checked>Draft</flux:menu.checkbox> <flux:menu.checkbox checked>Published</flux:menu.checkbox> <flux:menu.checkbox>Archived</flux:menu.checkbox> </flux:menu></flux:dropdown>",
+                "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Filters</flux:button> <flux:menu > <flux:menu.checkbox keep-open checked>Draft</flux:menu.checkbox> <flux:menu.checkbox keep-open checked>Published</flux:menu.checkbox> <flux:menu.checkbox keep-open>Archived</flux:menu.checkbox> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Clear</flux:menu.item> </flux:menu></flux:dropdown>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:57+00:00"
+}

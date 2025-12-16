@@ -1,0 +1,52 @@
+{
+    "name": "separator",
+    "title": "Separator",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/separator",
+    "pro": false,
+    "sections": [
+        {
+            "title": "With text",
+            "content": "",
+            "examples": [
+                "<flux:separator text=\"or\" />"
+            ]
+        },
+        {
+            "title": "Vertical",
+            "content": "",
+            "examples": [
+                "<flux:separator vertical />"
+            ]
+        },
+        {
+            "title": "Limited height",
+            "content": "",
+            "examples": [
+                "<flux:separator vertical class=\"my-2\" />"
+            ]
+        },
+        {
+            "title": "Subtle",
+            "content": "",
+            "examples": [
+                "<flux:separator vertical variant=\"subtle\" />"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:07+00:00"
+}

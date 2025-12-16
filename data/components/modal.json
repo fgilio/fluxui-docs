@@ -1,0 +1,104 @@
+{
+    "name": "modal",
+    "title": "Modal",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/modal",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Unique modal names",
+            "content": "",
+            "examples": [
+                "@foreach ($users as $user) <flux:modal :name=\"'edit-profile-'.$user->id\"> ... </flux:modal>@endforeach"
+            ]
+        },
+        {
+            "title": "Livewire methods",
+            "content": "",
+            "examples": [
+                "<flux:modal name=\"confirm\"> <!-- ... --></flux:modal>",
+                "<?phpclass ShowPost extends \\Livewire\\Component { public function delete() { // Control \"confirm\" modals anywhere on the page... Flux::modal('confirm')->show(); Flux::modal('confirm')->close(); // Control \"confirm\" modals within this Livewire component... $this->modal('confirm')->show(); $this->modal('confirm')->close(); // Closes all modals on the page... Flux::modals()->close(); }}"
+            ]
+        },
+        {
+            "title": "JavaScript methods",
+            "content": "",
+            "examples": [
+                "<button x-on:click=\"$flux.modal('confirm').show()\"> Open modal</button><button x-on:click=\"$flux.modal('confirm').close()\"> Close modal</button><button x-on:click=\"$flux.modals().close()\"> Close all modals</button>",
+                "// Control \"confirm\" modals anywhere on the page...Flux.modal('confirm').show()Flux.modal('confirm').close()// Closes all modals on the page...Flux.modals().close()"
+            ]
+        },
+        {
+            "title": "Data binding",
+            "content": "",
+            "examples": [
+                "<flux:modal wire:model.self=\"showConfirmModal\"> <!-- ... --></flux:modal>",
+                "<?phpclass ShowPost extends \\Livewire\\Component { public $showConfirmModal = false; public function delete() { $this->showConfirmModal = true; }}",
+                "<flux:button x-on:click=\"$wire.showConfirmModal = true\">Delete post</flux:button>"
+            ]
+        },
+        {
+            "title": "Close events",
+            "content": "",
+            "examples": [
+                "<flux:modal @close=\"someLivewireAction\"> <!-- ... --></flux:modal>"
+            ]
+        },
+        {
+            "title": "Cancel events",
+            "content": "",
+            "examples": [
+                "<flux:modal @cancel=\"someLivewireAction\"> <!-- ... --></flux:modal>"
+            ]
+        },
+        {
+            "title": "Disable click outside",
+            "content": "",
+            "examples": [
+                "<flux:modal :dismissible=\"false\"> <!-- ... --></flux:modal>"
+            ]
+        },
+        {
+            "title": "Confirmation",
+            "content": "",
+            "examples": [
+                "<flux:modal.trigger name=\"delete-profile\"> <flux:button variant=\"danger\">Delete</flux:button></flux:modal.trigger><flux:modal name=\"delete-profile\" class=\"min-w-[22rem]\"> <div class=\"space-y-6\"> <div> <flux:heading size=\"lg\">Delete project?</flux:heading> <flux:text class=\"mt-2\"> You're about to delete this project.<br> This action cannot be reversed. </flux:text> </div> <div class=\"flex gap-2\"> <flux:spacer /> <flux:modal.close> <flux:button variant=\"ghost\">Cancel</flux:button> </flux:modal.close> <flux:button type=\"submit\" variant=\"danger\">Delete project</flux:button> </div> </div></flux:modal>"
+            ]
+        },
+        {
+            "title": "Flyout",
+            "content": "",
+            "examples": [
+                "<flux:modal.trigger name=\"edit-profile\"> <flux:button>Edit profile</flux:button></flux:modal.trigger><flux:modal name=\"edit-profile\" flyout> <div class=\"space-y-6\"> <div> <flux:heading size=\"lg\">Update profile</flux:heading> <flux:text class=\"mt-2\">Make changes to your personal details.</flux:text> </div> <flux:input label=\"Name\" placeholder=\"Your name\" /> <flux:input label=\"Date of birth\" type=\"date\" /> <div class=\"flex\"> <flux:spacer /> <flux:button type=\"submit\" variant=\"primary\">Save changes</flux:button> </div> </div></flux:modal>",
+                "<flux:modal flyout position=\"left\"> <!-- ... --></flux:modal>"
+            ]
+        },
+        {
+            "title": "Flyout positioning",
+            "content": "",
+            "examples": [
+                "<flux:modal flyout position=\"left\"> <!-- ... --></flux:modal>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:02+00:00"
+}

@@ -1,0 +1,66 @@
+{
+    "name": "kanban",
+    "title": "Kanban",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/kanban",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Column actions",
+            "content": "",
+            "examples": [
+                "<flux:kanban.column> <flux:kanban.column.header :heading=\"$column->title\" :count=\"count($column->cards)\"> <x-slot name=\"actions\"> <flux:dropdown> <flux:button variant=\"subtle\" icon=\"ellipsis-horizontal\" size=\"sm\" /> <flux:menu> <flux:menu.item icon=\"plus\">New card</flux:menu.item> <flux:menu.item icon=\"archive-box\">Archive column</flux:menu.item> <flux:menu.separator /> <flux:menu.item variant=\"danger\" icon=\"trash\">Delete</flux:menu.item> </flux:menu> </flux:dropdown> <flux:button variant=\"subtle\" icon=\"plus\" size=\"sm\" /> </x-slot> </flux:kanban.column.header> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards></flux:kanban.column>"
+            ]
+        },
+        {
+            "title": "Column subheading",
+            "content": "",
+            "examples": [
+                "<flux:kanban.column> <flux:kanban.column.header heading=\"Blacklog\" subheading=\"Ideas and suggestions\" /> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards></flux:kanban.column>"
+            ]
+        },
+        {
+            "title": "Column footer",
+            "content": "",
+            "examples": [
+                "<flux:kanban.column> <flux:kanban.column.header :heading=\"$column['title']\" count=\"5\" /> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards> <flux:kanban.column.footer> <form> <flux:kanban.card> <div class=\"flex items-center gap-1\"> <flux:heading class=\"flex-1\"> <input class=\"w-full outline-none\" placeholder=\"New card...\"> </flux:heading> <flux:button type=\"submit\" variant=\"filled\" size=\"sm\" inset=\"top bottom\" class=\"-me-1.5\">Add</flux:button> </div> </flux:kanban.card> </form> <flux:button variant=\"subtle\" icon=\"plus\" size=\"sm\" align=\"start\"> New card </flux:button> </flux:kanban.column.footer></flux:kanban.column>"
+            ]
+        },
+        {
+            "title": "Card as button",
+            "content": "",
+            "examples": [
+                "<flux:kanban.card as=\"button\" wire:click=\"edit\" heading=\"Update privacy policy in app\" />"
+            ]
+        },
+        {
+            "title": "Card header",
+            "content": "",
+            "examples": [
+                "<flux:kanban.card as=\"button\" heading=\"Update privacy policy in app\"> <x-slot name=\"header\"> <div class=\"flex gap-2\"> <flux:badge color=\"blue\" size=\"sm\">UI</flux:badge> <flux:badge color=\"green\" size=\"sm\">Backend</flux:badge> <flux:badge color=\"red\" size=\"sm\">Bug</flux:badge> </div> </x-slot></flux:kanban.card>"
+            ]
+        },
+        {
+            "title": "Card footer",
+            "content": "",
+            "examples": [
+                "<flux:kanban.card as=\"button\" heading=\"Update privacy policy in app\"> <x-slot name=\"footer\"> <flux:icon name=\"bars-3-bottom-left\" variant=\"micro\" class=\"text-zinc-400\" /> <flux:avatar.group> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/x/calebporzio\" /> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/github/hugosaintemarie\" /> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/github/joshhanley\" /> <flux:avatar circle size=\"xs\">3+</flux:avatar> </flux:avatar.group> </x-slot></flux:kanban.card>"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:01+00:00"
+}

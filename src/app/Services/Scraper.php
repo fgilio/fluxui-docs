@@ -1,0 +1,388 @@
+<?php
+
+namespace App\Services;
+
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+use Symfony\Component\DomCrawler\Crawler;
+
+/**
+ * Scraper for Flux UI documentation from fluxui.dev.
+ *
+ * Parses HTML pages to extract structured documentation
+ * including sections, code examples, and reference tables.
+ */
+class Scraper
+{
+    private Client $client;
+    private string $baseUrl = 'https://fluxui.dev';
+
+    public function __construct()
+    {
+        $this->client = new Client([
+            'base_uri' => $this->baseUrl,
+            'timeout' => 30,
+            'headers' => [
+                'User-Agent' => 'FluxUI-CLI/1.0 (Documentation Scraper)',
+                'Accept' => 'text/html,application/xhtml+xml',
+            ],
+        ]);
+    }
+
+    /**
+     * Discover all documentation items from the navigation.
+     */
+    public function discoverAll(): array
+    {
+        $items = [];
+
+        try {
+            $response = $this->client->get('/docs');
+            $html = (string) $response->getBody();
+            $crawler = new Crawler($html);
+
+            // Find navigation links for components
+            $crawler->filter('a[href^="/components/"]')->each(function (Crawler $link) use (&$items) {
+                $href = $link->attr('href');
+                if (preg_match('/\/components\/([^\/\?#]+)/', $href, $matches)) {
+                    $name = $matches[1];
+                    if (! $this->isDuplicate($items, $name, 'component')) {
+                        $items[] = ['name' => $name, 'category' => 'component'];
+                    }
+                }
+            });
+
+            // Find navigation links for layouts
+            $crawler->filter('a[href^="/layouts/"]')->each(function (Crawler $link) use (&$items) {
+                $href = $link->attr('href');
+                if (preg_match('/\/layouts\/([^\/\?#]+)/', $href, $matches)) {
+                    $name = $matches[1];
+                    if (! $this->isDuplicate($items, $name, 'layout')) {
+                        $items[] = ['name' => $name, 'category' => 'layout'];
+                    }
+                }
+            });
+
+            // Find navigation links for guides
+            $crawler->filter('a[href^="/docs/"]')->each(function (Crawler $link) use (&$items) {
+                $href = $link->attr('href');
+                if (preg_match('/\/docs\/([^\/\?#]+)/', $href, $matches)) {
+                    $name = $matches[1];
+                    // Skip if it's the main docs page
+                    if ($name && $name !== 'docs' && ! $this->isDuplicate($items, $name, 'guide')) {
+                        $items[] = ['name' => $name, 'category' => 'guide'];
+                    }
+                }
+            });
+
+        } catch (GuzzleException $e) {
+            // Return empty on error
+        }
+
+        return $items;
+    }
+
+    /**
+     * Check if an item already exists in the list.
+     */
+    private function isDuplicate(array $items, string $name, string $category): bool
+    {
+        foreach ($items as $item) {
+            if ($item['name'] === $name && $item['category'] === $category) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Scrape a single documentation page.
+     */
+    public function scrape(string $category, string $name): ?array
+    {
+        $url = $this->buildUrl($category, $name);
+
+        try {
+            $response = $this->client->get($url);
+            $html = (string) $response->getBody();
+        } catch (GuzzleException $e) {
+            return null;
+        }
+
+        $crawler = new Crawler($html);
+
+        return [
+            'name' => $name,
+            'title' => $this->extractTitle($crawler),
+            'description' => $this->extractDescription($crawler),
+            'category' => $category,
+            'url' => $this->baseUrl . $url,
+            'pro' => $this->detectPro($crawler),
+            'sections' => $this->extractSections($crawler),
+            'reference' => $this->extractReference($crawler),
+            'related' => $this->extractRelated($crawler),
+            'scraped_at' => date('c'),
+        ];
+    }
+
+    /**
+     * Build the URL for a documentation page.
+     */
+    private function buildUrl(string $category, string $name): string
+    {
+        return match ($category) {
+            'component' => "/components/{$name}",
+            'layout' => "/layouts/{$name}",
+            'guide' => "/docs/{$name}",
+            default => throw new \InvalidArgumentException("Unknown category: {$category}"),
+        };
+    }
+
+    /**
+     * Extract the page title from h1.
+     */
+    private function extractTitle(Crawler $crawler): string
+    {
+        $h1 = $crawler->filter('h1')->first();
+        return $h1->count() > 0 ? trim($h1->text()) : '';
+    }
+
+    /**
+     * Extract the page description from the first paragraph.
+     */
+    private function extractDescription(Crawler $crawler): string
+    {
+        // Try to find the intro paragraph (usually after h1 or in a specific container)
+        $selectors = [
+            'main p:first-of-type',
+            'article p:first-of-type',
+            '.prose p:first-of-type',
+            'h1 + p',
+        ];
+
+        foreach ($selectors as $selector) {
+            $p = $crawler->filter($selector)->first();
+            if ($p->count() > 0) {
+                $text = trim($p->text());
+                if (strlen($text) > 20) {
+                    return $text;
+                }
+            }
+        }
+
+        return '';
+    }
+
+    /**
+     * Detect if this is a Pro-only component.
+     */
+    private function detectPro(Crawler $crawler): bool
+    {
+        $html = $crawler->html();
+
+        // Check for Pro badge or indicator
+        $proIndicators = [
+            'data-pro',
+            'pro-badge',
+            'Pro only',
+            'requires Pro',
+            'Flux Pro',
+        ];
+
+        foreach ($proIndicators as $indicator) {
+            if (stripos($html, $indicator) !== false) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Extract sections from h2 headings.
+     */
+    private function extractSections(Crawler $crawler): array
+    {
+        $sections = [];
+
+        // Find all h2 headings
+        $crawler->filter('h2')->each(function (Crawler $h2) use (&$sections) {
+            $title = trim($h2->text());
+
+            // Skip Reference section - handled separately
+            if (strtolower($title) === 'reference') {
+                return;
+            }
+
+            $section = [
+                'title' => $title,
+                'content' => '',
+                'examples' => [],
+            ];
+
+            // Get content between this h2 and the next h2
+            $node = $h2->getNode(0);
+            if (! $node) {
+                return;
+            }
+
+            $sibling = $node->nextSibling;
+            while ($sibling) {
+                if ($sibling->nodeName === 'h2') {
+                    break;
+                }
+
+                if ($sibling->nodeType === XML_ELEMENT_NODE) {
+                    $siblingCrawler = new Crawler($sibling);
+
+                    // Extract paragraphs
+                    if ($sibling->nodeName === 'p') {
+                        $text = trim($siblingCrawler->text());
+                        if ($text) {
+                            $section['content'] .= $text . "\n";
+                        }
+                    }
+
+                    // Extract code blocks
+                    $codeBlocks = $siblingCrawler->filter('pre code, pre');
+                    $codeBlocks->each(function (Crawler $code) use (&$section) {
+                        $codeText = trim($code->text());
+                        if ($codeText && ! in_array($codeText, $section['examples'])) {
+                            $section['examples'][] = $codeText;
+                        }
+                    });
+                }
+
+                $sibling = $sibling->nextSibling;
+            }
+
+            $section['content'] = trim($section['content']);
+            $sections[] = $section;
+        });
+
+        return $sections;
+    }
+
+    /**
+     * Extract the Reference section with props, slots, and attributes.
+     */
+    private function extractReference(Crawler $crawler): array
+    {
+        $reference = [];
+
+        // Find h2 with "Reference" text
+        $refH2 = $crawler->filter('h2')->reduce(function (Crawler $node) {
+            return strtolower(trim($node->text())) === 'reference';
+        })->first();
+
+        if ($refH2->count() === 0) {
+            return $reference;
+        }
+
+        // Find h3 headings after Reference (component names like flux:button)
+        $node = $refH2->getNode(0);
+        if (! $node) {
+            return $reference;
+        }
+
+        $sibling = $node->nextSibling;
+        $currentComponent = null;
+
+        while ($sibling) {
+            if ($sibling->nodeName === 'h2') {
+                break; // Stop at next h2
+            }
+
+            if ($sibling->nodeType === XML_ELEMENT_NODE) {
+                $siblingCrawler = new Crawler($sibling);
+
+                // h3 = component name
+                if ($sibling->nodeName === 'h3') {
+                    $currentComponent = trim($siblingCrawler->text());
+                    $reference[$currentComponent] = [
+                        'props' => [],
+                        'slots' => [],
+                        'attributes' => [],
+                    ];
+                }
+
+                // table = props/slots/attributes
+                if ($sibling->nodeName === 'table' && $currentComponent) {
+                    $this->parseReferenceTable($siblingCrawler, $reference[$currentComponent]);
+                }
+            }
+
+            $sibling = $sibling->nextSibling;
+        }
+
+        return $reference;
+    }
+
+    /**
+     * Parse a reference table for props, slots, or attributes.
+     */
+    private function parseReferenceTable(Crawler $table, array &$ref): void
+    {
+        $headers = [];
+        $table->filter('thead th, thead td')->each(function (Crawler $th) use (&$headers) {
+            $headers[] = strtolower(trim($th->text()));
+        });
+
+        // Determine table type from headers
+        $isPropTable = in_array('prop', $headers) || in_array('type', $headers) || in_array('default', $headers);
+        $isSlotTable = in_array('slot', $headers);
+        $isAttrTable = in_array('attribute', $headers) || in_array('data attribute', $headers);
+
+        $table->filter('tbody tr')->each(function (Crawler $row) use (&$ref, $isPropTable, $isSlotTable, $isAttrTable, $headers) {
+            $cells = [];
+            $row->filter('td')->each(function (Crawler $td) use (&$cells) {
+                $cells[] = trim($td->text());
+            });
+
+            if (count($cells) < 2) {
+                return;
+            }
+
+            if ($isPropTable) {
+                $ref['props'][] = [
+                    'name' => $cells[0] ?? '',
+                    'type' => $cells[1] ?? '',
+                    'default' => $cells[2] ?? '',
+                    'description' => $cells[3] ?? '',
+                ];
+            } elseif ($isSlotTable) {
+                $ref['slots'][] = [
+                    'name' => $cells[0] ?? '',
+                    'description' => $cells[1] ?? '',
+                ];
+            } elseif ($isAttrTable) {
+                $ref['attributes'][] = [
+                    'name' => $cells[0] ?? '',
+                    'description' => $cells[1] ?? '',
+                ];
+            }
+        });
+    }
+
+    /**
+     * Extract related components.
+     */
+    private function extractRelated(Crawler $crawler): array
+    {
+        $related = [];
+
+        // Look for "Related" section or links to other components
+        $crawler->filter('a[href^="/components/"]')->each(function (Crawler $a) use (&$related) {
+            $href = $a->attr('href');
+            if (preg_match('/\/components\/([^\/\?#]+)/', $href, $matches)) {
+                $name = $matches[1];
+                if (! in_array($name, $related)) {
+                    $related[] = $name;
+                }
+            }
+        });
+
+        // Limit to reasonable number
+        return array_slice($related, 0, 10);
+    }
+}

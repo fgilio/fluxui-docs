@@ -1,0 +1,64 @@
+{
+    "name": "table",
+    "title": "Table",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/table",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Simple",
+            "content": "",
+            "examples": [
+                "<flux:table> <flux:table.columns> <flux:table.column>Customer</flux:table.column> <flux:table.column>Date</flux:table.column> <flux:table.column>Status</flux:table.column> <flux:table.column>Amount</flux:table.column> </flux:table.columns> <flux:table.rows> <flux:table.row> <flux:table.cell>Lindsey Aminoff</flux:table.cell> <flux:table.cell>Jul 29, 10:45 AM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$49.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Hanna Lubin</flux:table.cell> <flux:table.cell>Jul 28, 2:15 PM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$312.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Kianna Bushevi</flux:table.cell> <flux:table.cell>Jul 30, 4:05 PM</flux:table.cell> <flux:table.cell><flux:badge color=\"zinc\" size=\"sm\" inset=\"top bottom\">Refunded</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$132.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Gustavo Geidt</flux:table.cell> <flux:table.cell>Jul 27, 9:30 AM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$31.00</flux:table.cell> </flux:table.row> </flux:table.rows></flux:table>"
+            ]
+        },
+        {
+            "title": "Pagination",
+            "content": "",
+            "examples": [
+                "<!-- $orders = \\App\\Models\\Order::paginate(5) --><flux:table :paginate=\"$orders\"> <!-- ... --></flux:table>"
+            ]
+        },
+        {
+            "title": "Sortable",
+            "content": "",
+            "examples": [
+                "<flux:table> <flux:table.columns> <flux:table.column>Customer</flux:table.column> <flux:table.column sortable sorted direction=\"desc\">Date</flux:table.column> <flux:table.column sortable>Amount</flux:table.column> </flux:table.columns> <!-- ... --></flux:table>"
+            ]
+        },
+        {
+            "title": "Sticky header",
+            "content": "",
+            "examples": [
+                "<!-- Set the height of the table container... --><flux:table container:class=\"max-h-80\"> <flux:table.columns sticky class=\"bg-white dark:bg-zinc-900\"> <!-- ... --> </flux:table.columns> <!-- ... --></flux:table>"
+            ]
+        },
+        {
+            "title": "Sticky columns",
+            "content": "",
+            "examples": [
+                "<flux:table container:class=\"max-h-80\"> <flux:table.columns sticky class=\"bg-white dark:bg-zinc-900\"> <flux:table.column sticky class=\"bg-white dark:bg-zinc-900\">ID</flux:table.column> <!-- ... --> </flux:table.columns> <flux:table.rows> @foreach ($this->orders as $order) <flux:table.row :key=\"$order->id\"> <flux:table.cell sticky class=\"bg-white dark:bg-zinc-900\">{{ $order->id }}</flux:table.cell> <!-- ... --> </flux:table.row> @endforeach </flux:table.rows></flux:table>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:09+00:00"
+}

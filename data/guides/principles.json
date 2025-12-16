@@ -1,0 +1,94 @@
+{
+    "name": "principles",
+    "title": "Principles",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/principles",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Simplicity",
+            "content": "",
+            "examples": [
+                "<flux:input wire:model=\"email\" label=\"Email\" />",
+                "<flux:form.field> <flux:form.field.label>Email</flux:form.field.label> <div> <flux:form.field.text-input wire:model=\"email\" /> </div> @error('email') <p class=\"mt-2 text-red-500 dark:text-red-400 text-xs\">{{ $message }}</p> @enderror</flux:form.field>"
+            ]
+        },
+        {
+            "title": "Complexity",
+            "content": "",
+            "examples": [
+                "<flux:input wire:model=\"email\" label=\"Email\" />",
+                "<flux:field> <flux:label>Email</flux:label> <flux:input wire:model=\"email\" /> <flux:error name=\"email\" /></flux:field>"
+            ]
+        },
+        {
+            "title": "Friendliness",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Composition",
+            "content": "",
+            "examples": [
+                "<flux:button>Options</flux:button>",
+                "<flux:dropdown> <flux:button>Options</flux:button> <flux:navmenu> <!-- ... --> </flux:navmenu></flux:dropdown>",
+                "<flux:dropdown> <flux:button>Options</flux:button> <flux:menu> <!-- ... --> </flux:menu></flux:dropdown>",
+                "<flux:context> <flux:button>Options</flux:button> <flux:menu> <!-- ... --> </flux:menu></flux:context>"
+            ]
+        },
+        {
+            "title": "Consistency",
+            "content": "",
+            "examples": [
+                "<flux:heading>...</flux:heading><flux:menu.submenu heading=\"...\"><flux:accordion.heading>...</flux:accordion.heading>"
+            ]
+        },
+        {
+            "title": "Brevity",
+            "content": "",
+            "examples": [
+                "<flux:input>",
+                "<flux:dropdown> <flux:button>Options</flux:button> <flux:menu> <!-- ... --> </flux:menu></flux:dropdown>",
+                "<flux:dropdown-menu> <flux:dropdown-menu.button>Options</flux:dropdown-menu.button> <flux:dropdown-menu.items> <!-- ... --> </flux:dropdown-menu.items></flux:dropdown-menu>"
+            ]
+        },
+        {
+            "title": "Use the browser",
+            "content": "",
+            "examples": [
+                "<div popover> <!-- ... --></div>",
+                "<dialog> <!-- ... --></dialog>"
+            ]
+        },
+        {
+            "title": "Use CSS",
+            "content": "",
+            "examples": [
+                "<flux:command.input placeholder=\"Search...\" />",
+                "[&:has(+input:focus)]:text-zinc-800"
+            ]
+        },
+        {
+            "title": "We style, you space",
+            "content": "",
+            "examples": [
+                "<form wire:submit=\"createAccount\"> <div class=\"mb-6\"> <flux:heading>Create an account</flux:heading> <flux:text class=\"mt-2\">We're excited to have you on board.</flux:text> </div> <flux:input class=\"mb-6\" label=\"Email\" wire:model=\"email\" /> <div class=\"mb-6 flex *:w-1/2 gap-4\"> <flux:input label=\"Password\" wire:model=\"password\" /> <flux:input label=\"Confirm password\" wire:model=\"password_confirmation\" /> </div> <flux:button type=\"submit\" variant=\"primary\">Create account</flux:button></form>"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:15+00:00"
+}

@@ -1,0 +1,100 @@
+{
+    "name": "time-picker",
+    "title": "Time picker",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/time-picker",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Basic usage",
+            "content": "",
+            "examples": [
+                "<flux:time-picker value=\"11:30\" />",
+                "<flux:time-picker wire:model=\"time\" />"
+            ]
+        },
+        {
+            "title": "Input trigger",
+            "content": "",
+            "examples": [
+                "<flux:time-picker type=\"input\" />",
+                "<flux:time-picker type=\"input\" :dropdown=\"false\" />"
+            ]
+        },
+        {
+            "title": "Without dropdown",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Multiple times",
+            "content": "",
+            "examples": [
+                "<flux:time-picker multiple />"
+            ]
+        },
+        {
+            "title": "Time format",
+            "content": "",
+            "examples": [
+                "<flux:time-picker time-format=\"12-hour\" /><flux:time-picker time-format=\"24-hour\" />"
+            ]
+        },
+        {
+            "title": "Interval",
+            "content": "",
+            "examples": [
+                "<flux:time-picker interval=\"60\" />"
+            ]
+        },
+        {
+            "title": "Min/max times",
+            "content": "",
+            "examples": [
+                "<flux:time-picker min=\"09:00\" max=\"17:00\" />",
+                "<!-- Prevent selection before now... --><flux:time-picker min=\"now\" /><!-- Prevent selection after now... --><flux:time-picker max=\"now\" />"
+            ]
+        },
+        {
+            "title": "Unavailable times",
+            "content": "",
+            "examples": [
+                "<flux:time-picker unavailable=\"03:00,04:00,05:30-07:29\" />"
+            ]
+        },
+        {
+            "title": "Open to",
+            "content": "",
+            "examples": [
+                "<flux:time-picker open-to=\"10:00\" />"
+            ]
+        },
+        {
+            "title": "Localization",
+            "content": "",
+            "examples": [
+                "<flux:time-picker locale=\"ja-JP\" />"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:11+00:00"
+}

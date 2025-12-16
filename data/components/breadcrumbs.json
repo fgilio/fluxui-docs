@@ -1,0 +1,52 @@
+{
+    "name": "breadcrumbs",
+    "title": "Breadcrumbs",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/breadcrumbs",
+    "pro": false,
+    "sections": [
+        {
+            "title": "With slashes",
+            "content": "",
+            "examples": [
+                "<flux:breadcrumbs> <flux:breadcrumbs.item href=\"#\" separator=\"slash\">Home</flux:breadcrumbs.item> <flux:breadcrumbs.item href=\"#\" separator=\"slash\">Blog</flux:breadcrumbs.item> <flux:breadcrumbs.item separator=\"slash\">Post</flux:breadcrumbs.item></flux:breadcrumbs>"
+            ]
+        },
+        {
+            "title": "With icon",
+            "content": "",
+            "examples": [
+                "<flux:breadcrumbs> <flux:breadcrumbs.item href=\"#\" icon=\"home\" /> <flux:breadcrumbs.item href=\"#\">Blog</flux:breadcrumbs.item> <flux:breadcrumbs.item>Post</flux:breadcrumbs.item></flux:breadcrumbs>"
+            ]
+        },
+        {
+            "title": "With ellipsis",
+            "content": "",
+            "examples": [
+                "<flux:breadcrumbs> <flux:breadcrumbs.item href=\"#\" icon=\"home\" /> <flux:breadcrumbs.item icon=\"ellipsis-horizontal\" /> <flux:breadcrumbs.item>Post</flux:breadcrumbs.item></flux:breadcrumbs>"
+            ]
+        },
+        {
+            "title": "With ellipsis dropdown",
+            "content": "",
+            "examples": [
+                "<flux:breadcrumbs> <flux:breadcrumbs.item href=\"#\" icon=\"home\" /> <flux:breadcrumbs.item> <flux:dropdown> <flux:button icon=\"ellipsis-horizontal\" variant=\"ghost\" size=\"sm\" /> <flux:navmenu> <flux:navmenu.item>Client</flux:navmenu.item> <flux:navmenu.item icon=\"arrow-turn-down-right\">Team</flux:navmenu.item> <flux:navmenu.item icon=\"arrow-turn-down-right\">User</flux:navmenu.item> </flux:navmenu> </flux:dropdown> </flux:breadcrumbs.item> <flux:breadcrumbs.item>Post</flux:breadcrumbs.item></flux:breadcrumbs>"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:50+00:00"
+}

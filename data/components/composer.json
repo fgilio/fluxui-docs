@@ -1,0 +1,85 @@
+{
+    "name": "composer",
+    "title": "Composer",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/composer",
+    "pro": true,
+    "sections": [
+        {
+            "title": "With header",
+            "content": "",
+            "examples": [
+                "<flux:composer wire:model=\"prompt\" label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"header\"> <!-- Header content... --> <div class=\"relative border border-zinc-200 dark:border-zinc-700 rounded-lg overflow-hidden\"> <img src=\"https://fluxui.dev/img/demo/caleb.png\" alt=\"Profile picture\" class=\"size-14\"> <div class=\"absolute top-0 right-0 p-1\"> <button type=\"button\" class=\"p-0.5 rounded-full bg-zinc-900/50 hover:bg-zinc-900/70 flex justify-center items-center\"> <flux:icon icon=\"x-mark\" variant=\"micro\" class=\"text-white\" /> </button> </div> </div> </x-slot> <x-slot name=\"actionsLeading\"> <!-- ... --> </x-slot> <x-slot name=\"actionsTrailing\"> <!-- ... --> </x-slot></flux:composer>"
+            ]
+        },
+        {
+            "title": "Inline",
+            "content": "",
+            "examples": [
+                "<flux:composer wire:model=\"prompt\" rows=\"1\" inline label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"actionsLeading\"> <flux:button size=\"sm\" variant=\"ghost\" icon=\"plus\" /> </x-slot> <x-slot name=\"actionsTrailing\"> <flux:button size=\"sm\" variant=\"filled\" icon=\"microphone\" /> <flux:button type=\"submit\" size=\"sm\" variant=\"primary\" icon=\"paper-airplane\" /> </x-slot></flux:composer>"
+            ]
+        },
+        {
+            "title": "Input variant",
+            "content": "",
+            "examples": [
+                "<flux:composer variant=\"input\" label=\"Message\" placeholder=\"What's on your mind?\"> <!-- ... --></flux:composer>"
+            ]
+        },
+        {
+            "title": "Height",
+            "content": "",
+            "examples": [
+                "<flux:composer rows=\"4\" max-rows=\"8\" ...> <!-- ... --></flux:composer>"
+            ]
+        },
+        {
+            "title": "Submit behavior",
+            "content": "",
+            "examples": [
+                "<form wire:submit=\"send\"> <flux:composer wire:model=\"prompt\" submit=\"enter\" ...> <!-- ... --> </flux:composer></form>"
+            ]
+        },
+        {
+            "title": "Rich text",
+            "content": "",
+            "examples": [
+                "<flux:composer wire:model=\"prompt\" rows=\"3\" label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"input\"> <flux:editor variant=\"borderless\" toolbar=\"bold italic bullet ordered | link | align\" /> </x-slot> <x-slot name=\"actionsLeading\"> <flux:button size=\"sm\" variant=\"subtle\" icon=\"paper-clip\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"slash\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"adjustments-horizontal\" /> </x-slot> <x-slot name=\"actionsTrailing\"> <flux:button size=\"sm\" variant=\"filled\" icon=\"microphone\" /> <flux:button type=\"submit\" size=\"sm\" variant=\"primary\" icon=\"paper-airplane\" /> </x-slot></flux:composer>"
+            ]
+        },
+        {
+            "title": "Disabled",
+            "content": "",
+            "examples": [
+                "<flux:composer disabled ...> <!-- ... --></flux:composer>"
+            ]
+        },
+        {
+            "title": "Invalid",
+            "content": "",
+            "examples": [
+                "<flux:composer wire:model=\"prompt\" label=\"Prompt\" label:sr-only ...> <!-- ... --></flux:composer>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:56+00:00"
+}

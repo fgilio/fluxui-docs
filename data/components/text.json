@@ -1,0 +1,64 @@
+{
+    "name": "text",
+    "title": "Text",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/text",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Size",
+            "content": "",
+            "examples": [
+                "<flux:text class=\"text-base\">Base text size</flux:text><flux:text>Default text size</flux:text><flux:text class=\"text-xs\">Smaller text</flux:text>"
+            ]
+        },
+        {
+            "title": "Color",
+            "content": "",
+            "examples": [
+                "<flux:text variant=\"strong\">Strong text color</flux:text><flux:text>Default text color</flux:text><flux:text variant=\"subtle\">Subtle text color</flux:text><flux:text color=\"blue\">Colored text</flux:text>"
+            ]
+        },
+        {
+            "title": "Link",
+            "content": "",
+            "examples": [
+                "<flux:text>Visit our <flux:link href=\"#\">documentation</flux:link> for more information.</flux:text>"
+            ]
+        },
+        {
+            "title": "Link variants",
+            "content": "",
+            "examples": [
+                "<flux:link href=\"#\">Default link</flux:link><flux:link href=\"#\" variant=\"ghost\">Ghost link</flux:link><flux:link href=\"#\" variant=\"subtle\">Subtle link</flux:link>"
+            ]
+        },
+        {
+            "title": "Link as button",
+            "content": "",
+            "examples": [
+                "<flux:link as=\"button\" wire:click=\"...\">Create new account →</flux:link>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:10+00:00"
+}

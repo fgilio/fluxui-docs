@@ -1,0 +1,78 @@
+{
+    "name": "otp-input",
+    "title": "OTP Input",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/otp-input",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Example usage",
+            "content": "",
+            "examples": [
+                "<flux:card> <form wire:submit=\"verify\" class=\"space-y-8\"> <div class=\"max-w-64 mx-auto space-y-2\"> <flux:heading size=\"lg\" class=\"text-center\">Verify your account</flux:heading> <flux:text class=\"text-center\">Please enter a one-time password from the authenticator app.</flux:text> </div> <flux:otp wire:model=\"code\" length=\"6\" label=\"OTP Code\" label:sr-only :error:icon=\"false\" error:class=\"text-center\" class=\"mx-auto\" /> <div class=\"space-y-4\"> <flux:button variant=\"primary\" type=\"submit\" class=\"w-full\">Verify</flux:button> <flux:button wire:click=\"resend\" class=\"w-full\">Resend code</flux:button> </div> </form></flux:card>"
+            ]
+        },
+        {
+            "title": "Autosubmit",
+            "content": "",
+            "examples": [
+                "<form wire:submit=\"verify\" class=\"space-y-8\"> <div class=\"max-w-64 mx-auto space-y-2\"> <flux:heading size=\"lg\" class=\"text-center\">Verify your account</flux:heading> <flux:text class=\"text-center\">Please enter a one-time password from the authenticator app.</flux:text> </div> <div class=\"space-y-6\"> <flux:otp wire:model=\"code\" length=\"6\" submit=\"auto\" class=\"mx-auto\" /> </div></form>"
+            ]
+        },
+        {
+            "title": "Alphanumeric",
+            "content": "",
+            "examples": [
+                "<flux:otp wire:model=\"licenseKey\" length=\"10\" mode=\"alphanumeric\" label=\"License key\" description:trailing=\"Enter the license key printed on the installation disc\" />"
+            ]
+        },
+        {
+            "title": "Private",
+            "content": "",
+            "examples": [
+                "<flux:otp wire:model=\"pin\" length=\"4\" private label=\"PIN Code\" />"
+            ]
+        },
+        {
+            "title": "Separator",
+            "content": "",
+            "examples": [
+                "<flux:otp wire:model=\"code\"> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.separator /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /></flux:otp>"
+            ]
+        },
+        {
+            "title": "Group",
+            "content": "",
+            "examples": [
+                "<flux:otp wire:model=\"code\"> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group></flux:otp>"
+            ]
+        },
+        {
+            "title": "Group separator",
+            "content": "",
+            "examples": [
+                "<flux:otp wire:model=\"code\"> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group> <flux:otp.separator /> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group></flux:otp>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:03+00:00"
+}

@@ -1,0 +1,50 @@
+{
+    "name": "brand",
+    "title": "Brand",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/brand",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Logo slot",
+            "content": "",
+            "examples": [
+                "<flux:brand href=\"#\" name=\"Launchpad\"> <x-slot name=\"logo\" class=\"size-6 rounded-full bg-cyan-500 text-white text-xs font-bold\"> <flux:icon name=\"rocket-launch\" variant=\"micro\" /> </x-slot></flux:brand>"
+            ]
+        },
+        {
+            "title": "Logo only",
+            "content": "",
+            "examples": [
+                "<flux:brand href=\"#\" logo=\"/img/demo/logo.png\" />"
+            ]
+        },
+        {
+            "title": "Examples",
+            "content": "",
+            "examples": [
+                "<flux:header class=\"px-4! w-full bg-zinc-50 dark:bg-zinc-800 rounded-lg border border-zinc-100 dark:border-white/5\"> <flux:brand href=\"#\" name=\"Acme Inc.\"> <x-slot name=\"logo\" class=\"bg-accent text-accent-foreground\"> <i class=\"font-serif font-bold\">A</i> </x-slot> </flux:brand> <flux:navbar variant=\"outline\"> <flux:navbar.item href=\"#\" current>Home</flux:navbar.item> <flux:navbar.item badge=\"12\" href=\"#\">Inbox</flux:navbar.item> </flux:navbar> <flux:spacer class=\"min-w-24\" /> <flux:profile circle :chevron=\"false\" avatar=\"https://unavatar.io/x/calebporzio\" /></flux:header>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:49+00:00"
+}

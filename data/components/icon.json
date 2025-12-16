@@ -1,0 +1,82 @@
+{
+    "name": "icon",
+    "title": "Icon",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/icon",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Variants",
+            "content": "",
+            "examples": [
+                "<flux:icon.bolt /> <!-- 24px, outline --><flux:icon.bolt variant=\"solid\" /> <!-- 24px, filled --><flux:icon.bolt variant=\"mini\" /> <!-- 20px, filled --><flux:icon.bolt variant=\"micro\" /> <!-- 16px, filled -->"
+            ]
+        },
+        {
+            "title": "Sizes",
+            "content": "",
+            "examples": [
+                "<flux:icon.bolt class=\"size-12\" /><flux:icon.bolt class=\"size-10\" /><flux:icon.bolt class=\"size-8\" />"
+            ]
+        },
+        {
+            "title": "Color",
+            "content": "",
+            "examples": [
+                "<flux:icon.bolt variant=\"solid\" class=\"text-amber-500 dark:text-amber-300\" />"
+            ]
+        },
+        {
+            "title": "Loading spinner",
+            "content": "",
+            "examples": [
+                "<flux:icon.loading />"
+            ]
+        },
+        {
+            "title": "Dynamic icons",
+            "content": "",
+            "examples": [
+                "<flux:icon name=\"bolt\" />"
+            ]
+        },
+        {
+            "title": "Lucide icons",
+            "content": "",
+            "examples": [
+                "php artisan flux:icon",
+                "php artisan flux:icon crown grip-vertical github",
+                "<flux:icon.crown /><flux:icon.grip-vertical /><flux:icon.github />"
+            ]
+        },
+        {
+            "title": "Custom icons",
+            "content": "",
+            "examples": [
+                "- resources - views - flux - icon - wink.blade.php",
+                "@php $attributes = $unescapedForwardedAttributes ?? $attributes; @endphp@props([ 'variant' => 'outline',])@php$classes = Flux::classes('shrink-0') ->add(match($variant) { 'outline' => '[:where(&)]:size-6', 'solid' => '[:where(&)]:size-6', 'mini' => '[:where(&)]:size-5', 'micro' => '[:where(&)]:size-4', });@endphp{{-- Your SVG code here: --}}<svg {{ $attributes->class($classes) }} data-flux-icon aria-hidden=\"true\" ... > ...</svg>",
+                "<flux:icon.wink />"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:00+00:00"
+}

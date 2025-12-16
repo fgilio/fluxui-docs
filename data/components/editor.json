@@ -1,0 +1,110 @@
+{
+    "name": "editor",
+    "title": "Rich text editor",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/editor",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Toolbar",
+            "content": "",
+            "examples": [
+                "<flux:editor toolbar=\"heading | bold italic underline | align ~ undo redo\" />",
+                "- resources - views - flux - editor - copy.blade.php",
+                "<flux:tooltip content=\"{{ __('Copy to clipboard') }}\" class=\"contents\"> <flux:editor.button x-on:click=\"navigator.clipboard?.writeText($el.closest('[data-flux-editor]').value); $el.setAttribute('data-copied', ''); setTimeout(() => $el.removeAttribute('data-copied'), 2000)\"> <flux:icon.clipboard variant=\"outline\" class=\"[[data-copied]_&]:hidden size-5!\" /> <flux:icon.clipboard-document-check variant=\"outline\" class=\"hidden [[data-copied]_&]:block size-5!\" /> </flux:editor.button></flux:tooltip>",
+                "<flux:editor toolbar=\"heading | […] | align ~ copy\" />",
+                "<flux:editor> <flux:editor.toolbar> <flux:editor.heading /> <flux:editor.separator /> <flux:editor.bold /> <flux:editor.italic /> <flux:editor.strike /> <flux:editor.separator /> <flux:editor.bullet /> <flux:editor.ordered /> <flux:editor.blockquote /> <flux:editor.separator /> <flux:editor.link /> <flux:editor.separator /> <flux:editor.align /> <flux:editor.spacer /> <flux:dropdown position=\"bottom end\" offset=\"-15\"> <flux:editor.button icon=\"ellipsis-horizontal\" tooltip=\"More\" /> <flux:menu> <flux:menu.item wire:click=\"…\" icon=\"arrow-top-right-on-square\">Preview</flux:menu.item> <flux:menu.item wire:click=\"…\" icon=\"arrow-down-tray\">Export</flux:menu.item> <flux:menu.item wire:click=\"…\" icon=\"share\">Share</flux:menu.item> </flux:menu> </flux:dropdown> </flux:editor.toolbar> <flux:editor.content /></flux:editor>"
+            ]
+        },
+        {
+            "title": "Configuring items",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Custom items",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Customization",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Height",
+            "content": "",
+            "examples": [
+                "<flux:editor class=\"**:data-[slot=content]:min-h-[100px]!\" />"
+            ]
+        },
+        {
+            "title": "Shortcut keys",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Markdown syntax",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Localization",
+            "content": "",
+            "examples": [
+                "// lang/es.json{ \"Rich text editor\": \"Editor de texto enriquecido\", \"Formatting\": \"Formato\", \"Text\": \"Texto\", \"Heading 1\": \"Encabezado 1\", \"Heading 2\": \"Encabezado 2\", \"Heading 3\": \"Encabezado 3\", \"Styles\": \"Estilos\", \"Bold\": \"Negrita\", \"Italic\": \"Cursiva\", \"Underline\": \"Subrayado\", \"Strikethrough\": \"Tachado\", \"Subscript\": \"Subíndice\", \"Superscript\": \"Superíndice\", \"Highlight\": \"Resaltar\", \"Code\": \"Código\", \"Bullet list\": \"Lista con viñetas\", \"Ordered list\": \"Lista numerada\", \"Blockquote\": \"Cita\", \"Insert link\": \"Insertar enlace\", \"Unlink\": \"Quitar enlace\", \"Align\": \"Alinear\", \"Left\": \"Izquierda\", \"Center\": \"Centro\", \"Right\": \"Derecha\", \"Undo\": \"Deshacer\", \"Redo\": \"Rehacer\"}"
+            ]
+        },
+        {
+            "title": "Extensions",
+            "content": "",
+            "examples": [
+                "<head> ... <script type=\"module\"> document.addEventListener('flux:editor', (e) => { ... }) </script></head>",
+                "...document.addEventListener('flux:editor', (e) => { ...})",
+                "import Youtube from 'https://cdn.jsdelivr.net/npm/@tiptap/[email protected]/+esm'document.addEventListener('flux:editor', (e) => { e.detail.registerExtensions([ Youtube.configure({ controls: false, nocookie: true, }), ])})",
+                "document.addEventListener('flux:editor', (e) => { e.detail.disableExtension('underline')})",
+                "document.addEventListener('flux:editor', (e) => { e.detail.init(({ editor }) => { editor.on('create', () => {}) editor.on('update', () => {}) editor.on('selectionUpdate', () => {}) editor.on('transaction', () => {}) editor.on('focus', () => {}) editor.on('blur', () => {}) editor.on('destroy', () => {}) editor.on('drop', () => {}) editor.on('paste', () => {}) editor.on('contentError', () => {}) })})"
+            ]
+        },
+        {
+            "title": "Set up listener",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Registering extensions",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Disabling extensions",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Accessing the instance",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:58+00:00"
+}

@@ -1,0 +1,50 @@
+{
+    "name": "tooltip",
+    "title": "Tooltip",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/tooltip",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Info tooltip",
+            "content": "",
+            "examples": [
+                "<flux:heading class=\"flex items-center gap-2\"> Tax identification number <flux:tooltip toggleable> <flux:button icon=\"information-circle\" size=\"sm\" variant=\"ghost\" /> <flux:tooltip.content class=\"max-w-[20rem] space-y-2\"> <p>For US businesses, enter your 9-digit Employer Identification Number (EIN) without hyphens.</p> <p>For European companies, enter your VAT number including the country prefix (e.g., DE123456789).</p> </flux:tooltip.content> </flux:tooltip></flux:heading>"
+            ]
+        },
+        {
+            "title": "Position",
+            "content": "",
+            "examples": [
+                "<flux:tooltip content=\"Settings\" position=\"top\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"right\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"bottom\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"left\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip>"
+            ]
+        },
+        {
+            "title": "Disabled buttons",
+            "content": "",
+            "examples": [
+                "<flux:tooltip content=\"Cannot merge until reviewed by a team member\"> <div> <flux:button disabled icon=\"arrow-turn-down-right\">Merge pull request</flux:button> </div></flux:tooltip>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:12+00:00"
+}
