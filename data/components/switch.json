@@ -1,0 +1,43 @@
+{
+    "name": "switch",
+    "title": "Switch",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/switch",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Fieldset",
+            "content": "",
+            "examples": [
+                "<flux:fieldset> <flux:legend>Email notifications</flux:legend> <div class=\"space-y-4\"> <flux:switch wire:model.live=\"communication\" label=\"Communication emails\" description=\"Receive emails about your account activity.\" /> <flux:separator variant=\"subtle\" /> <flux:switch wire:model.live=\"marketing\" label=\"Marketing emails\" description=\"Receive emails about new products, features, and more.\" /> <flux:separator variant=\"subtle\" /> <flux:switch wire:model.live=\"social\" label=\"Social emails\" description=\"Receive emails for friend requests, follows, and more.\" /> <flux:separator variant=\"subtle\" /> <flux:switch wire:model.live=\"security\" label=\"Security emails\" description=\"Receive emails about your account activity and security.\" /> </div></flux:fieldset>"
+            ]
+        },
+        {
+            "title": "Left align",
+            "content": "",
+            "examples": [
+                "<flux:fieldset> <flux:legend>Email notifications</flux:legend> <div class=\"space-y-3\"> <flux:switch label=\"Communication emails\" align=\"left\" /> <flux:switch label=\"Marketing emails\" align=\"left\" /> <flux:switch label=\"Social emails\" align=\"left\" /> <flux:switch label=\"Security emails\" align=\"left\" /> </div></flux:fieldset>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:09+00:00"
+}

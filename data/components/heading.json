@@ -1,0 +1,50 @@
+{
+    "name": "heading",
+    "title": "Heading",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/heading",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Sizes",
+            "content": "",
+            "examples": [
+                "<flux:heading>Default</flux:heading><flux:heading size=\"lg\">Large</flux:heading><flux:heading size=\"xl\">Extra large</flux:heading>"
+            ]
+        },
+        {
+            "title": "Heading level",
+            "content": "",
+            "examples": [
+                "<flux:heading level=\"3\">User profile</flux:heading><flux:text class=\"mt-2\">This information will be displayed publicly.</flux:text>"
+            ]
+        },
+        {
+            "title": "Examples",
+            "content": "",
+            "examples": [
+                "<div> <flux:text>Year to date</flux:text> <flux:heading size=\"xl\" class=\"mb-1\">$7,532.16</flux:heading> <div class=\"flex items-center gap-2\"> <flux:icon.arrow-trending-up variant=\"micro\" class=\"text-green-600 dark:text-green-500\" /> <span class=\"text-sm text-green-600 dark:text-green-500\">15.2%</span> </div></div>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:59+00:00"
+}

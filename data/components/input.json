@@ -1,0 +1,148 @@
+{
+    "name": "input",
+    "title": "Input",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/input",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Shorthand",
+            "content": "",
+            "examples": [
+                "<flux:input label=\"Username\" description=\"This will be publicly displayed.\" />"
+            ]
+        },
+        {
+            "title": "Class targeting",
+            "content": "",
+            "examples": [
+                "<flux:input class=\"max-w-xs\" class:input=\"font-mono\" />"
+            ]
+        },
+        {
+            "title": "Types",
+            "content": "",
+            "examples": [
+                "<flux:input type=\"email\" label=\"Email\" /><flux:input type=\"password\" label=\"Password\" /><flux:input type=\"date\" max=\"2999-12-31\" label=\"Date\" />"
+            ]
+        },
+        {
+            "title": "File",
+            "content": "",
+            "examples": [
+                "<flux:input type=\"file\" wire:model=\"logo\" label=\"Logo\"/><flux:input type=\"file\" wire:model=\"attachments\" label=\"Attachments\" multiple />"
+            ]
+        },
+        {
+            "title": "Smaller",
+            "content": "",
+            "examples": [
+                "<flux:input size=\"sm\" placeholder=\"Filter by...\" />"
+            ]
+        },
+        {
+            "title": "Disabled",
+            "content": "",
+            "examples": [
+                "<flux:input disabled label=\"Email\" />"
+            ]
+        },
+        {
+            "title": "Readonly",
+            "content": "",
+            "examples": [
+                "<flux:input readonly variant=\"filled\" />"
+            ]
+        },
+        {
+            "title": "Invalid",
+            "content": "",
+            "examples": [
+                "<flux:input invalid />"
+            ]
+        },
+        {
+            "title": "Input masking",
+            "content": "",
+            "examples": [
+                "<flux:input mask=\"(999) 999-9999\" value=\"7161234567\" /><flux:input mask:dynamic=\"$money($input)\" value=\"1234.56\" />"
+            ]
+        },
+        {
+            "title": "Icons",
+            "content": "",
+            "examples": [
+                "<flux:input icon=\"magnifying-glass\" placeholder=\"Search orders\" /><flux:input icon:trailing=\"credit-card\" placeholder=\"4444-4444-4444-4444\" /><flux:input icon:trailing=\"loading\" placeholder=\"Search transactions\" />"
+            ]
+        },
+        {
+            "title": "Icon buttons",
+            "content": "",
+            "examples": [
+                "<flux:input placeholder=\"Search orders\"> <x-slot name=\"iconTrailing\"> <flux:button size=\"sm\" variant=\"subtle\" icon=\"x-mark\" class=\"-mr-1\" /> </x-slot></flux:input><flux:input type=\"password\" value=\"password\"> <x-slot name=\"iconTrailing\"> <flux:button size=\"sm\" variant=\"subtle\" icon=\"eye\" class=\"-mr-1\" /> </x-slot></flux:input>"
+            ]
+        },
+        {
+            "title": "Clearable, copyable, and viewable inputs",
+            "content": "",
+            "examples": [
+                "<flux:input placeholder=\"Search orders\" clearable /><flux:input type=\"password\" value=\"password\" viewable /><flux:input icon=\"key\" value=\"FLUX-1234-5678-ABCD-EFGH\" readonly copyable />"
+            ]
+        },
+        {
+            "title": "Keyboard hint",
+            "content": "",
+            "examples": [
+                "<flux:input kbd=\"⌘K\" icon=\"magnifying-glass\" placeholder=\"Search...\"/>"
+            ]
+        },
+        {
+            "title": "As a button",
+            "content": "",
+            "examples": [
+                "<flux:input as=\"button\" placeholder=\"Search...\" icon=\"magnifying-glass\" kbd=\"⌘K\" />"
+            ]
+        },
+        {
+            "title": "With buttons",
+            "content": "",
+            "examples": [
+                "<flux:input.group> <flux:input placeholder=\"Post title\" /> <flux:button icon=\"plus\">New post</flux:button></flux:input.group><flux:input.group> <flux:select class=\"max-w-fit\"> <flux:select.option selected>USD</flux:select.option> <!-- ... --> </flux:select> <flux:input placeholder=\"$99.99\" /></flux:input.group>"
+            ]
+        },
+        {
+            "title": "Text prefixes and suffixes",
+            "content": "",
+            "examples": [
+                "<flux:input.group> <flux:input.group.prefix>https://</flux:input.group.prefix> <flux:input placeholder=\"example.com\" /></flux:input.group><flux:input.group> <flux:input placeholder=\"chunky-spaceship\" /> <flux:input.group.suffix>.brand.com</flux:input.group.suffix></flux:input.group>"
+            ]
+        },
+        {
+            "title": "Input group labels",
+            "content": "",
+            "examples": [
+                "<flux:field> <flux:label>Website</flux:label> <flux:input.group> <flux:input.group.prefix>https://</flux:input.group.prefix> <flux:input wire:model=\"website\" placeholder=\"example.com\" /> </flux:input.group> <flux:error name=\"website\" /></flux:field>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:00+00:00"
+}

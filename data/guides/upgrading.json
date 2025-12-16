@@ -1,0 +1,85 @@
+{
+    "name": "upgrading",
+    "title": "Upgrade guide",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/upgrading",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Prerequisites",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Update Flux",
+            "content": "",
+            "examples": [
+                "composer require livewire/flux:^2.0 livewire/flux-pro:^2.0"
+            ]
+        },
+        {
+            "title": "Rename @fluxStyles",
+            "content": "",
+            "examples": [
+                "<head> ...-- @fluxStyles++ @fluxAppearance</head>"
+            ]
+        },
+        {
+            "title": "Clear the view cache",
+            "content": "",
+            "examples": [
+                "php artisan view:clear"
+            ]
+        },
+        {
+            "title": "Tailwind Config",
+            "content": "",
+            "examples": [
+                "@import \"tailwindcss\";@import '../../vendor/livewire/flux/dist/flux.css';/* Required for dark mode in Flux... */@custom-variant dark (&:where(.dark, .dark *));..."
+            ]
+        },
+        {
+            "title": "Migrating accent colors",
+            "content": "",
+            "examples": [
+                "@theme { --color-accent: var(--color-sky-600); --color-accent-content: var(--color-sky-600); --color-accent-foreground: var(--color-white);}@layer theme { .dark { --color-accent: var(--color-sky-600); --color-accent-content: var(--color-sky-400); --color-accent-foreground: var(--color-white); }}",
+                "export default { ... theme: { extend: { colors: { ...-- accent: {-- DEFAULT: 'var(--color-accent)',-- content: 'var(--color-accent-content)',-- foreground: 'var(--color-accent-foreground)',-- }, }, }, },};"
+            ]
+        },
+        {
+            "title": "Re-assigning gray",
+            "content": "",
+            "examples": [
+                "/* Re-assign Flux's gray of choice... */@theme { --color-zinc-50: var(--color-neutral-50); --color-zinc-100: var(--color-neutral-100); --color-zinc-200: var(--color-neutral-200); --color-zinc-300: var(--color-neutral-300); --color-zinc-400: var(--color-neutral-400); --color-zinc-500: var(--color-neutral-500); --color-zinc-600: var(--color-neutral-600); --color-zinc-700: var(--color-neutral-700); --color-zinc-800: var(--color-neutral-800); --color-zinc-900: var(--color-neutral-900); --color-zinc-950: var(--color-neutral-950);}",
+                "-- import colors from 'tailwindcss/colors';export default { ... theme: { extend: { colors: {-- // Re-assign Flux's gray of choice...-- zinc: colors.neutral, ... }, }, },};"
+            ]
+        },
+        {
+            "title": "Dark mode changes",
+            "content": "",
+            "examples": [
+                "<head> ...-- @fluxAppearance</head>"
+            ]
+        },
+        {
+            "title": "Rename components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:14+00:00"
+}

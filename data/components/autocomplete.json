@@ -1,0 +1,29 @@
+{
+    "name": "autocomplete",
+    "title": "Autocomplete",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/autocomplete",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:47+00:00"
+}

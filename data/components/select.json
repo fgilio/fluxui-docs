@@ -1,0 +1,135 @@
+{
+    "name": "select",
+    "title": "Select",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/select",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Small",
+            "content": "",
+            "examples": [
+                "<flux:select size=\"sm\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>"
+            ]
+        },
+        {
+            "title": "Custom select",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
+                "<flux:select variant=\"listbox\"> <x-slot name=\"button\"> <flux:select.button class=\"rounded-full!\" placeholder=\"Choose industry...\" :invalid=\"$errors->has('...')\" /> </x-slot> <flux:select.option>Photography</flux:select.option> ...</flux:select>",
+                "<flux:select variant=\"listbox\" clearable> ...</flux:select>",
+                "<flux:select variant=\"listbox\" placeholder=\"Select role...\"> <flux:select.option> <div class=\"flex items-center gap-2\"> <flux:icon.shield-check variant=\"mini\" class=\"text-zinc-400\" /> Owner </div> </flux:select.option> <flux:select.option> <div class=\"flex items-center gap-2\"> <flux:icon.key variant=\"mini\" class=\"text-zinc-400\" /> Administrator </div> </flux:select.option> <flux:select.option> <div class=\"flex items-center gap-2\"> <flux:icon.user variant=\"mini\" class=\"text-zinc-400\" /> Member </div> </flux:select.option> <flux:select.option> <div class=\"flex items-center gap-2\"> <flux:icon.eye variant=\"mini\" class=\"text-zinc-400\" /> Viewer </div> </flux:select.option></flux:select>"
+            ]
+        },
+        {
+            "title": "The button slot",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\"> <x-slot name=\"button\"> <flux:select.button class=\"rounded-full!\" placeholder=\"Choose industry...\" :invalid=\"$errors->has('...')\" /> </x-slot> <flux:select.option>Photography</flux:select.option> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Clearable",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" clearable> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Options with images/icons",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Searchable select",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" searchable placeholder=\"Choose industries...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
+                "<flux:select variant=\"listbox\" searchable> <x-slot name=\"search\"> <flux:select.search class=\"px-4\" placeholder=\"Search industries...\" /> </x-slot> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "The search slot",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" searchable> <x-slot name=\"search\"> <flux:select.search class=\"px-4\" placeholder=\"Search industries...\" /> </x-slot> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Multiple select",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" multiple placeholder=\"Choose industries...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
+                "<flux:select variant=\"listbox\" selected-suffix=\"industries selected\" multiple> ...</flux:select>",
+                "<flux:select variant=\"listbox\" selected-suffix=\"{{ __('industries selected') }}\" multiple> ...</flux:select>",
+                "<flux:select variant=\"listbox\" indicator=\"checkbox\" multiple> ...</flux:select>",
+                "<flux:select variant=\"listbox\" searchable multiple clear=\"close\"> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Selected suffix",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" selected-suffix=\"industries selected\" multiple> ...</flux:select>",
+                "<flux:select variant=\"listbox\" selected-suffix=\"{{ __('industries selected') }}\" multiple> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Checkbox indicator",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" indicator=\"checkbox\" multiple> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Clearing search",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"listbox\" searchable multiple clear=\"close\"> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Combobox",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"combobox\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
+                "<flux:select variant=\"combobox\"> <x-slot name=\"input\"> <flux:select.input x-model=\"search\" :invalid=\"$errors->has('...')\" /> </x-slot> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "The input slot",
+            "content": "",
+            "examples": [
+                "<flux:select variant=\"combobox\"> <x-slot name=\"input\"> <flux:select.input x-model=\"search\" :invalid=\"$errors->has('...')\" /> </x-slot> ...</flux:select>"
+            ]
+        },
+        {
+            "title": "Dynamic options",
+            "content": "",
+            "examples": [
+                "<flux:select wire:model=\"userId\" variant=\"combobox\" :filter=\"false\"> <x-slot name=\"input\"> <flux:select.input wire:model.live=\"search\" /> </x-slot> @foreach ($this->users as $user) <flux:select.option value=\"{{ $user->id }}\" wire:key=\"{{ $user->id }}\"> {{ $user->name }} </flux:select.option> @endforeach</flux:select><!--public $search = '';public $userId = null;#[\\Livewire\\Attributes\\Computed]public function users() { return \\App\\Models\\User::query() ->when($this->search, fn($query) => $query->where('name', 'like', '%' . $this->search . '%')) ->limit(20) ->get();}-->"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:06+00:00"
+}

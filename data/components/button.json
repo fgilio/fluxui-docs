@@ -1,0 +1,121 @@
+{
+    "name": "button",
+    "title": "Button",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/button",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Variants",
+            "content": "",
+            "examples": [
+                "<flux:button>Default</flux:button><flux:button variant=\"primary\">Primary</flux:button><flux:button variant=\"filled\">Filled</flux:button><flux:button variant=\"danger\">Danger</flux:button><flux:button variant=\"ghost\">Ghost</flux:button><flux:button variant=\"subtle\">Subtle</flux:button>"
+            ]
+        },
+        {
+            "title": "Colors",
+            "content": "",
+            "examples": [
+                "<flux:button variant=\"primary\" color=\"zinc\">Zinc</flux:button><flux:button variant=\"primary\" color=\"red\">Red</flux:button><flux:button variant=\"primary\" color=\"orange\">Orange</flux:button><flux:button variant=\"primary\" color=\"amber\">Amber</flux:button><flux:button variant=\"primary\" color=\"yellow\">Yellow</flux:button><flux:button variant=\"primary\" color=\"lime\">Lime</flux:button><flux:button variant=\"primary\" color=\"green\">Green</flux:button><flux:button variant=\"primary\" color=\"emerald\">Emerald</flux:button><flux:button variant=\"primary\" color=\"teal\">Teal</flux:button><flux:button variant=\"primary\" color=\"cyan\">Cyan</flux:button><flux:button variant=\"primary\" color=\"sky\">Sky</flux:button><flux:button variant=\"primary\" color=\"blue\">Blue</flux:button><flux:button variant=\"primary\" color=\"indigo\">Indigo</flux:button><flux:button variant=\"primary\" color=\"violet\">Violet</flux:button><flux:button variant=\"primary\" color=\"purple\">Purple</flux:button><flux:button variant=\"primary\" color=\"fuchsia\">Fuchsia</flux:button><flux:button variant=\"primary\" color=\"pink\">Pink</flux:button><flux:button variant=\"primary\" color=\"rose\">Rose</flux:button>"
+            ]
+        },
+        {
+            "title": "Sizes",
+            "content": "",
+            "examples": [
+                "<flux:button>Base</flux:button><flux:button size=\"sm\">Small</flux:button><flux:button size=\"xs\">Extra small</flux:button>"
+            ]
+        },
+        {
+            "title": "Icons",
+            "content": "",
+            "examples": [
+                "<flux:button icon=\"ellipsis-horizontal\" /><flux:button icon=\"arrow-down-tray\">Export</flux:button><flux:button icon:trailing=\"chevron-down\">Open</flux:button><flux:button icon=\"x-mark\" variant=\"subtle\" />"
+            ]
+        },
+        {
+            "title": "Loading",
+            "content": "",
+            "examples": [
+                "<flux:button wire:click=\"save\"> Save changes</flux:button>",
+                "<flux:button wire:click=\"save\" :loading=\"false\">"
+            ]
+        },
+        {
+            "title": "Full width",
+            "content": "",
+            "examples": [
+                "<flux:button variant=\"primary\" class=\"w-full\">Send invite</flux:button>"
+            ]
+        },
+        {
+            "title": "Button groups",
+            "content": "",
+            "examples": [
+                "<flux:button.group> <flux:button>Oldest</flux:button> <flux:button>Newest</flux:button> <flux:button>Top</flux:button></flux:button.group>"
+            ]
+        },
+        {
+            "title": "Icon group",
+            "content": "",
+            "examples": [
+                "<flux:button.group> <flux:button icon=\"bars-3-bottom-left\"></flux:button> <flux:button icon=\"bars-3\"></flux:button> <flux:button icon=\"bars-3-bottom-right\"></flux:button></flux:button.group>"
+            ]
+        },
+        {
+            "title": "Attached button",
+            "content": "",
+            "examples": [
+                "<flux:button.group> <flux:button>New product</flux:button> <flux:button icon=\"chevron-down\"></flux:button></flux:button.group>"
+            ]
+        },
+        {
+            "title": "As a link",
+            "content": "",
+            "examples": [
+                "<flux:button href=\"https://google.com\" icon:trailing=\"arrow-up-right\"> Visit Google</flux:button>"
+            ]
+        },
+        {
+            "title": "As an input",
+            "content": "",
+            "examples": [
+                "<flux:input as=\"button\" placeholder=\"Search...\" icon=\"magnifying-glass\" kbd=\"⌘K\" />"
+            ]
+        },
+        {
+            "title": "Square",
+            "content": "",
+            "examples": [
+                "<flux:button square>...</flux:button>"
+            ]
+        },
+        {
+            "title": "Inset",
+            "content": "",
+            "examples": [
+                "<div class=\"flex justify-between\"> <flux:heading>Post successfully created.</flux:heading> <flux:button size=\"sm\" icon=\"x-mark\" variant=\"ghost\" inset /></div>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:50+00:00"
+}

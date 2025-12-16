@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+
+# IDE
+/.idea
+/.vscode
+
+# Build artifacts in src/
+/src/vendor/
+/src/buildroot/
+/src/builds/
+/src/downloads/
+/src/source/
+/src/pkgroot/
+/src/log/
+/src/spc
+/src/*.phar
+
+# Keep these tracked
+!/flux
+!/data/

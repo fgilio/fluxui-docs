@@ -1,0 +1,107 @@
+{
+    "name": "installation",
+    "title": "Installation",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/installation",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Prerequisites",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Getting started",
+            "content": "",
+            "examples": [
+                "composer require livewire/flux",
+                "php artisan flux:activate",
+                "<head> ... @fluxAppearance</head><body> ... @fluxScripts</body>",
+                "@import 'tailwindcss';@import '../../vendor/livewire/flux/dist/flux.css';@custom-variant dark (&:where(.dark, .dark *));",
+                "<head> ... <link rel=\"preconnect\" href=\"https://fonts.bunny.net\"> <link href=\"https://fonts.bunny.net/css?family=inter:400,500,600&display=swap\" rel=\"stylesheet\" /></head>",
+                "@import 'tailwindcss';@import '../../vendor/livewire/flux/dist/flux.css';...@theme { --font-sans: Inter, sans-serif;}"
+            ]
+        },
+        {
+            "title": "Theming",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Disable dark mode",
+            "content": "",
+            "examples": [
+                "<head> ...-- @fluxAppearance</head>"
+            ]
+        },
+        {
+            "title": "Publishing components",
+            "content": "",
+            "examples": [
+                "php artisan flux:publish"
+            ]
+        },
+        {
+            "title": "Keeping Flux updated",
+            "content": "",
+            "examples": [
+                "composer update livewire/flux livewire/flux-pro"
+            ]
+        },
+        {
+            "title": "Cloning an existing project",
+            "content": "",
+            "examples": [
+                "composer config http-basic.composer.fluxui.dev your-email your-license-key"
+            ]
+        },
+        {
+            "title": "Activating using Laravel Forge",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Activating using Laravel Cloud",
+            "content": "",
+            "examples": [
+                "composer config http-basic.composer.fluxui.dev your-email your-license-key"
+            ]
+        },
+        {
+            "title": "Activating in GitHub Actions",
+            "content": "",
+            "examples": [
+                "- name: Add Flux license run: composer config http-basic.composer.fluxui.dev \"${{ secrets.FLUX_USERNAME }}\" \"${{ secrets.FLUX_LICENSE_KEY }}\""
+            ]
+        },
+        {
+            "title": "Activating in CI",
+            "content": "",
+            "examples": [
+                "composer config http-basic.composer.fluxui.dev \"${FLUX_USERNAME}\" \"${FLUX_LICENSE_KEY}\""
+            ]
+        },
+        {
+            "title": "Configuring nginx",
+            "content": "",
+            "examples": [
+                "location ~ ^/flux/flux(\\.min)?\\.(js|css)$ { expires off; try_files $uri $uri/ /index.php?$query_string;}"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:14+00:00"
+}

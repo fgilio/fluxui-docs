@@ -1,0 +1,11 @@
+/vendor
+/builds
+.phpunit.result.cache
+
+# static-php-cli build artifacts
+/source
+/downloads
+/buildroot
+/pkgroot
+/log
+/spc

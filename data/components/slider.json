@@ -1,0 +1,104 @@
+{
+    "name": "slider",
+    "title": "Slider",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/slider",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Min/max/step",
+            "content": "",
+            "examples": [
+                "<flux:slider min=\"0\" max=\"100\" step=\"10\" />"
+            ]
+        },
+        {
+            "title": "Displaying value",
+            "content": "",
+            "examples": [
+                "<flux:field> <flux:label> Corner radius <x-slot name=\"trailing\"> <span wire:text=\"amount\" class=\"tabular-nums\"></span> </x-slot> </flux:label> <flux:slider wire:model=\"amount\" /></flux:field>"
+            ]
+        },
+        {
+            "title": "With input",
+            "content": "",
+            "examples": [
+                "<flux:field> <flux:label>Corner radius</flux:label> <div class=\"flex items-center gap-4 -mt-2\"> <flux:slider wire:model=\"amount\" /> <flux:input wire:model=\"amount\" type=\"number\" size=\"sm\" class=\"max-w-18\" /> </div></flux:field>"
+            ]
+        },
+        {
+            "title": "Big steps",
+            "content": "",
+            "examples": [
+                "<flux:slider step=\"1\" big-step=\"10\" />"
+            ]
+        },
+        {
+            "title": "Step marks",
+            "content": "",
+            "examples": [
+                "<flux:slider min=\"1\" max=\"5\"> @foreach (range(1, 5) as $i) <flux:slider.tick :value=\"$i\" /> @endforeach</flux:slider>"
+            ]
+        },
+        {
+            "title": "Numbered steps",
+            "content": "",
+            "examples": [
+                "<flux:slider min=\"1\" max=\"5\"> @foreach (range(1, 5) as $i) <flux:slider.tick :value=\"$i\">{{ $i }}</flux:slider.tick> @endforeach</flux:slider>"
+            ]
+        },
+        {
+            "title": "Custom steps",
+            "content": "",
+            "examples": [
+                "<flux:slider min=\"1\" max=\"5\"> <flux:slider.tick value=\"1\">Low</flux:slider.tick> <flux:slider.tick value=\"3\">Mid</flux:slider.tick> <flux:slider.tick value=\"5\">High</flux:slider.tick></flux:slider>"
+            ]
+        },
+        {
+            "title": "Range slider",
+            "content": "",
+            "examples": [
+                "<flux:slider range />",
+                "<flux:slider range value=\"20,80\" />",
+                "<flux:slider range wire:model=\"range\" />",
+                "<?phpuse Livewire\\Component;class Dashboard extends Component { public array $range = [20, 80];}"
+            ]
+        },
+        {
+            "title": "Basic usage",
+            "content": "",
+            "examples": [
+                "<flux:slider range value=\"20,80\" />",
+                "<flux:slider range wire:model=\"range\" />",
+                "<?phpuse Livewire\\Component;class Dashboard extends Component { public array $range = [20, 80];}"
+            ]
+        },
+        {
+            "title": "Custom styles",
+            "content": "",
+            "examples": [
+                "<flux:slider track:class=\"h-5\" thumb:class=\"size-5\" />"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:08+00:00"
+}

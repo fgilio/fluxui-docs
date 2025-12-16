@@ -1,0 +1,66 @@
+{
+    "name": "accordion",
+    "title": "Accordion",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/accordion",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Shorthand",
+            "content": "",
+            "examples": [
+                "<flux:accordion.item heading=\"What's your refund policy?\"> If you are not satisfied with your purchase, we offer a 30-day money-back guarantee. Please contact our support team for assistance.</flux:accordion.item>"
+            ]
+        },
+        {
+            "title": "With transition",
+            "content": "",
+            "examples": [
+                "<flux:accordion transition> <!-- ... --></flux:accordion>"
+            ]
+        },
+        {
+            "title": "Disabled",
+            "content": "",
+            "examples": [
+                "<flux:accordion.item disabled> <!-- ... --></flux:accordion.item>"
+            ]
+        },
+        {
+            "title": "Exclusive",
+            "content": "",
+            "examples": [
+                "<flux:accordion exclusive> <!-- ... --></flux:accordion>"
+            ]
+        },
+        {
+            "title": "Expanded",
+            "content": "",
+            "examples": [
+                "<flux:accordion.item expanded> <!-- ... --></flux:accordion.item>"
+            ]
+        },
+        {
+            "title": "Leading icon",
+            "content": "",
+            "examples": [
+                "<flux:accordion variant=\"reverse\"> <!-- ... --></flux:accordion>"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:37:47+00:00"
+}

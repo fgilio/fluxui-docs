@@ -1,0 +1,50 @@
+{
+    "name": "customization",
+    "title": "Customization",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/customization",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Tailwind overrides",
+            "content": "",
+            "examples": [
+                "<flux:select class=\"max-w-md\">",
+                "<flux:button class=\"bg-zinc-800 hover:bg-zinc-700\">",
+                "<button type=\"button\" class=\"bg-zinc-800 hover:bg-zinc-700 bg-white hover:bg-zinc-100...\">",
+                "<flux:button class=\"bg-zinc-800! hover:bg-zinc-700!\">"
+            ]
+        },
+        {
+            "title": "Publishing components",
+            "content": "",
+            "examples": [
+                "php artisan flux:publish",
+                "php artisan flux:publish --all",
+                "resources/ views/ flux/ checkbox.blade.php ..."
+            ]
+        },
+        {
+            "title": "Global style overrides",
+            "content": "",
+            "examples": [
+                "<style> [data-flux-button] { @apply bg-zinc-800 dark:bg-zinc-400 hover:bg-zinc-700 dark:hover:bg-zinc-300; }</style>"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:17+00:00"
+}

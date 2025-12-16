@@ -1,0 +1,170 @@
+{
+    "name": "patterns",
+    "title": "Patterns",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/patterns",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Props vs attributes",
+            "content": "",
+            "examples": [
+                "<flux:button variant=\"primary\" x-on:change.prevent=\"...\">",
+                "<button type=\"button\" class=\"bg-zinc-900 ...\" x-on:change.prevent=\"...\">"
+            ]
+        },
+        {
+            "title": "Class merging",
+            "content": "",
+            "examples": [
+                "<flux:button class=\"w-full\">",
+                "<button type=\"button\" class=\"w-full border border-zinc-200 ...\">"
+            ]
+        },
+        {
+            "title": "Dealing with class merging conflicts",
+            "content": "",
+            "examples": [
+                "<flux:button class=\"bg-zinc-800 hover:bg-zinc-700\">",
+                "<button type=\"button\" class=\"bg-zinc-800 hover:bg-zinc-700 bg-white hover:bg-zinc-100...\">",
+                "<flux:button class=\"bg-zinc-800! hover:bg-zinc-700!\">"
+            ]
+        },
+        {
+            "title": "Split attribute forwarding",
+            "content": "",
+            "examples": [
+                "<div class=\"...\"> <input type=\"text\" class=\"...\"></div>",
+                "<flux:input class=\"w-full\" autofocus>",
+                "<div class=\"w-full ...\"> <input type=\"text\" class=\"...\" autofocus></div>"
+            ]
+        },
+        {
+            "title": "Common props",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Variant",
+            "content": "",
+            "examples": [
+                "<flux:button variant=\"primary\" /><flux:input variant=\"filled\" /><flux:modal variant=\"flyout\" /><flux:badge variant=\"solid\" /><flux:select variant=\"combobox\" /><flux:separator variant=\"subtle\" /><flux:tabs variant=\"segmented\" />"
+            ]
+        },
+        {
+            "title": "Icon",
+            "content": "",
+            "examples": [
+                "<flux:button icon=\"magnifying-glass\" /><flux:input icon=\"magnifying-glass\" /><flux:tab icon=\"cog-6-tooth\" /><flux:badge icon=\"user\" /><flux:breadcrumbs.item icon=\"home\" /><flux:navlist.item icon=\"user\" /><flux:navbar.item icon=\"user\" /><flux:menu.item icon=\"plus\" />",
+                "<flux:button icon:trailing=\"chevron-down\" /><flux:input icon:trailing=\"credit-card\" /><flux:badge icon:trailing=\"x-mark\" /><flux:navbar.item icon:trailing=\"chevron-down\" />"
+            ]
+        },
+        {
+            "title": "Size",
+            "content": "",
+            "examples": [
+                "<flux:button size=\"sm\" /><flux:select size=\"sm\" /><flux:input size=\"sm\" /><flux:tabs size=\"sm\" />",
+                "<flux:heading size=\"lg\" /><flux:badge size=\"lg\" />"
+            ]
+        },
+        {
+            "title": "Keyboard hints",
+            "content": "",
+            "examples": [
+                "<flux:button kbd=\"⌘S\" /><flux:tooltip kbd=\"D\" /><flux:input kbd=\"⌘K\" /><flux:menu.item kbd=\"⌘E\" /><flux:command.item kbd=\"⌘N\" />"
+            ]
+        },
+        {
+            "title": "Inset",
+            "content": "",
+            "examples": [
+                "<flux:badge inset=\"top bottom\"><flux:button variant=\"ghost\" inset=\"left\">"
+            ]
+        },
+        {
+            "title": "Prop forwarding",
+            "content": "",
+            "examples": [
+                "<flux:button icon=\"bell\" />",
+                "<flux:button> <flux:icon.bell /></flux:button>",
+                "<flux:button icon=\"bell\" icon:variant=\"solid\" />"
+            ]
+        },
+        {
+            "title": "Opt-out props",
+            "content": "",
+            "examples": [
+                "<flux:navbar.item :current=\"false\">"
+            ]
+        },
+        {
+            "title": "Shorthand props",
+            "content": "",
+            "examples": [
+                "<flux:field> <flux:label>Email</flux:label> <flux:input wire:model=\"email\" type=\"email\" /> <flux:error name=\"email\" /></flux:field>",
+                "<flux:input type=\"email\" wire:model=\"email\" label=\"Email\" />",
+                "<flux:tooltip content=\"Settings\"> <flux:button icon=\"cog-6-tooth\" /></flux:tooltip>",
+                "<flux:button icon=\"cog-6-tooth\" tooltip=\"Settings\" />"
+            ]
+        },
+        {
+            "title": "Data binding",
+            "content": "",
+            "examples": [
+                "<flux:input wire:model=\"email\" /><flux:checkbox wire:model=\"terms\" /><flux:switch wire:model.live=\"enabled\" /><flux:textarea wire:model=\"content\" /><flux:select wire:model=\"state\" />",
+                "<flux:checkbox.group wire:model=\"notifications\"><flux:radio.group wire:model=\"payment\"><flux:tabs wire:model=\"activeTab\">"
+            ]
+        },
+        {
+            "title": "Component Groups",
+            "content": "",
+            "examples": [
+                "<flux:button.group> <flux:button /></flux:button.group><flux:input.group> <flux:input /></flux:input.group><flux:checkbox.group> <flux:checkbox /></flux:checkbox.group><flux:radio.group> <flux:radio /></flux:radio.group>",
+                "<flux:accordion> <flux:accordion.item /></flux:accordion><flux:menu> <flux:menu.item /></flux:menu><flux:breadcrumbs> <flux:breadcrumbs.item /></flux:breadcrumbs><flux:navbar> <flux:navbar.item /></flux:navbar><flux:navlist> <flux:navlist.item /></flux:navlist><flux:navmenu> <flux:navmenu.item /></flux:navmenu><flux:command> <flux:command.item /></flux:command><flux:autocomplete> <flux:autocomplete.item /></flux:autocomplete>",
+                "<flux:field> <flux:label></flux:label> <flux:description></flux:description> <flux:error></flux:error></flux:field>"
+            ]
+        },
+        {
+            "title": "Anomalies",
+            "content": "",
+            "examples": [
+                "<flux:tab.group> <flux:tabs> <flux:tab> </flux:tabs> <flux:tab.panel></flux:tab.group>"
+            ]
+        },
+        {
+            "title": "Slots",
+            "content": "",
+            "examples": [
+                "<flux:input icon:trailing=\"x-mark\" />",
+                "<flux:input> <x-slot name=\"iconTrailing\"> <flux:button icon=\"x-mark\" size=\"sm\" variant=\"subtle\" wire:click=\"clear\" /> </x-slot></flux:input>"
+            ]
+        },
+        {
+            "title": "Paper cuts",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Blade components vs HTML elements",
+            "content": "",
+            "examples": [
+                "<!-- Conditional attributes: --><input @if ($disabled) disabled @endif><flux:input :disabled=\"$disabled\">"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:16+00:00"
+}

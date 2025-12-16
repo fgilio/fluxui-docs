@@ -1,0 +1,58 @@
+{
+    "name": "pillbox",
+    "title": "Pillbox",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/pillbox",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Small",
+            "content": "",
+            "examples": [
+                "<flux:pillbox size=\"sm\" multiple placeholder=\"Choose tags...\"> <flux:pillbox.option value=\"design\">Design</flux:pillbox.option> <flux:pillbox.option value=\"development\">Development</flux:pillbox.option> <flux:pillbox.option value=\"marketing\">Marketing</flux:pillbox.option> <flux:pillbox.option value=\"sales\">Sales</flux:pillbox.option> <flux:pillbox.option value=\"support\">Support</flux:pillbox.option> <flux:pillbox.option value=\"engineering\">Engineering</flux:pillbox.option> <flux:pillbox.option value=\"product\">Product</flux:pillbox.option> <flux:pillbox.option value=\"operations\">Operations</flux:pillbox.option></flux:pillbox>"
+            ]
+        },
+        {
+            "title": "Searchable",
+            "content": "",
+            "examples": [
+                "<flux:pillbox multiple searchable placeholder=\"Choose skills...\"> <flux:pillbox.option value=\"javascript\">JavaScript</flux:pillbox.option> <flux:pillbox.option value=\"typescript\">TypeScript</flux:pillbox.option> <flux:pillbox.option value=\"php\">PHP</flux:pillbox.option> <flux:pillbox.option value=\"python\">Python</flux:pillbox.option> <flux:pillbox.option value=\"ruby\">Ruby</flux:pillbox.option> <flux:pillbox.option value=\"go\">Go</flux:pillbox.option> <flux:pillbox.option value=\"rust\">Rust</flux:pillbox.option> <flux:pillbox.option value=\"java\">Java</flux:pillbox.option> <flux:pillbox.option value=\"csharp\">C#</flux:pillbox.option> <flux:pillbox.option value=\"swift\">Swift</flux:pillbox.option></flux:pillbox>",
+                "<flux:pillbox multiple searchable search:placeholder=\"Filter skills...\"> ...</flux:pillbox>"
+            ]
+        },
+        {
+            "title": "Custom search placeholder",
+            "content": "",
+            "examples": [
+                "<flux:pillbox multiple searchable search:placeholder=\"Filter skills...\"> ...</flux:pillbox>"
+            ]
+        },
+        {
+            "title": "With icons",
+            "content": "",
+            "examples": [
+                "<flux:pillbox multiple placeholder=\"Choose platforms...\"> <flux:pillbox.option value=\"github\"> <div class=\"flex items-center gap-2\"> <flux:icon.code-bracket variant=\"mini\" class=\"text-zinc-400\" /> GitHub </div> </flux:pillbox.option> <flux:pillbox.option value=\"gitlab\"> <div class=\"flex items-center gap-2\"> <flux:icon.server variant=\"mini\" class=\"text-zinc-400\" /> GitLab </div> </flux:pillbox.option> <flux:pillbox.option value=\"bitbucket\"> <div class=\"flex items-center gap-2\"> <flux:icon.cloud variant=\"mini\" class=\"text-zinc-400\" /> Bitbucket </div> </flux:pillbox.option></flux:pillbox>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:04+00:00"
+}

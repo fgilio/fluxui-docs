@@ -1,0 +1,73 @@
+{
+    "name": "toast",
+    "title": "Toast",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/toast",
+    "pro": true,
+    "sections": [
+        {
+            "title": "With heading",
+            "content": "",
+            "examples": [
+                "Flux::toast( heading: 'Changes saved.', text: 'You can always update this in your settings.',);"
+            ]
+        },
+        {
+            "title": "Variants",
+            "content": "",
+            "examples": [
+                "Flux::toast(variant: 'success', ...);Flux::toast(variant: 'warning', ...);Flux::toast(variant: 'danger', ...);"
+            ]
+        },
+        {
+            "title": "Positioning",
+            "content": "",
+            "examples": [
+                "<flux:toast position=\"top end\" /><!-- Customize top padding for things like navbars... --><flux:toast position=\"top end\" class=\"pt-24\" />"
+            ]
+        },
+        {
+            "title": "Duration",
+            "content": "",
+            "examples": [
+                "// 1 second...Flux::toast(duration: 1000, ...);"
+            ]
+        },
+        {
+            "title": "Permanent",
+            "content": "",
+            "examples": [
+                "// Show indefinitely...Flux::toast(duration: 0, ...);"
+            ]
+        },
+        {
+            "title": "Stack",
+            "content": "",
+            "examples": [
+                "<flux:toast.group> <flux:toast /></flux:toast.group>",
+                "<flux:toast.group expanded> <flux:toast /></flux:toast.group>",
+                "<flux:toast.group position=\"top end\"> <flux:toast /></flux:toast.group>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:12+00:00"
+}

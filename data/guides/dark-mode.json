@@ -1,0 +1,73 @@
+{
+    "name": "dark-mode",
+    "title": "Dark mode",
+    "description": "",
+    "category": "guide",
+    "url": "https://fluxui.dev/docs/dark-mode",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Set up Tailwind",
+            "content": "",
+            "examples": [
+                "@import \"tailwindcss\";@import '../../vendor/livewire/flux/dist/flux.css';@custom-variant dark (&:where(.dark, .dark *));"
+            ]
+        },
+        {
+            "title": "Disabling dark mode handling",
+            "content": "",
+            "examples": [
+                "<head> ...-- @fluxAppearance</head>"
+            ]
+        },
+        {
+            "title": "JavaScript utilities",
+            "content": "",
+            "examples": [
+                "// Get/set a users color scheme preference...$flux.appearance = 'light|dark|system'// Get/set the current color scheme of your app...$flux.dark = 'true|false'",
+                "<flux:button x-data x-on:click=\"$flux.dark = ! $flux.dark\">Toggle</flux:button>",
+                "<flux:radio.group x-data x-model=\"$flux.appearance\"> <flux:radio value=\"light\">Light</flux:radio> <flux:radio value=\"dark\">Dark</flux:radio> <flux:radio value=\"system\">System</flux:radio></flux:radio.group>",
+                "let button = document.querySelector('...')button.addEventListener('click', () => { Flux.dark = ! Flux.dark})"
+            ]
+        },
+        {
+            "title": "Examples",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Toggle button",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Dropdown menu",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Toggle switch",
+            "content": "",
+            "examples": []
+        },
+        {
+            "title": "Segmented radio",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:17+00:00"
+}

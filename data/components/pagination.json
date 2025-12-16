@@ -1,0 +1,43 @@
+{
+    "name": "pagination",
+    "title": "Pagination",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/pagination",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Simple paginator",
+            "content": "",
+            "examples": [
+                "<!-- $orders = Order::simplePaginate() --><flux:pagination :paginator=\"$orders\" />"
+            ]
+        },
+        {
+            "title": "Large result set",
+            "content": "",
+            "examples": [
+                "<!-- $orders = Order::paginate(5) --><flux:pagination :paginator=\"$orders\" />"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "scraped_at": "2025-12-16T20:38:03+00:00"
+}
