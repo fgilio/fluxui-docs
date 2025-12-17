@@ -205,18 +205,27 @@ class Scraper
     }
 
     /**
-     * Extract sections from h2 headings.
+     * Extract sections from h2 and h3 headings.
+     *
+     * Uses parent container approach to handle both flat and nested DOM structures.
+     * Includes h3 because some sites use h3 for subsections (e.g., "Floating flyout").
      */
     private function extractSections(Crawler $crawler): array
     {
         $sections = [];
 
-        // Find all h2 headings
-        $crawler->filter('h2')->each(function (Crawler $h2) use (&$sections) {
-            $title = trim($h2->text());
+        // Find h2 and h3 headings (some sites use h3 for subsections)
+        $crawler->filter('h2, h3')->each(function (Crawler $heading) use (&$sections) {
+            $title = trim($heading->text());
+            $node = $heading->getNode(0);
 
             // Skip Reference section - handled separately
             if (strtolower($title) === 'reference') {
+                return;
+            }
+
+            // Skip h3s that are component names in Reference section (e.g., "flux:modal")
+            if ($node && $node->nodeName === 'h3' && str_starts_with(strtolower($title), 'flux:')) {
                 return;
             }
 
@@ -226,37 +235,37 @@ class Scraper
                 'examples' => [],
             ];
 
-            // Get content between this h2 and the next h2
-            $node = $h2->getNode(0);
             if (! $node) {
                 return;
             }
 
+            // Strategy 1: Check parent container for content
+            // Many sites wrap sections in divs/sections containing heading + content
+            $parent = $node->parentNode;
+            if ($parent && $parent->nodeName !== 'body' && $parent->nodeName !== 'main') {
+                $parentCrawler = new Crawler($parent);
+
+                // Only use parent if it contains exactly one heading of this type
+                $headingCount = $parentCrawler->filter($node->nodeName)->count();
+                if ($headingCount === 1) {
+                    $this->extractSectionContent($parentCrawler, $section);
+                    $section['content'] = trim($section['content']);
+                    $sections[] = $section;
+                    return;
+                }
+            }
+
+            // Strategy 2: Fall back to sibling traversal for flat structures
             $sibling = $node->nextSibling;
             while ($sibling) {
-                if ($sibling->nodeName === 'h2') {
+                // Stop at next heading of same or higher level
+                if (in_array($sibling->nodeName, ['h2', 'h3'])) {
                     break;
                 }
 
                 if ($sibling->nodeType === XML_ELEMENT_NODE) {
                     $siblingCrawler = new Crawler($sibling);
-
-                    // Extract paragraphs
-                    if ($sibling->nodeName === 'p') {
-                        $text = trim($siblingCrawler->text());
-                        if ($text) {
-                            $section['content'] .= $text . "\n";
-                        }
-                    }
-
-                    // Extract code blocks
-                    $codeBlocks = $siblingCrawler->filter('pre code, pre');
-                    $codeBlocks->each(function (Crawler $code) use (&$section) {
-                        $codeText = trim($code->text());
-                        if ($codeText && ! in_array($codeText, $section['examples'])) {
-                            $section['examples'][] = $codeText;
-                        }
-                    });
+                    $this->extractSectionContent($siblingCrawler, $section);
                 }
 
                 $sibling = $sibling->nextSibling;
@@ -267,6 +276,28 @@ class Scraper
         });
 
         return $sections;
+    }
+
+    /**
+     * Extract content and code examples from a crawler node.
+     */
+    private function extractSectionContent(Crawler $crawler, array &$section): void
+    {
+        // Extract paragraphs
+        $crawler->filter('p')->each(function (Crawler $p) use (&$section) {
+            $text = trim($p->text());
+            if ($text && strlen($text) > 5) {
+                $section['content'] .= $text . "\n";
+            }
+        });
+
+        // Extract code blocks
+        $crawler->filter('pre code, pre')->each(function (Crawler $code) use (&$section) {
+            $codeText = trim($code->text());
+            if ($codeText && ! in_array($codeText, $section['examples'])) {
+                $section['examples'][] = $codeText;
+            }
+        });
     }
 
     /**

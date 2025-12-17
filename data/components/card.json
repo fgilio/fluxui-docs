@@ -8,28 +8,28 @@
     "sections": [
         {
             "title": "Small card",
-            "content": "",
+            "content": "Use the small card variant for compact content like notifications, alerts, or brief summaries.\nStay up to date with our latest insights, tutorials, and product updates.",
             "examples": [
                 "<a href=\"#\" aria-label=\"Latest on our blog\"> <flux:card size=\"sm\" class=\"hover:bg-zinc-50 dark:hover:bg-zinc-700\"> <flux:heading class=\"flex items-center gap-2\">Latest on our blog <flux:icon name=\"arrow-up-right\" class=\"ml-auto text-zinc-400\" variant=\"micro\" /></flux:heading> <flux:text class=\"mt-2\">Stay up to date with our latest insights, tutorials, and product updates.</flux:text> </flux:card></a>"
             ]
         },
         {
             "title": "Header actions",
-            "content": "",
+            "content": "Use the button component to add actions to the header.\nYour post will be deleted permanently. This action cannot be undone.",
             "examples": [
                 "<flux:card class=\"space-y-6\"> <div class=\"flex\"> <div class=\"flex-1\"> <flux:heading size=\"lg\">Are you sure?</flux:heading> <flux:text class=\"mt-2\"> Your post will be deleted permanently.<br> This action cannot be undone. </flux:text> </div> <div class=\"-mx-2 -mt-2\"> <flux:button variant=\"ghost\" size=\"sm\" icon=\"x-mark\" inset=\"top right bottom\" /> </div> </div> <div class=\"flex gap-4\"> <flux:spacer /> <flux:button variant=\"ghost\">Undo</flux:button> <flux:button variant=\"danger\">Delete</flux:button> </div></flux:card>"
             ]
         },
         {
             "title": "Simple card",
-            "content": "",
+            "content": "Let's be honest, a card is just a div with a border and some padding.\nYour post will be deleted permanently. This action cannot be undone.",
             "examples": [
                 "<flux:card> <flux:heading size=\"lg\">Are you sure?</flux:heading> <flux:text class=\"mt-2 mb-4\"> Your post will be deleted permanently.<br> This action cannot be undone. </flux:text> <flux:button variant=\"danger\">Delete</flux:button></flux:card>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Create hierarchical section headings for content\nFormat paragraphs and textual content with consistent styling",
             "examples": []
         }
     ],
@@ -55,5 +55,5 @@
         "text"
     ],
     "sub_components": [],
-    "scraped_at": "2025-12-17T11:42:03+00:00"
+    "scraped_at": "2025-12-17T11:52:29+00:00"
 }

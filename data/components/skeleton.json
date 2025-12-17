@@ -8,22 +8,36 @@
     "sections": [
         {
             "title": "Line of text",
-            "content": "",
+            "content": "Create a loading state for a single line of text. The flux:skeleton.line component occupies the full spatial line-height (e.g., ~20px) while rendering a slimmer bar, giving it the visual proportions of real text.",
             "examples": [
                 "<flux:skeleton.group animate=\"shimmer\"> <flux:skeleton.line class=\"mb-2 w-1/4\" /> <flux:skeleton.line /> <flux:skeleton.line /> <flux:skeleton.line class=\"w-3/4\" /></flux:skeleton.group>"
             ]
         },
         {
             "title": "Animation",
-            "content": "",
+            "content": "Use the animate prop to add an animation to the skeleton.",
             "examples": [
                 "<flux:skeleton /><flux:skeleton animate=\"shimmer\" /><flux:skeleton animate=\"pulse\" />"
             ]
         },
         {
             "title": "Examples",
-            "content": "",
+            "content": "Here are some examples of different ways you can use the skeleton component.",
             "examples": []
+        },
+        {
+            "title": "Table",
+            "content": "Use the skeleton component to create a loading state for a table.",
+            "examples": [
+                "<flux:skeleton.group animate=\"shimmer\"> <flux:table> <flux:table.columns> <flux:table.column>Customer</flux:table.column> <flux:table.column>Date</flux:table.column> <flux:table.column>Status</flux:table.column> <flux:table.column>Amount</flux:table.column> </flux:table.columns> <flux:table.rows> @foreach (range(1, 5) as $order) <flux:table.row> <flux:table.cell> <div class=\"flex items-center gap-2\"> <flux:skeleton class=\"rounded-full size-5\" /> <div class=\"flex-1\"> <flux:skeleton.line style=\"width: {{ rand(50, 100) }}%\" /> </div> </div> </flux:table.cell> <flux:table.cell> <flux:skeleton.line /> </flux:table.cell> <flux:table.cell> <flux:skeleton.line /> </flux:table.cell> <flux:table.cell> <flux:skeleton.line /> </flux:table.cell> </flux:table.row> @endforeach </flux:table.rows> </flux:table></flux:skeleton.group>"
+            ]
+        },
+        {
+            "title": "Chart",
+            "content": "Use the skeleton component to create a loading state for a chart.\n-:-- PM\nYesterday",
+            "examples": [
+                "<flux:card class=\"dark:bg-zinc-800\"> <div class=\"flex flex-col gap-6\"> <div class=\"flex gap-12\"> <div> <flux:text>Today</flux:text> <flux:heading size=\"xl\" class=\"mt-2 tabular-nums\">$---</flux:heading> <flux:text class=\"mt-2 tabular-nums\">-:-- PM</flux:text> </div> <div> <flux:text>Yesterday</flux:text> <flux:heading size=\"lg\" class=\"mt-2 tabular-nums\">$---</flux:heading> </div> </div> <flux:skeleton animate=\"shimmer\" class=\"aspect-[4/1] size-full rounded-lg\" /> </div></flux:card>"
+            ]
         }
     ],
     "reference": [],
@@ -39,5 +53,23 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:08+00:00"
+    "components_used": [
+        "card",
+        "heading",
+        "skeleton",
+        "skeleton.group",
+        "skeleton.line",
+        "table",
+        "table.cell",
+        "table.column",
+        "table.columns",
+        "table.row",
+        "table.rows",
+        "text"
+    ],
+    "sub_components": [
+        "skeleton.group",
+        "skeleton.line"
+    ],
+    "scraped_at": "2025-12-17T11:52:43+00:00"
 }

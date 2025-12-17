@@ -46,5 +46,10 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:17+00:00"
+    "components_used": [
+        "button",
+        "select"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:54+00:00"
 }

@@ -8,49 +8,49 @@
     "sections": [
         {
             "title": "Detecting the current page",
-            "content": "",
+            "content": "Navbars and navlists will try to automatically detect and mark the current page based on the href attribute passed in. However, if you need full control, you can pass the current prop to the item directly.",
             "examples": [
                 "<flux:navbar.item href=\"/\" current>Home</flux:navbar.item><flux:navbar.item href=\"/\" :current=\"false\">Home</flux:navbar.item><flux:navbar.item href=\"/\" :current=\"request()->is('/')\">Home</flux:navbar.item>"
             ]
         },
         {
             "title": "With icons",
-            "content": "",
+            "content": "Add a leading icons for visual context.",
             "examples": [
                 "<flux:navbar> <flux:navbar.item href=\"#\" icon=\"home\">Home</flux:navbar.item> <flux:navbar.item href=\"#\" icon=\"puzzle-piece\">Features</flux:navbar.item> <flux:navbar.item href=\"#\" icon=\"currency-dollar\">Pricing</flux:navbar.item> <flux:navbar.item href=\"#\" icon=\"user\">About</flux:navbar.item></flux:navbar>"
             ]
         },
         {
             "title": "With badges",
-            "content": "",
+            "content": "Add a trailing badge to a navbar item using the badge prop.",
             "examples": [
                 "<flux:navbar> <flux:navbar.item href=\"#\">Home</flux:navbar.item> <flux:navbar.item href=\"#\" badge=\"12\">Inbox</flux:navbar.item> <flux:navbar.item href=\"#\">Contacts</flux:navbar.item> <flux:navbar.item href=\"#\" badge=\"Pro\" badge:color=\"lime\">Calendar</flux:navbar.item></flux:navbar>"
             ]
         },
         {
             "title": "Dropdown navigation",
-            "content": "",
+            "content": "Condense multiple navigation items into a single dropdown menu to save on space and group related items.",
             "examples": [
                 "<flux:navbar> <flux:navbar.item href=\"#\">Dashboard</flux:navbar.item> <flux:navbar.item href=\"#\">Transactions</flux:navbar.item> <flux:dropdown> <flux:navbar.item icon:trailing=\"chevron-down\">Account</flux:navbar.item> <flux:navmenu> <flux:navmenu.item href=\"#\">Profile</flux:navmenu.item> <flux:navmenu.item href=\"#\">Settings</flux:navmenu.item> <flux:navmenu.item href=\"#\">Billing</flux:navmenu.item> </flux:navmenu> </flux:dropdown></flux:navbar>"
             ]
         },
         {
             "title": "Navlist (sidebar)",
-            "content": "",
+            "content": "Arrange your navbar vertically using the navlist component.",
             "examples": [
                 "<flux:navlist class=\"w-64\"> <flux:navlist.item href=\"#\" icon=\"home\">Home</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"puzzle-piece\">Features</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"currency-dollar\">Pricing</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"user\">About</flux:navlist.item></flux:navlist>"
             ]
         },
         {
             "title": "Navlist group",
-            "content": "",
+            "content": "Group related navigation items.",
             "examples": [
                 "<flux:navlist> <flux:navlist.group heading=\"Account\" class=\"mt-4\"> <flux:navlist.item href=\"#\">Profile</flux:navlist.item> <flux:navlist.item href=\"#\">Settings</flux:navlist.item> <flux:navlist.item href=\"#\">Billing</flux:navlist.item> </flux:navlist.group></flux:navlist>"
             ]
         },
         {
             "title": "Collapsible groups",
-            "content": "",
+            "content": "Group related navigation items into collapsible sections using the expandable prop.\nIf you want a group to be collapsed by default, you can use the expanded prop:",
             "examples": [
                 "<flux:navlist class=\"w-64\"> <flux:navlist.item href=\"#\" icon=\"home\">Dashboard</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"list-bullet\">Transactions</flux:navlist.item> <flux:navlist.group heading=\"Account\" expandable> <flux:navlist.item href=\"#\">Profile</flux:navlist.item> <flux:navlist.item href=\"#\">Settings</flux:navlist.item> <flux:navlist.item href=\"#\">Billing</flux:navlist.item> </flux:navlist.group></flux:navlist>",
                 "<flux:navlist.group heading=\"Account\" expandable :expanded=\"false\">"
@@ -58,13 +58,18 @@
         },
         {
             "title": "Navlist badges",
-            "content": "",
+            "content": "Show additional information related to a navlist item using the badge prop.",
             "examples": [
                 "<flux:navlist class=\"w-64\"> <flux:navlist.item href=\"#\" icon=\"home\">Home</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"envelope\" badge=\"12\">Inbox</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"user-group\">Contacts</flux:navlist.item> <flux:navlist.item href=\"#\" icon=\"calendar-days\" badge=\"Pro\" badge:color=\"lime\">Calendar</flux:navlist.item></flux:navlist>"
             ]
         },
         {
             "title": "Related components",
+            "content": "Organize content into separate panels\nTop navigation headers for your application\nPrimary or secondary navigation sidebars",
+            "examples": []
+        },
+        {
+            "title": "Profile switcher",
             "content": "",
             "examples": []
         }
@@ -82,5 +87,18 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:02+00:00"
+    "components_used": [
+        "dropdown",
+        "navbar",
+        "navbar.item",
+        "navlist",
+        "navlist.group",
+        "navlist.item",
+        "navmenu",
+        "navmenu.item"
+    ],
+    "sub_components": [
+        "navbar.item"
+    ],
+    "scraped_at": "2025-12-17T11:52:38+00:00"
 }

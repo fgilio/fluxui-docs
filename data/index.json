@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "updated_at": "2025-12-17T11:42:03+00:00",
+    "updated_at": "2025-12-17T11:52:55+00:00",
     "items": [
         {
             "name": "accordion",
@@ -24,7 +24,8 @@
                 "disabled",
                 "exclusive",
                 "expanded",
-                "leading icon"
+                "leading icon",
+                "accordion.item"
             ]
         },
         {
@@ -75,7 +76,27 @@
                 "as button",
                 "as link",
                 "examples",
-                "related components"
+                "testimonial",
+                "grouped feature",
+                "members table",
+                "assignees list",
+                "select options",
+                "user popover",
+                "related components",
+                "avatar.group",
+                "dropdown",
+                "heading",
+                "icon.star",
+                "link",
+                "popover",
+                "select",
+                "select.option",
+                "separator",
+                "table",
+                "table.cell",
+                "table.row",
+                "table.rows",
+                "text"
             ]
         },
         {
@@ -103,7 +124,10 @@
                 "colors",
                 "solid variant",
                 "inset",
-                "related components"
+                "related components",
+                "badge.close",
+                "heading",
+                "text"
             ]
         },
         {
@@ -126,7 +150,14 @@
                 "logo slot",
                 "logo only",
                 "examples",
-                "related components"
+                "header with brand",
+                "related components",
+                "header",
+                "icon",
+                "navbar",
+                "navbar.item",
+                "profile",
+                "spacer"
             ]
         },
         {
@@ -149,7 +180,11 @@
                 "with slashes",
                 "with icon",
                 "with ellipsis",
-                "with ellipsis dropdown"
+                "with ellipsis dropdown",
+                "breadcrumbs.item",
+                "dropdown",
+                "navmenu",
+                "navmenu.item"
             ]
         },
         {
@@ -182,7 +217,10 @@
                 "as an input",
                 "square",
                 "inset",
-                "related components"
+                "related components",
+                "button.group",
+                "heading",
+                "input"
             ]
         },
         {
@@ -221,7 +259,8 @@
                 "instantiation",
                 "persisting to the session",
                 "using with eloquent",
-                "available methods"
+                "available methods",
+                "daterange object"
             ]
         },
         {
@@ -249,7 +288,15 @@
                 "colors",
                 "custom icon",
                 "examples",
-                "related components"
+                "feature spotlight",
+                "premium upsell",
+                "upgrade offer",
+                "engagement prompt",
+                "related components",
+                "callout.heading",
+                "callout.link",
+                "callout.text",
+                "text"
             ]
         },
         {
@@ -320,7 +367,24 @@
                 "formatting",
                 "formatting numbers",
                 "formatting dates",
-                "additional resources"
+                "additional resources",
+                "chart.axis",
+                "chart.axis.grid",
+                "chart.axis.line",
+                "chart.axis.mark",
+                "chart.axis.tick",
+                "chart.cursor",
+                "chart.legend",
+                "chart.legend.indicator",
+                "chart.line",
+                "chart.summary",
+                "chart.summary.value",
+                "chart.svg",
+                "chart.tooltip",
+                "chart.tooltip.heading",
+                "chart.tooltip.value",
+                "chart.viewport",
+                "chart.zero-line"
             ]
         },
         {
@@ -353,7 +417,15 @@
                 "custom card content",
                 "pills",
                 "buttons",
-                "related components"
+                "related components",
+                "checkbox.all",
+                "checkbox.group",
+                "checkbox.indicator",
+                "description",
+                "fieldset",
+                "heading",
+                "legend",
+                "text"
             ]
         },
         {
@@ -375,7 +447,13 @@
                 "calendar",
                 "callout",
                 "card",
-                "as a modal"
+                "as a modal",
+                "command.input",
+                "command.item",
+                "command.items",
+                "input",
+                "modal",
+                "modal.trigger"
             ]
         },
         {
@@ -404,7 +482,9 @@
                 "rich text",
                 "disabled",
                 "invalid",
-                "related components"
+                "related components",
+                "editor",
+                "icon"
             ]
         },
         {
@@ -471,7 +551,10 @@
                 "using with eloquent",
                 "available methods",
                 "range presets",
-                "related components"
+                "related components",
+                "daterange object",
+                "date-picker",
+                "date-picker.input"
             ]
         },
         {
@@ -502,7 +585,18 @@
                 "groups with headings",
                 "submenus",
                 "keep open",
-                "related components"
+                "related components",
+                "menu",
+                "menu.checkbox",
+                "menu.group",
+                "menu.item",
+                "menu.radio",
+                "menu.radio.group",
+                "menu.separator",
+                "menu.submenu",
+                "navmenu",
+                "navmenu.item",
+                "profile"
             ]
         },
         {
@@ -525,6 +619,7 @@
                 "calendar",
                 "callout",
                 "card",
+                "what's changed",
                 "toolbar",
                 "configuring items",
                 "custom items",
@@ -538,7 +633,28 @@
                 "registering extensions",
                 "disabling extensions",
                 "accessing the instance",
-                "related components"
+                "related components",
+                "toolbar items",
+                "dropdown",
+                "editor.align",
+                "editor.blockquote",
+                "editor.bold",
+                "editor.bullet",
+                "editor.button",
+                "editor.content",
+                "editor.heading",
+                "editor.italic",
+                "editor.link",
+                "editor.ordered",
+                "editor.separator",
+                "editor.spacer",
+                "editor.strike",
+                "editor.toolbar",
+                "icon.clipboard",
+                "icon.clipboard-document-check",
+                "menu",
+                "menu.item",
+                "tooltip"
             ]
         },
         {
@@ -564,7 +680,13 @@
                 "with badge",
                 "split layout",
                 "fieldset",
-                "related components"
+                "related components",
+                "description",
+                "error",
+                "input",
+                "label",
+                "legend",
+                "select"
             ]
         },
         {
@@ -591,7 +713,14 @@
                 "disabled state",
                 "custom uploader",
                 "livewire integration",
-                "related components"
+                "single file upload",
+                "multiple files upload",
+                "related components",
+                "file-item",
+                "file-item.remove",
+                "file-upload",
+                "file-upload.dropzone",
+                "icon"
             ]
         },
         {
@@ -614,7 +743,9 @@
                 "card",
                 "sizes",
                 "heading level",
+                "user profile",
                 "examples",
+                "leading subheading",
                 "related components",
                 "icon.arrow-trending-up",
                 "text"
@@ -645,7 +776,14 @@
                 "dynamic icons",
                 "lucide icons",
                 "custom icons",
-                "related components"
+                "related components",
+                "icon sizes",
+                "icon.bolt",
+                "icon.crown",
+                "icon.github",
+                "icon.grip-vertical",
+                "icon.loading",
+                "icon.wink"
             ]
         },
         {
@@ -683,7 +821,15 @@
                 "with buttons",
                 "text prefixes and suffixes",
                 "input group labels",
-                "related components"
+                "related components",
+                "error",
+                "field",
+                "input.group",
+                "input.group.prefix",
+                "input.group.suffix",
+                "label",
+                "select",
+                "select.option"
             ]
         },
         {
@@ -709,7 +855,19 @@
                 "column footer",
                 "card as button",
                 "card header",
-                "card footer"
+                "card footer",
+                "avatar.group",
+                "dropdown",
+                "heading",
+                "icon",
+                "kanban.card",
+                "kanban.column",
+                "kanban.column.cards",
+                "kanban.column.footer",
+                "kanban.column.header",
+                "menu",
+                "menu.item",
+                "menu.separator"
             ]
         },
         {
@@ -740,12 +898,15 @@
                 "confirmation",
                 "flyout",
                 "flyout positioning",
+                "floating flyout",
                 "related components",
+                "$flux.modal()",
                 "heading",
                 "input",
                 "modal.close",
                 "modal.trigger",
                 "spacer",
+                "subheading",
                 "text"
             ]
         },
@@ -775,7 +936,15 @@
                 "navlist group",
                 "collapsible groups",
                 "navlist badges",
-                "related components"
+                "related components",
+                "profile switcher",
+                "dropdown",
+                "navbar.item",
+                "navlist",
+                "navlist.group",
+                "navlist.item",
+                "navmenu",
+                "navmenu.item"
             ]
         },
         {
@@ -804,7 +973,12 @@
                 "separator",
                 "group",
                 "group separator",
-                "related components"
+                "related components",
+                "heading",
+                "otp.group",
+                "otp.input",
+                "otp.separator",
+                "text"
             ]
         },
         {
@@ -852,7 +1026,11 @@
                 "searchable",
                 "custom search placeholder",
                 "with icons",
-                "related components"
+                "related components",
+                "icon.cloud",
+                "icon.code-bracket",
+                "icon.server",
+                "pillbox.option"
             ]
         },
         {
@@ -877,7 +1055,26 @@
                 "position",
                 "gap & offset",
                 "examples",
-                "related components"
+                "category picker",
+                "feedback",
+                "event details",
+                "related components",
+                "avatar.group",
+                "checkbox",
+                "checkbox.group",
+                "dropdown",
+                "heading",
+                "icon.arrow-path-rounded-square",
+                "icon.arrow-right",
+                "icon.clock",
+                "icon.map-pin",
+                "icon.users",
+                "link",
+                "radio",
+                "radio.group",
+                "separator",
+                "text",
+                "textarea"
             ]
         },
         {
@@ -904,7 +1101,20 @@
                 "avatar with initials",
                 "custom trailing icon",
                 "examples",
-                "related components"
+                "profile menu",
+                "profile switcher",
+                "related components",
+                "dropdown",
+                "heading",
+                "menu",
+                "menu.item",
+                "menu.radio",
+                "menu.radio.group",
+                "menu.separator",
+                "navmenu",
+                "navmenu.item",
+                "navmenu.separator",
+                "text"
             ]
         },
         {
@@ -936,7 +1146,13 @@
                 "custom card content",
                 "pills",
                 "buttons",
-                "related components"
+                "related components",
+                "fieldset",
+                "heading",
+                "legend",
+                "radio.group",
+                "radio.indicator",
+                "text"
             ]
         },
         {
@@ -971,7 +1187,15 @@
                 "combobox",
                 "the input slot",
                 "dynamic options",
-                "related components"
+                "related components",
+                "icon.eye",
+                "icon.key",
+                "icon.shield-check",
+                "icon.user",
+                "select.button",
+                "select.input",
+                "select.option",
+                "select.search"
             ]
         },
         {
@@ -1018,7 +1242,18 @@
                 "card",
                 "line of text",
                 "animation",
-                "examples"
+                "examples",
+                "table",
+                "chart",
+                "heading",
+                "skeleton.group",
+                "skeleton.line",
+                "table.cell",
+                "table.column",
+                "table.columns",
+                "table.row",
+                "table.rows",
+                "text"
             ]
         },
         {
@@ -1048,8 +1283,14 @@
                 "custom steps",
                 "range slider",
                 "basic usage",
+                "min steps between",
+                "displaying values",
                 "custom styles",
-                "related components"
+                "related components",
+                "field",
+                "input",
+                "label",
+                "slider.tick"
             ]
         },
         {
@@ -1072,7 +1313,9 @@
                 "card",
                 "fieldset",
                 "left align",
-                "related components"
+                "related components",
+                "legend",
+                "separator"
             ]
         },
         {
@@ -1098,7 +1341,12 @@
                 "sortable",
                 "sticky header",
                 "sticky columns",
-                "related components"
+                "related components",
+                "table.cell",
+                "table.column",
+                "table.columns",
+                "table.row",
+                "table.rows"
             ]
         },
         {
@@ -1122,12 +1370,16 @@
                 "with icons",
                 "padded edges",
                 "scrollable tabs",
+                "faded edge",
                 "segmented tabs",
                 "segmented with icons",
                 "small segmented tabs",
                 "pill tabs",
                 "dynamic tabs",
-                "related components"
+                "related components",
+                "tab",
+                "tab.group",
+                "tab.panel"
             ]
         },
         {
@@ -1210,7 +1462,8 @@
                 "unavailable times",
                 "open to",
                 "localization",
-                "related components"
+                "related components",
+                "time-picker"
             ]
         },
         {
@@ -1237,7 +1490,9 @@
                 "duration",
                 "permanent",
                 "stack",
-                "related components"
+                "related components",
+                "$flux.toast()",
+                "toast.group"
             ]
         },
         {
@@ -1261,7 +1516,9 @@
                 "info tooltip",
                 "position",
                 "disabled buttons",
-                "related components"
+                "related components",
+                "heading",
+                "tooltip.content"
             ]
         },
         {
@@ -1283,7 +1540,34 @@
                 "callout",
                 "card",
                 "secondary sidebar",
-                "related components"
+                "related components",
+                "dropdown",
+                "heading",
+                "main",
+                "menu",
+                "menu.item",
+                "menu.radio",
+                "menu.radio.group",
+                "menu.separator",
+                "navbar",
+                "navbar.item",
+                "navlist",
+                "navlist.item",
+                "navmenu",
+                "navmenu.item",
+                "profile",
+                "separator",
+                "sidebar",
+                "sidebar.brand",
+                "sidebar.collapse",
+                "sidebar.group",
+                "sidebar.header",
+                "sidebar.item",
+                "sidebar.nav",
+                "sidebar.spacer",
+                "sidebar.toggle",
+                "spacer",
+                "text"
             ]
         },
         {
@@ -1306,7 +1590,32 @@
                 "card",
                 "secondary header",
                 "collapsible sidebar",
-                "related components"
+                "related components",
+                "dropdown",
+                "header",
+                "heading",
+                "main",
+                "menu",
+                "menu.item",
+                "menu.radio",
+                "menu.radio.group",
+                "menu.separator",
+                "navbar",
+                "navbar.item",
+                "profile",
+                "separator",
+                "sidebar.brand",
+                "sidebar.collapse",
+                "sidebar.group",
+                "sidebar.header",
+                "sidebar.item",
+                "sidebar.nav",
+                "sidebar.profile",
+                "sidebar.search",
+                "sidebar.spacer",
+                "sidebar.toggle",
+                "spacer",
+                "text"
             ]
         },
         {
@@ -1329,7 +1638,8 @@
                 "card",
                 "tailwind overrides",
                 "publishing components",
-                "global style overrides"
+                "global style overrides",
+                "select"
             ]
         },
         {
@@ -1358,7 +1668,9 @@
                 "toggle button",
                 "dropdown menu",
                 "toggle switch",
-                "segmented radio"
+                "segmented radio",
+                "radio",
+                "radio.group"
             ]
         },
         {
@@ -1452,7 +1764,43 @@
                 "anomalies",
                 "slots",
                 "paper cuts",
-                "blade components vs html elements"
+                "blade components vs html elements",
+                "accordion.item",
+                "autocomplete.item",
+                "breadcrumbs.item",
+                "button.group",
+                "checkbox",
+                "checkbox.group",
+                "command",
+                "command.item",
+                "description",
+                "error",
+                "field",
+                "heading",
+                "icon.bell",
+                "input",
+                "input.group",
+                "label",
+                "menu",
+                "menu.item",
+                "modal",
+                "navbar",
+                "navbar.item",
+                "navlist",
+                "navlist.item",
+                "navmenu",
+                "navmenu.item",
+                "radio",
+                "radio.group",
+                "select",
+                "separator",
+                "switch",
+                "tab",
+                "tab.group",
+                "tab.panel",
+                "tabs",
+                "textarea",
+                "tooltip"
             ]
         },
         {
@@ -1481,7 +1829,26 @@
                 "brevity",
                 "use the browser",
                 "use css",
-                "we style, you space"
+                "we style, you space",
+                "accordion.heading",
+                "command.input",
+                "context",
+                "dropdown",
+                "dropdown-menu",
+                "dropdown-menu.button",
+                "dropdown-menu.items",
+                "error",
+                "field",
+                "form.field",
+                "form.field.label",
+                "form.field.text-input",
+                "heading",
+                "input",
+                "label",
+                "menu",
+                "menu.submenu",
+                "navmenu",
+                "text"
             ]
         },
         {
@@ -1504,7 +1871,15 @@
                 "card",
                 "base color",
                 "accent color",
-                "accent props"
+                "accent props",
+                "link",
+                "navbar",
+                "navbar.item",
+                "navlist",
+                "navlist.item",
+                "tab",
+                "tabs",
+                "text"
             ]
         },
         {

@@ -8,14 +8,14 @@
     "sections": [
         {
             "title": "Unique modal names",
-            "content": "",
+            "content": "If you are placing modals inside a loop, ensure that you are dynamically generating unique modal names. Otherwise, one modal trigger, will trigger all modals of that name on the page causing unexpected behavior.",
             "examples": [
                 "@foreach ($users as $user) <flux:modal :name=\"'edit-profile-'.$user->id\"> ... </flux:modal>@endforeach"
             ]
         },
         {
             "title": "Livewire methods",
-            "content": "",
+            "content": "In addition to triggering modals in your Blade templates, you can also control them directly from Livewire.\nConsider a \"confirm\" modal in your Blade template like so:\nYou can now open and close this modal from your Livewire component using the following methods:",
             "examples": [
                 "<flux:modal name=\"confirm\"> <!-- ... --></flux:modal>",
                 "<?phpclass ShowPost extends \\Livewire\\Component { public function delete() { // Control \"confirm\" modals anywhere on the page... Flux::modal('confirm')->show(); Flux::modal('confirm')->close(); // Control \"confirm\" modals within this Livewire component... $this->modal('confirm')->show(); $this->modal('confirm')->close(); // Closes all modals on the page... Flux::modals()->close(); }}"
@@ -23,7 +23,7 @@
         },
         {
             "title": "JavaScript methods",
-            "content": "",
+            "content": "You can also control modals from Alpine directly using Flux's magic methods:\nOr you can use the window.Flux global object to control modals from any JavaScript in your application:",
             "examples": [
                 "<button x-on:click=\"$flux.modal('confirm').show()\"> Open modal</button><button x-on:click=\"$flux.modal('confirm').close()\"> Close modal</button><button x-on:click=\"$flux.modals().close()\"> Close all modals</button>",
                 "// Control \"confirm\" modals anywhere on the page...Flux.modal('confirm').show()Flux.modal('confirm').close()// Closes all modals on the page...Flux.modals().close()"
@@ -31,7 +31,7 @@
         },
         {
             "title": "Data binding",
-            "content": "",
+            "content": "If you prefer, you can bind a Livewire property directly to a modal to control its states from your Livewire component.\nConsider a confirmation modal in your Blade template like so:\nYou can now open and close this modal from your Livewire component by toggling the wire:model property.\nOne advantage of this approach is being able to control the state of the modal directly from the browser without making a server roundtrip:",
             "examples": [
                 "<flux:modal wire:model.self=\"showConfirmModal\"> <!-- ... --></flux:modal>",
                 "<?phpclass ShowPost extends \\Livewire\\Component { public $showConfirmModal = false; public function delete() { $this->showConfirmModal = true; }}",
@@ -40,35 +40,35 @@
         },
         {
             "title": "Close events",
-            "content": "",
+            "content": "If you need to perform some logic after a modal closes, you can register a close listener like so:",
             "examples": [
                 "<flux:modal @close=\"someLivewireAction\"> <!-- ... --></flux:modal>"
             ]
         },
         {
             "title": "Cancel events",
-            "content": "",
+            "content": "If you need to perform some logic after a modal is cancelled, you can register a cancel listener like so:",
             "examples": [
                 "<flux:modal @cancel=\"someLivewireAction\"> <!-- ... --></flux:modal>"
             ]
         },
         {
             "title": "Disable click outside",
-            "content": "",
+            "content": "By default, clicking outside the modal will close it. If you want to disable this behavior, you can use the :dismissible=\"false\" prop.",
             "examples": [
                 "<flux:modal :dismissible=\"false\"> <!-- ... --></flux:modal>"
             ]
         },
         {
             "title": "Confirmation",
-            "content": "",
+            "content": "Prompt a user for confirmation before performing a dangerous action.\nYou're about to delete this project. This action cannot be reversed.",
             "examples": [
                 "<flux:modal.trigger name=\"delete-profile\"> <flux:button variant=\"danger\">Delete</flux:button></flux:modal.trigger><flux:modal name=\"delete-profile\" class=\"min-w-[22rem]\"> <div class=\"space-y-6\"> <div> <flux:heading size=\"lg\">Delete project?</flux:heading> <flux:text class=\"mt-2\"> You're about to delete this project.<br> This action cannot be reversed. </flux:text> </div> <div class=\"flex gap-2\"> <flux:spacer /> <flux:modal.close> <flux:button variant=\"ghost\">Cancel</flux:button> </flux:modal.close> <flux:button type=\"submit\" variant=\"danger\">Delete project</flux:button> </div> </div></flux:modal>"
             ]
         },
         {
             "title": "Flyout",
-            "content": "",
+            "content": "Use the flyout prop for a more anchored and long-form dialog.\nMake changes to your personal details.",
             "examples": [
                 "<flux:modal.trigger name=\"edit-profile\"> <flux:button>Edit profile</flux:button></flux:modal.trigger><flux:modal name=\"edit-profile\" flyout> <div class=\"space-y-6\"> <div> <flux:heading size=\"lg\">Update profile</flux:heading> <flux:text class=\"mt-2\">Make changes to your personal details.</flux:text> </div> <flux:input label=\"Name\" placeholder=\"Your name\" /> <flux:input label=\"Date of birth\" type=\"date\" /> <div class=\"flex\"> <flux:spacer /> <flux:button type=\"submit\" variant=\"primary\">Save changes</flux:button> </div> </div></flux:modal>",
                 "<flux:modal flyout position=\"left\"> <!-- ... --></flux:modal>"
@@ -82,8 +82,20 @@
             ]
         },
         {
+            "title": "Floating flyout",
+            "content": "Use the \"floating\" variant to give your flyout modal a floating appearance.",
+            "examples": [
+                "<flux:modal.trigger name=\"edit-profile\"> <flux:button>Edit profile</flux:button></flux:modal.trigger><flux:modal name=\"edit-profile\" flyout variant=\"floating\" class=\"md:w-lg\"> <div class=\"space-y-6\"> <flux:heading size=\"lg\">Update profile</flux:heading> <flux:subheading>Make changes to your personal details.</flux:subheading> <flux:input label=\"Name\" placeholder=\"Your name\" /> <flux:input label=\"Date of birth\" type=\"date\" /> </div> <x-slot name=\"footer\" class=\"flex items-center justify-end gap-2\"> <flux:modal.close> <flux:button variant=\"filled\">Cancel</flux:button> </flux:modal.close> <flux:button type=\"submit\" variant=\"primary\">Save changes</flux:button> </x-slot></flux:modal>"
+            ]
+        },
+        {
             "title": "Related components",
-            "content": "",
+            "content": "Display expandable action or navigation menus\nKeyboard command palettes for application navigation",
+            "examples": []
+        },
+        {
+            "title": "$flux.modal()",
+            "content": "Alpine.js magic method for controlling modals.",
             "examples": []
         }
     ],
@@ -108,11 +120,12 @@
         "modal.close",
         "modal.trigger",
         "spacer",
+        "subheading",
         "text"
     ],
     "sub_components": [
         "modal.close",
         "modal.trigger"
     ],
-    "scraped_at": "2025-12-17T11:41:49+00:00"
+    "scraped_at": "2025-12-17T11:52:37+00:00"
 }

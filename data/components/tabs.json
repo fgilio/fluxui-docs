@@ -8,63 +8,70 @@
     "sections": [
         {
             "title": "With icons",
-            "content": "",
+            "content": "Associate tab labels with icons to visually distinguish different sections.",
             "examples": [
                 "<flux:tab.group> <flux:tabs> <flux:tab name=\"profile\" icon=\"user\">Profile</flux:tab> <flux:tab name=\"account\" icon=\"cog-6-tooth\">Account</flux:tab> <flux:tab name=\"billing\" icon=\"banknotes\">Billing</flux:tab> </flux:tabs> <flux:tab.panel name=\"profile\">...</flux:tab.panel> <flux:tab.panel name=\"account\">...</flux:tab.panel> <flux:tab.panel name=\"billing\">...</flux:tab.panel></flux:tab.group>"
             ]
         },
         {
             "title": "Padded edges",
-            "content": "",
+            "content": "By default, the tabs will have no horizontal padding around the edges. If you want to add padding you can do by adding Tailwind utilities to the tabs and/or tab.panel components.",
             "examples": [
                 "<flux:tabs class=\"px-4\"> <flux:tab name=\"profile\">Profile</flux:tab> <flux:tab name=\"account\">Account</flux:tab> <flux:tab name=\"billing\">Billing</flux:tab></flux:tabs>"
             ]
         },
         {
             "title": "Scrollable tabs",
-            "content": "",
+            "content": "If your tabs extend beyond the viewport, especially on mobile devices, you should make them scrollable to prevent horizontal overflow.",
             "examples": [
                 "<flux:tab.group> <flux:tabs scrollable> <flux:tab name=\"profile\">Profile</flux:tab> <flux:tab name=\"account\">Account</flux:tab> <flux:tab name=\"billing\">Billing</flux:tab> <flux:tab name=\"security\">Security</flux:tab> <flux:tab name=\"notifications\">Notifications</flux:tab> <flux:tab name=\"integrations\">Integrations</flux:tab> <flux:tab name=\"api\">API</flux:tab> </flux:tabs> <flux:tab.panel name=\"profile\">...</flux:tab.panel> <flux:tab.panel name=\"account\">...</flux:tab.panel> <flux:tab.panel name=\"billing\">...</flux:tab.panel> <flux:tab.panel name=\"security\">...</flux:tab.panel> <flux:tab.panel name=\"notifications\">...</flux:tab.panel> <flux:tab.panel name=\"integrations\">...</flux:tab.panel> <flux:tab.panel name=\"api\">...</flux:tab.panel></flux:tab.group>"
             ]
         },
         {
+            "title": "Faded edge",
+            "content": "Use scrollable:fade to add a fade effect to the trailing edge. This visual cue indicates that additional tabs are available beyond the visible area.",
+            "examples": [
+                "<flux:tab.group> <flux:tabs scrollable scrollable:fade> <flux:tab name=\"profile\">Profile</flux:tab> <flux:tab name=\"account\">Account</flux:tab> <flux:tab name=\"billing\">Billing</flux:tab> <flux:tab name=\"security\">Security</flux:tab> <flux:tab name=\"notifications\">Notifications</flux:tab> <flux:tab name=\"integrations\">Integrations</flux:tab> <flux:tab name=\"api\">API</flux:tab> </flux:tabs> <flux:tab.panel name=\"profile\">...</flux:tab.panel> <flux:tab.panel name=\"account\">...</flux:tab.panel> <flux:tab.panel name=\"billing\">...</flux:tab.panel> <flux:tab.panel name=\"security\">...</flux:tab.panel> <flux:tab.panel name=\"notifications\">...</flux:tab.panel> <flux:tab.panel name=\"integrations\">...</flux:tab.panel> <flux:tab.panel name=\"api\">...</flux:tab.panel></flux:tab.group>"
+            ]
+        },
+        {
             "title": "Segmented tabs",
-            "content": "",
+            "content": "Tab through content with visually separated, button-like tabs. Ideal for toggling between views inside a container with a constrained width.",
             "examples": [
                 "<flux:tabs variant=\"segmented\"> <flux:tab>List</flux:tab> <flux:tab>Board</flux:tab> <flux:tab>Timeline</flux:tab></flux:tabs>"
             ]
         },
         {
             "title": "Segmented with icons",
-            "content": "",
+            "content": "Combine segmented tabs with icon prefixes.",
             "examples": [
                 "<flux:tabs variant=\"segmented\"> <flux:tab icon=\"list-bullet\">List</flux:tab> <flux:tab icon=\"squares-2x2\">Board</flux:tab> <flux:tab icon=\"calendar-days\">Timeline</flux:tab></flux:tabs>"
             ]
         },
         {
             "title": "Small segmented tabs",
-            "content": "",
+            "content": "For more compact layouts, you can use the size=\"sm\" prop to make the tabs smaller.",
             "examples": [
                 "<flux:tabs variant=\"segmented\" size=\"sm\"> <flux:tab>Demo</flux:tab> <flux:tab>Code</flux:tab></flux:tabs>"
             ]
         },
         {
             "title": "Pill tabs",
-            "content": "",
+            "content": "Tab through content with visually separated, pill-like tabs.",
             "examples": [
                 "<flux:tabs variant=\"pills\"> <flux:tab>List</flux:tab> <flux:tab>Board</flux:tab> <flux:tab>Timeline</flux:tab></flux:tabs>"
             ]
         },
         {
             "title": "Dynamic tabs",
-            "content": "",
+            "content": "If you need, you can dynamically generate additional tabs and panels in your Livewire component. Just make sure you use matching names for the new tabs and panels.",
             "examples": [
                 "<flux:tab.group> <flux:tabs> @foreach($tabs as $id => $tab) <flux:tab :name=\"$id\">{{ $tab }}</flux:tab> @endforeach <flux:tab icon=\"plus\" wire:click=\"addTab\" action>Add tab</flux:tab> </flux:tabs> @foreach($tabs as $id => $tab) <flux:tab.panel :name=\"$id\"> <!-- ... --> </flux:tab.panel> @endforeach</flux:tab.group><!-- Livewire component example code... public array $tabs = [ 'tab-1' => 'Tab #1', 'tab-2' => 'Tab #2', ]; public function addTab(): void { $id = 'tab-' . str()->random(); $this->tabs[$id] = 'Tab #' . count($this->tabs) + 1; }-->"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Build responsive navigation bars\nAllow users to select a single option from a list",
             "examples": []
         }
     ],
@@ -81,5 +88,12 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:10+00:00"
+    "components_used": [
+        "tab",
+        "tab.group",
+        "tab.panel",
+        "tabs"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:45+00:00"
 }

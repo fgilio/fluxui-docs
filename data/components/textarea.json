@@ -8,35 +8,35 @@
     "sections": [
         {
             "title": "With placeholder",
-            "content": "",
+            "content": "Display a hint inside the textarea to guide users on what to enter.",
             "examples": [
                 "<flux:textarea label=\"Order notes\" placeholder=\"No lettuce, tomato, or onion...\"/>"
             ]
         },
         {
             "title": "Fixed row height",
-            "content": "",
+            "content": "Customize the height of the textarea by passing a rows prop.",
             "examples": [
                 "<flux:textarea rows=\"2\" label=\"Note\" />"
             ]
         },
         {
             "title": "Auto-sizing textarea",
-            "content": "",
+            "content": "Using CSS's new field-sizing property, the textarea will automatically adjust its height to fit the content by passing in the rows=\"auto\" prop.\nThis feature is not available in all web browsers. Visit caniuse.com to see which browsers support this feature.",
             "examples": [
                 "<flux:textarea rows=\"auto\" />"
             ]
         },
         {
             "title": "Configure resize",
-            "content": "",
+            "content": "If you want to restrict the user from resizing the textarea, you can use the resize=\"none\" prop.",
             "examples": [
                 "<flux:textarea resize=\"vertical\" /><flux:textarea resize=\"none\" /><flux:textarea resize=\"horizontal\" /><flux:textarea resize=\"both\" />"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label\nText fields for collecting user input",
             "examples": []
         }
     ],
@@ -53,5 +53,9 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:11+00:00"
+    "components_used": [
+        "textarea"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:46+00:00"
 }

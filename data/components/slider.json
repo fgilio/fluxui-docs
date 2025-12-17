@@ -8,56 +8,56 @@
     "sections": [
         {
             "title": "Min/max/step",
-            "content": "",
+            "content": "Use the min, max and step props to configure the slider.",
             "examples": [
                 "<flux:slider min=\"0\" max=\"100\" step=\"10\" />"
             ]
         },
         {
             "title": "Displaying value",
-            "content": "",
+            "content": "To display the current value, add an element with a wire:text directive.",
             "examples": [
                 "<flux:field> <flux:label> Corner radius <x-slot name=\"trailing\"> <span wire:text=\"amount\" class=\"tabular-nums\"></span> </x-slot> </flux:label> <flux:slider wire:model=\"amount\" /></flux:field>"
             ]
         },
         {
             "title": "With input",
-            "content": "",
+            "content": "To display an input next to the slider and ensure accessibility, wrap both inside flux:field.",
             "examples": [
                 "<flux:field> <flux:label>Corner radius</flux:label> <div class=\"flex items-center gap-4 -mt-2\"> <flux:slider wire:model=\"amount\" /> <flux:input wire:model=\"amount\" type=\"number\" size=\"sm\" class=\"max-w-18\" /> </div></flux:field>"
             ]
         },
         {
             "title": "Big steps",
-            "content": "",
+            "content": "Use the big-step prop to define a step size that will be be used when pressing the arrow keys while holding the shift key.",
             "examples": [
                 "<flux:slider step=\"1\" big-step=\"10\" />"
             ]
         },
         {
             "title": "Step marks",
-            "content": "",
+            "content": "Display ticks below the slider to visualize the steps.",
             "examples": [
                 "<flux:slider min=\"1\" max=\"5\"> @foreach (range(1, 5) as $i) <flux:slider.tick :value=\"$i\" /> @endforeach</flux:slider>"
             ]
         },
         {
             "title": "Numbered steps",
-            "content": "",
+            "content": "Display numbers below the slider to visualize the steps.",
             "examples": [
                 "<flux:slider min=\"1\" max=\"5\"> @foreach (range(1, 5) as $i) <flux:slider.tick :value=\"$i\">{{ $i }}</flux:slider.tick> @endforeach</flux:slider>"
             ]
         },
         {
             "title": "Custom steps",
-            "content": "",
+            "content": "Display custom labels for specified steps.",
             "examples": [
                 "<flux:slider min=\"1\" max=\"5\"> <flux:slider.tick value=\"1\">Low</flux:slider.tick> <flux:slider.tick value=\"3\">Mid</flux:slider.tick> <flux:slider.tick value=\"5\">High</flux:slider.tick></flux:slider>"
             ]
         },
         {
             "title": "Range slider",
-            "content": "",
+            "content": "Select a range of values using two slider thumbs.",
             "examples": [
                 "<flux:slider range />",
                 "<flux:slider range value=\"20,80\" />",
@@ -75,15 +75,29 @@
             ]
         },
         {
+            "title": "Min steps between",
+            "content": "Use min-steps-between to set the minimum distance between thumbs. The value is defined in number of steps, where the size of each step is determined by the step attribute.",
+            "examples": [
+                "<flux:slider range step=\"1\" min-steps-between=\"10\" />"
+            ]
+        },
+        {
+            "title": "Displaying values",
+            "content": "To display the selected range, add two elements with a wire:text directive.",
+            "examples": [
+                "<div class=\"relative\"> <flux:field> <flux:label> Price range <x-slot name=\"trailing\"> $<span wire:text=\"range[0]\" class=\"tabular-nums\"></span> &ndash; $<span wire:text=\"range[1]\" class=\"tabular-nums\"></span> </x-slot> </flux:label> <flux:slider range wire:model=\"range\" min=\"0\" max=\"990\" step=\"10\" min-steps-between=\"10\" big-step=\"100\" /> </flux:field></div>"
+            ]
+        },
+        {
             "title": "Custom styles",
-            "content": "",
+            "content": "Customize the styles of the slider using the track:class and thumb:class props.",
             "examples": [
                 "<flux:slider track:class=\"h-5\" thumb:class=\"size-5\" />"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label and validation\nText fields for collecting user input",
             "examples": []
         }
     ],
@@ -100,5 +114,15 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:08+00:00"
+    "components_used": [
+        "field",
+        "input",
+        "label",
+        "slider",
+        "slider.tick"
+    ],
+    "sub_components": [
+        "slider.tick"
+    ],
+    "scraped_at": "2025-12-17T11:52:43+00:00"
 }
