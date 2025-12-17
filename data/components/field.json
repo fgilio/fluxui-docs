@@ -8,42 +8,42 @@
     "sections": [
         {
             "title": "Shorthand props",
-            "content": "",
+            "content": "Because using the field component in its full form can be verbose and repetitive, all form controls in flux allow you pass a label and a description parameter directly. Under the hood, they will be wrapped in a field with an error component automatically.",
             "examples": [
                 "<flux:input wire:model=\"email\" label=\"Email\" type=\"email\" />"
             ]
         },
         {
             "title": "With trailing description",
-            "content": "",
+            "content": "Position the field description directly below the input.",
             "examples": [
                 "<flux:field> <flux:label>Password</flux:label> <flux:input type=\"password\" /> <flux:error name=\"password\" /> <flux:description>Must be at least 8 characters long, include an uppercase letter, a number, and a special character.</flux:description></flux:field><!-- Alternative shorthand syntax... --><flux:input type=\"password\" label=\"Password\" description:trailing=\"Must be at least 8 characters long, include an uppercase letter, a number, and a special character.\"/>"
             ]
         },
         {
             "title": "With badge",
-            "content": "",
+            "content": "Badges allow you to enhance a field with additional information such as being \"required\" or \"optional\" when it might not be expected.",
             "examples": [
                 "<flux:field> <flux:label badge=\"Required\">Email</flux:label> <flux:input type=\"email\" required /> <flux:error name=\"email\" /></flux:field><flux:field> <flux:label badge=\"Optional\">Phone number</flux:label> <flux:input type=\"phone\" placeholder=\"(555) 555-5555\" mask=\"(999) 999-9999\" /> <flux:error name=\"phone\" /></flux:field>"
             ]
         },
         {
             "title": "Split layout",
-            "content": "",
+            "content": "Display multiple fields horizontally in the same row.",
             "examples": [
                 "<div class=\"grid grid-cols-2 gap-4\"> <flux:input label=\"First name\" placeholder=\"River\" /> <flux:input label=\"Last name\" placeholder=\"Porzio\" /></div>"
             ]
         },
         {
             "title": "Fieldset",
-            "content": "",
+            "content": "Group related fields using the fieldset and legend component.",
             "examples": [
                 "<flux:fieldset> <flux:legend>Shipping address</flux:legend> <div class=\"space-y-6\"> <flux:input label=\"Street address line 1\" placeholder=\"123 Main St\" class=\"max-w-sm\" /> <flux:input label=\"Street address line 2\" placeholder=\"Apartment, studio, or floor\" class=\"max-w-sm\" /> <div class=\"grid grid-cols-2 gap-x-4 gap-y-6\"> <flux:input label=\"City\" placeholder=\"San Francisco\" /> <flux:input label=\"State / Province\" placeholder=\"CA\" /> <flux:input label=\"Postal / Zip code\" placeholder=\"12345\" /> <flux:select label=\"Country\"> <option selected>United States</option> <!-- ... --> </flux:select> </div> </div></flux:fieldset>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Text fields for collecting user input\nMulti-line text input areas for longer form content\nToggleable input control for making selections",
             "examples": []
         }
     ],
@@ -60,5 +60,16 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:58+00:00"
+    "components_used": [
+        "description",
+        "error",
+        "field",
+        "fieldset",
+        "input",
+        "label",
+        "legend",
+        "select"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:34+00:00"
 }

@@ -8,42 +8,42 @@
     "sections": [
         {
             "title": "Column actions",
-            "content": "",
+            "content": "Add actions to the column header.",
             "examples": [
                 "<flux:kanban.column> <flux:kanban.column.header :heading=\"$column->title\" :count=\"count($column->cards)\"> <x-slot name=\"actions\"> <flux:dropdown> <flux:button variant=\"subtle\" icon=\"ellipsis-horizontal\" size=\"sm\" /> <flux:menu> <flux:menu.item icon=\"plus\">New card</flux:menu.item> <flux:menu.item icon=\"archive-box\">Archive column</flux:menu.item> <flux:menu.separator /> <flux:menu.item variant=\"danger\" icon=\"trash\">Delete</flux:menu.item> </flux:menu> </flux:dropdown> <flux:button variant=\"subtle\" icon=\"plus\" size=\"sm\" /> </x-slot> </flux:kanban.column.header> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards></flux:kanban.column>"
             ]
         },
         {
             "title": "Column subheading",
-            "content": "",
+            "content": "Add a subheading to the column header using the subheading prop.",
             "examples": [
                 "<flux:kanban.column> <flux:kanban.column.header heading=\"Blacklog\" subheading=\"Ideas and suggestions\" /> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards></flux:kanban.column>"
             ]
         },
         {
             "title": "Column footer",
-            "content": "",
+            "content": "Add a footer to the column using the flux:kanban.column.footer component to display additional information or actions like a \"New card\" button.",
             "examples": [
                 "<flux:kanban.column> <flux:kanban.column.header :heading=\"$column['title']\" count=\"5\" /> <flux:kanban.column.cards> <!-- ... --> </flux:kanban.column.cards> <flux:kanban.column.footer> <form> <flux:kanban.card> <div class=\"flex items-center gap-1\"> <flux:heading class=\"flex-1\"> <input class=\"w-full outline-none\" placeholder=\"New card...\"> </flux:heading> <flux:button type=\"submit\" variant=\"filled\" size=\"sm\" inset=\"top bottom\" class=\"-me-1.5\">Add</flux:button> </div> </flux:kanban.card> </form> <flux:button variant=\"subtle\" icon=\"plus\" size=\"sm\" align=\"start\"> New card </flux:button> </flux:kanban.column.footer></flux:kanban.column>"
             ]
         },
         {
             "title": "Card as button",
-            "content": "",
+            "content": "Make a card clickable by passing the as=\"button\" prop to the flux:kanban.card component.\nNow you can use the wire:click or x-on:click directives to handle the click event.",
             "examples": [
                 "<flux:kanban.card as=\"button\" wire:click=\"edit\" heading=\"Update privacy policy in app\" />"
             ]
         },
         {
             "title": "Card header",
-            "content": "",
+            "content": "Add a header to the card using the <x-slot name=\"header\"> slot to display additional information or actions.",
             "examples": [
                 "<flux:kanban.card as=\"button\" heading=\"Update privacy policy in app\"> <x-slot name=\"header\"> <div class=\"flex gap-2\"> <flux:badge color=\"blue\" size=\"sm\">UI</flux:badge> <flux:badge color=\"green\" size=\"sm\">Backend</flux:badge> <flux:badge color=\"red\" size=\"sm\">Bug</flux:badge> </div> </x-slot></flux:kanban.card>"
             ]
         },
         {
             "title": "Card footer",
-            "content": "",
+            "content": "Add a footer to the card using the <x-slot name=\"footer\"> slot to display additional information or actions.",
             "examples": [
                 "<flux:kanban.card as=\"button\" heading=\"Update privacy policy in app\"> <x-slot name=\"footer\"> <flux:icon name=\"bars-3-bottom-left\" variant=\"micro\" class=\"text-zinc-400\" /> <flux:avatar.group> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/x/calebporzio\" /> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/github/hugosaintemarie\" /> <flux:avatar circle size=\"xs\" src=\"https://unavatar.io/github/joshhanley\" /> <flux:avatar circle size=\"xs\">3+</flux:avatar> </flux:avatar.group> </x-slot></flux:kanban.card>"
             ]
@@ -62,5 +62,29 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:01+00:00"
+    "components_used": [
+        "avatar",
+        "avatar.group",
+        "badge",
+        "button",
+        "dropdown",
+        "heading",
+        "icon",
+        "kanban.card",
+        "kanban.column",
+        "kanban.column.cards",
+        "kanban.column.footer",
+        "kanban.column.header",
+        "menu",
+        "menu.item",
+        "menu.separator"
+    ],
+    "sub_components": [
+        "kanban.card",
+        "kanban.column",
+        "kanban.column.cards",
+        "kanban.column.footer",
+        "kanban.column.header"
+    ],
+    "scraped_at": "2025-12-17T11:52:37+00:00"
 }

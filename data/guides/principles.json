@@ -90,5 +90,28 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:15+00:00"
+    "components_used": [
+        "accordion.heading",
+        "button",
+        "command.input",
+        "context",
+        "dropdown",
+        "dropdown-menu",
+        "dropdown-menu.button",
+        "dropdown-menu.items",
+        "error",
+        "field",
+        "form.field",
+        "form.field.label",
+        "form.field.text-input",
+        "heading",
+        "input",
+        "label",
+        "menu",
+        "menu.submenu",
+        "navmenu",
+        "text"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:51+00:00"
 }

@@ -8,42 +8,42 @@
     "sections": [
         {
             "title": "Variants",
-            "content": "",
+            "content": "There are four variants for each icon: outline (default), solid, mini, and micro.",
             "examples": [
                 "<flux:icon.bolt /> <!-- 24px, outline --><flux:icon.bolt variant=\"solid\" /> <!-- 24px, filled --><flux:icon.bolt variant=\"mini\" /> <!-- 20px, filled --><flux:icon.bolt variant=\"micro\" /> <!-- 16px, filled -->"
             ]
         },
         {
             "title": "Sizes",
-            "content": "",
+            "content": "Control the size (height/width) of an icon using the size-* Tailwind utility.",
             "examples": [
                 "<flux:icon.bolt class=\"size-12\" /><flux:icon.bolt class=\"size-10\" /><flux:icon.bolt class=\"size-8\" />"
             ]
         },
         {
             "title": "Color",
-            "content": "",
+            "content": "You can customize the color of an icon using Tailwind's text color utilities",
             "examples": [
                 "<flux:icon.bolt variant=\"solid\" class=\"text-amber-500 dark:text-amber-300\" />"
             ]
         },
         {
             "title": "Loading spinner",
-            "content": "",
+            "content": "Flux has a special loading spinner icon that isn't part of the Heroicons collection. You can use this special icon anywhere you would normally use a standard icon.",
             "examples": [
                 "<flux:icon.loading />"
             ]
         },
         {
             "title": "Dynamic icons",
-            "content": "",
+            "content": "If you need to dynamically set an icon, you can use the flux:icon component and pass in the icon name as a prop.",
             "examples": [
                 "<flux:icon name=\"bolt\" />"
             ]
         },
         {
             "title": "Lucide icons",
-            "content": "",
+            "content": "We love Heroicons, but we acknowledge that it's a fairly limited icon set. If you need more icons, we recommend using Lucide instead.\nTo make it trivial to use Lucide icons, Flux provides a convenient artisan command to import them into your project:\nThis command will prompt you to select which icons you want to import. You can also manually specify the icons you want to import by passing in their names as arguments to the command:",
             "examples": [
                 "php artisan flux:icon",
                 "php artisan flux:icon crown grip-vertical github",
@@ -52,7 +52,7 @@
         },
         {
             "title": "Custom icons",
-            "content": "",
+            "content": "For full control over your icons, you can create your own Blade files in the resources/views/flux/icon directory in your project.\nYou can simply paste SVG code directly into the Blade file, however we recommend using the following template structure to ensure compatibility with other components:",
             "examples": [
                 "- resources - views - flux - icon - wink.blade.php",
                 "@php $attributes = $unescapedForwardedAttributes ?? $attributes; @endphp@props([ 'variant' => 'outline',])@php$classes = Flux::classes('shrink-0') ->add(match($variant) { 'outline' => '[:where(&)]:size-6', 'solid' => '[:where(&)]:size-6', 'mini' => '[:where(&)]:size-5', 'micro' => '[:where(&)]:size-4', });@endphp{{-- Your SVG code here: --}}<svg {{ $attributes->class($classes) }} data-flux-icon aria-hidden=\"true\" ... > ...</svg>",
@@ -61,6 +61,11 @@
         },
         {
             "title": "Related components",
+            "content": "Interactive controls with integrated icons\nText fields with leading or trailing icons\nSmall indicators with optional icon content",
+            "examples": []
+        },
+        {
+            "title": "Icon sizes",
             "content": "",
             "examples": []
         }
@@ -78,5 +83,22 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:00+00:00"
+    "components_used": [
+        "icon",
+        "icon.bolt",
+        "icon.crown",
+        "icon.github",
+        "icon.grip-vertical",
+        "icon.loading",
+        "icon.wink"
+    ],
+    "sub_components": [
+        "icon.bolt",
+        "icon.crown",
+        "icon.github",
+        "icon.grip-vertical",
+        "icon.loading",
+        "icon.wink"
+    ],
+    "scraped_at": "2025-12-17T11:52:36+00:00"
 }

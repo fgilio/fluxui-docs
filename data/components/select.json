@@ -8,14 +8,14 @@
     "sections": [
         {
             "title": "Small",
-            "content": "",
+            "content": "A smaller select element for more compact layouts.",
             "examples": [
                 "<flux:select size=\"sm\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>"
             ]
         },
         {
             "title": "Custom select",
-            "content": "",
+            "content": "An alternative to the browser's native select element. Typically used when you need custom option styling like icons, images, and other treatments.",
             "examples": [
                 "<flux:select variant=\"listbox\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
                 "<flux:select variant=\"listbox\"> <x-slot name=\"button\"> <flux:select.button class=\"rounded-full!\" placeholder=\"Choose industry...\" :invalid=\"$errors->has('...')\" /> </x-slot> <flux:select.option>Photography</flux:select.option> ...</flux:select>",
@@ -44,7 +44,7 @@
         },
         {
             "title": "Searchable select",
-            "content": "",
+            "content": "The searchable select variant makes navigating large option lists easier for your users.",
             "examples": [
                 "<flux:select variant=\"listbox\" searchable placeholder=\"Choose industries...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
                 "<flux:select variant=\"listbox\" searchable> <x-slot name=\"search\"> <flux:select.search class=\"px-4\" placeholder=\"Search industries...\" /> </x-slot> ...</flux:select>"
@@ -59,7 +59,7 @@
         },
         {
             "title": "Multiple select",
-            "content": "",
+            "content": "Allow your users to select multiple options from a list of options.",
             "examples": [
                 "<flux:select variant=\"listbox\" multiple placeholder=\"Choose industries...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
                 "<flux:select variant=\"listbox\" selected-suffix=\"industries selected\" multiple> ...</flux:select>",
@@ -92,7 +92,7 @@
         },
         {
             "title": "Combobox",
-            "content": "",
+            "content": "A versatile combobox that can be used for anything from basic autocomplete to complex multi-selects.",
             "examples": [
                 "<flux:select variant=\"combobox\" placeholder=\"Choose industry...\"> <flux:select.option>Photography</flux:select.option> <flux:select.option>Design services</flux:select.option> <flux:select.option>Web development</flux:select.option> <flux:select.option>Accounting</flux:select.option> <flux:select.option>Legal services</flux:select.option> <flux:select.option>Consulting</flux:select.option> <flux:select.option>Other</flux:select.option></flux:select>",
                 "<flux:select variant=\"combobox\"> <x-slot name=\"input\"> <flux:select.input x-model=\"search\" :invalid=\"$errors->has('...')\" /> </x-slot> ...</flux:select>"
@@ -107,14 +107,14 @@
         },
         {
             "title": "Dynamic options",
-            "content": "",
+            "content": "If you want to dynamically generate options on the server, you can use the :filter=\"false\" prop to disable client-side filtering.",
             "examples": [
                 "<flux:select wire:model=\"userId\" variant=\"combobox\" :filter=\"false\"> <x-slot name=\"input\"> <flux:select.input wire:model.live=\"search\" /> </x-slot> @foreach ($this->users as $user) <flux:select.option value=\"{{ $user->id }}\" wire:key=\"{{ $user->id }}\"> {{ $user->name }} </flux:select.option> @endforeach</flux:select><!--public $search = '';public $userId = null;#[\\Livewire\\Attributes\\Computed]public function users() { return \\App\\Models\\User::query() ->when($this->search, fn($query) => $query->where('name', 'like', '%' . $this->search . '%')) ->limit(20) ->get();}-->"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label and validation states\nPill-based selection component\nControl for selecting one option from many",
             "examples": []
         }
     ],
@@ -131,5 +131,22 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:06+00:00"
+    "components_used": [
+        "icon.eye",
+        "icon.key",
+        "icon.shield-check",
+        "icon.user",
+        "select",
+        "select.button",
+        "select.input",
+        "select.option",
+        "select.search"
+    ],
+    "sub_components": [
+        "select.button",
+        "select.input",
+        "select.option",
+        "select.search"
+    ],
+    "scraped_at": "2025-12-17T11:52:42+00:00"
 }

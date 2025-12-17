@@ -8,28 +8,28 @@
     "sections": [
         {
             "title": "With text",
-            "content": "",
+            "content": "Add text to the separator for a more descriptive element.",
             "examples": [
                 "<flux:separator text=\"or\" />"
             ]
         },
         {
             "title": "Vertical",
-            "content": "",
+            "content": "Seperate contents with a vertical seperator when horizontally stacked.",
             "examples": [
                 "<flux:separator vertical />"
             ]
         },
         {
             "title": "Limited height",
-            "content": "",
+            "content": "You can limit the height of the vertical separator by adding vertical margin.",
             "examples": [
                 "<flux:separator vertical class=\"my-2\" />"
             ]
         },
         {
             "title": "Subtle",
-            "content": "",
+            "content": "Flux offers a subtle variant for a separator that blends into the background.",
             "examples": [
                 "<flux:separator vertical variant=\"subtle\" />"
             ]
@@ -48,5 +48,9 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:07+00:00"
+    "components_used": [
+        "separator"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:42+00:00"
 }

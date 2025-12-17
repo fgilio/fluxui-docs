@@ -8,28 +8,40 @@
     "sections": [
         {
             "title": "Sizes",
-            "content": "",
+            "content": "Flux offers three different heading sizes that should cover most use cases in your app.\n14px · Use liberally—think input and toast labels.\n16px · Use sparingly—think modal and card headings.\n24px · Use rarely—think hero text.",
             "examples": [
                 "<flux:heading>Default</flux:heading><flux:heading size=\"lg\">Large</flux:heading><flux:heading size=\"xl\">Extra large</flux:heading>"
             ]
         },
         {
             "title": "Heading level",
-            "content": "",
+            "content": "Control the heading level: h1, h2, h3, that will be used for the heading element. Without a level prop, the heading will default to a div.\nThis information will be displayed publicly.",
             "examples": [
                 "<flux:heading level=\"3\">User profile</flux:heading><flux:text class=\"mt-2\">This information will be displayed publicly.</flux:text>"
             ]
         },
         {
+            "title": "User profile",
+            "content": "This information will be displayed publicly.",
+            "examples": []
+        },
+        {
             "title": "Examples",
-            "content": "",
+            "content": "Subheadings can be placed above headings for a more interesting arrangment.\nYear to date\nFormat paragraphs and textual content with consistent styling\nContainers for content with consistent styling",
+            "examples": [
+                "<div> <flux:text>Year to date</flux:text> <flux:heading size=\"xl\" class=\"mb-1\">$7,532.16</flux:heading> <div class=\"flex items-center gap-2\"> <flux:icon.arrow-trending-up variant=\"micro\" class=\"text-green-600 dark:text-green-500\" /> <span class=\"text-sm text-green-600 dark:text-green-500\">15.2%</span> </div></div>"
+            ]
+        },
+        {
+            "title": "Leading subheading",
+            "content": "Subheadings can be placed above headings for a more interesting arrangment.\nYear to date",
             "examples": [
                 "<div> <flux:text>Year to date</flux:text> <flux:heading size=\"xl\" class=\"mb-1\">$7,532.16</flux:heading> <div class=\"flex items-center gap-2\"> <flux:icon.arrow-trending-up variant=\"micro\" class=\"text-green-600 dark:text-green-500\" /> <span class=\"text-sm text-green-600 dark:text-green-500\">15.2%</span> </div></div>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Format paragraphs and textual content with consistent styling\nContainers for content with consistent styling",
             "examples": []
         }
     ],
@@ -52,5 +64,5 @@
         "text"
     ],
     "sub_components": [],
-    "scraped_at": "2025-12-17T11:42:03+00:00"
+    "scraped_at": "2025-12-17T11:52:35+00:00"
 }

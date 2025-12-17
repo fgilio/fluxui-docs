@@ -8,70 +8,70 @@
     "sections": [
         {
             "title": "Navigation menus",
-            "content": "",
+            "content": "Display a simple set of links in a dropdown menu.\nUse the navmenu component for a simple collections of links. Otherwise, use the menu component for action menus that require keyboard navigation, submenus, etc.",
             "examples": [
                 "<flux:dropdown position=\"bottom\" align=\"end\"> <flux:profile avatar=\"/img/demo/user.png\" name=\"Olivia Martin\" /> <flux:navmenu> <flux:navmenu.item href=\"#\" icon=\"user\">Account</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"building-storefront\">Profile</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"credit-card\">Billing</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"arrow-right-start-on-rectangle\">Logout</flux:navmenu.item> <flux:navmenu.item href=\"#\" icon=\"trash\" variant=\"danger\">Delete</flux:navmenu.item> </flux:navmenu></flux:dropdown>"
             ]
         },
         {
             "title": "Positioning",
-            "content": "",
+            "content": "Customize the position of the dropdown menu via the position and align props. You can first pass the base position: top, bottom, left, and right, then an alignment modifier like start, center, or end.",
             "examples": [
                 "<flux:dropdown position=\"top\" align=\"start\"><!-- More positions... --><flux:dropdown position=\"right\" align=\"center\"><flux:dropdown position=\"bottom\" align=\"center\"><flux:dropdown position=\"left\" align=\"end\">"
             ]
         },
         {
             "title": "Offset & gap",
-            "content": "",
+            "content": "Customize the offset/gap of the dropdown menu via the offset and gap props. These properties accept values in pixels.",
             "examples": [
                 "<flux:dropdown offset=\"-15\" gap=\"2\">"
             ]
         },
         {
             "title": "Keyboard hints",
-            "content": "",
+            "content": "Add keyboard shortcut hints to menu items to teach users how to navigate your app faster.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.item icon=\"pencil-square\" kbd=\"⌘S\">Save</flux:menu.item> <flux:menu.item icon=\"document-duplicate\" kbd=\"⌘D\">Duplicate</flux:menu.item> <flux:menu.item icon=\"trash\" variant=\"danger\" kbd=\"⌘⌫\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Checkbox items",
-            "content": "",
+            "content": "Select one or many menu options.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Permissions</flux:button> <flux:menu> <flux:menu.checkbox wire:model=\"read\" checked>Read</flux:menu.checkbox> <flux:menu.checkbox wire:model=\"write\" checked>Write</flux:menu.checkbox> <flux:menu.checkbox wire:model=\"delete\">Delete</flux:menu.checkbox> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Radio items",
-            "content": "",
+            "content": "Select a single menu option.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Sort by</flux:button> <flux:menu> <flux:menu.radio.group wire:model=\"sortBy\"> <flux:menu.radio checked>Latest activity</flux:menu.radio> <flux:menu.radio>Date created</flux:menu.radio> <flux:menu.radio>Most popular</flux:menu.radio> </flux:menu.radio.group> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Groups",
-            "content": "",
+            "content": "Visually group related menu items with a separator line.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.item>View</flux:menu.item> <flux:menu.item>Transfer</flux:menu.item> <flux:menu.separator /> <flux:menu.item>Publish</flux:menu.item> <flux:menu.item>Share</flux:menu.item> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Groups with headings",
-            "content": "",
+            "content": "Group options under headings to make them more discoverable.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.group heading=\"Account\"> <flux:menu.item>Profile</flux:menu.item> <flux:menu.item>Permissions</flux:menu.item> </flux:menu.group> <flux:menu.group heading=\"Billing\"> <flux:menu.item>Transactions</flux:menu.item> <flux:menu.item>Payouts</flux:menu.item> <flux:menu.item>Refunds</flux:menu.item> </flux:menu.group> <flux:menu.item>Logout</flux:menu.item> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Submenus",
-            "content": "",
+            "content": "Nest submenus for more condensed menus.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Options</flux:button> <flux:menu> <flux:menu.submenu heading=\"Sort by\"> <flux:menu.radio checked>Name</flux:menu.radio> <flux:menu.radio>Date</flux:menu.radio> <flux:menu.radio>Popularity</flux:menu.radio> </flux:menu.submenu> <flux:menu.submenu heading=\"Filter\"> <flux:menu.checkbox checked>Draft</flux:menu.checkbox> <flux:menu.checkbox checked>Published</flux:menu.checkbox> <flux:menu.checkbox>Archived</flux:menu.checkbox> </flux:menu.submenu> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Delete</flux:menu.item> </flux:menu></flux:dropdown>"
             ]
         },
         {
             "title": "Keep open",
-            "content": "",
+            "content": "Menus typically close when an item is clicked, however, you can add the keep-open attribute to the menu component to keep it open.",
             "examples": [
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Filter</flux:button> <flux:menu keep-open> <flux:menu.checkbox checked>Draft</flux:menu.checkbox> <flux:menu.checkbox checked>Published</flux:menu.checkbox> <flux:menu.checkbox>Archived</flux:menu.checkbox> </flux:menu></flux:dropdown>",
                 "<flux:dropdown> <flux:button icon:trailing=\"chevron-down\">Filters</flux:button> <flux:menu > <flux:menu.checkbox keep-open checked>Draft</flux:menu.checkbox> <flux:menu.checkbox keep-open checked>Published</flux:menu.checkbox> <flux:menu.checkbox keep-open>Archived</flux:menu.checkbox> <flux:menu.separator /> <flux:menu.item variant=\"danger\">Clear</flux:menu.item> </flux:menu></flux:dropdown>"
@@ -79,7 +79,7 @@
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Build responsive navigation bars with dropdown menus\nShow user avatars and profile information\nInteractive controls for forms and UI actions",
             "examples": []
         }
     ],
@@ -96,5 +96,21 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:57+00:00"
+    "components_used": [
+        "button",
+        "dropdown",
+        "menu",
+        "menu.checkbox",
+        "menu.group",
+        "menu.item",
+        "menu.radio",
+        "menu.radio.group",
+        "menu.separator",
+        "menu.submenu",
+        "navmenu",
+        "navmenu.item",
+        "profile"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:33+00:00"
 }

@@ -25,6 +25,8 @@
             "title": "Accent props",
             "content": "",
             "examples": [
+                "<button class=\"bg-[var(--color-accent)] text-[var(--color-accent-foreground)]\">",
+                "<button class=\"bg-accent text-accent-foreground\">",
                 "<!-- Link --><flux:link :accent=\"false\">Profile</flux:tab><!-- Tabs --><flux:tabs> <flux:tab :accent=\"false\">Profile</flux:tab> <flux:tab :accent=\"false\">Account</flux:tab> <flux:tab :accent=\"false\">Billing</flux:tab></flux:tabs><!-- Navbar --><flux:navbar> <flux:navbar.item :accent=\"false\">Profile</flux:navbar.item> <flux:navbar.item :accent=\"false\">Account</flux:navbar.item> <flux:navbar.item :accent=\"false\">Billing</flux:navbar.item></flux:navbar><!-- Navlist --><flux:navlist> <flux:navlist.item :accent=\"false\">Profile</flux:navlist.item> <flux:navlist.item :accent=\"false\">Account</flux:navlist.item> <flux:navlist.item :accent=\"false\">Billing</flux:navlist.item></flux:navlist>"
             ]
         }
@@ -42,5 +44,16 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:16+00:00"
+    "components_used": [
+        "link",
+        "navbar",
+        "navbar.item",
+        "navlist",
+        "navlist.item",
+        "tab",
+        "tabs",
+        "text"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:52+00:00"
 }

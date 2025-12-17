@@ -8,63 +8,63 @@
     "sections": [
         {
             "title": "With header",
-            "content": "",
+            "content": "Display file previews or other content above the input area using the header slot.",
             "examples": [
                 "<flux:composer wire:model=\"prompt\" label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"header\"> <!-- Header content... --> <div class=\"relative border border-zinc-200 dark:border-zinc-700 rounded-lg overflow-hidden\"> <img src=\"https://fluxui.dev/img/demo/caleb.png\" alt=\"Profile picture\" class=\"size-14\"> <div class=\"absolute top-0 right-0 p-1\"> <button type=\"button\" class=\"p-0.5 rounded-full bg-zinc-900/50 hover:bg-zinc-900/70 flex justify-center items-center\"> <flux:icon icon=\"x-mark\" variant=\"micro\" class=\"text-white\" /> </button> </div> </div> </x-slot> <x-slot name=\"actionsLeading\"> <!-- ... --> </x-slot> <x-slot name=\"actionsTrailing\"> <!-- ... --> </x-slot></flux:composer>"
             ]
         },
         {
             "title": "Inline",
-            "content": "",
+            "content": "Place action buttons alongside the input in a single row for a more compact layout.",
             "examples": [
                 "<flux:composer wire:model=\"prompt\" rows=\"1\" inline label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"actionsLeading\"> <flux:button size=\"sm\" variant=\"ghost\" icon=\"plus\" /> </x-slot> <x-slot name=\"actionsTrailing\"> <flux:button size=\"sm\" variant=\"filled\" icon=\"microphone\" /> <flux:button type=\"submit\" size=\"sm\" variant=\"primary\" icon=\"paper-airplane\" /> </x-slot></flux:composer>"
             ]
         },
         {
             "title": "Input variant",
-            "content": "",
+            "content": "Use the variant=\"input\" prop to render the composer with border radiuses that match other form inputs.",
             "examples": [
                 "<flux:composer variant=\"input\" label=\"Message\" placeholder=\"What's on your mind?\"> <!-- ... --></flux:composer>"
             ]
         },
         {
             "title": "Height",
-            "content": "",
+            "content": "Set the initial and maximum height of the input area using rows and max-rows.",
             "examples": [
                 "<flux:composer rows=\"4\" max-rows=\"8\" ...> <!-- ... --></flux:composer>"
             ]
         },
         {
             "title": "Submit behavior",
-            "content": "",
+            "content": "By default, the form submits when pressing Ctrl/Cmd + Enter. Set submit=\"enter\" to submit on Enter alone.",
             "examples": [
                 "<form wire:submit=\"send\"> <flux:composer wire:model=\"prompt\" submit=\"enter\" ...> <!-- ... --> </flux:composer></form>"
             ]
         },
         {
             "title": "Rich text",
-            "content": "",
+            "content": "Enable rich text formatting by passing an editor component to the input slot.",
             "examples": [
                 "<flux:composer wire:model=\"prompt\" rows=\"3\" label=\"Prompt\" label:sr-only placeholder=\"How can I help you today?\"> <x-slot name=\"input\"> <flux:editor variant=\"borderless\" toolbar=\"bold italic bullet ordered | link | align\" /> </x-slot> <x-slot name=\"actionsLeading\"> <flux:button size=\"sm\" variant=\"subtle\" icon=\"paper-clip\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"slash\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"adjustments-horizontal\" /> </x-slot> <x-slot name=\"actionsTrailing\"> <flux:button size=\"sm\" variant=\"filled\" icon=\"microphone\" /> <flux:button type=\"submit\" size=\"sm\" variant=\"primary\" icon=\"paper-airplane\" /> </x-slot></flux:composer>"
             ]
         },
         {
             "title": "Disabled",
-            "content": "",
+            "content": "Prevent user interaction with the composer by adding the disabled attribute.",
             "examples": [
                 "<flux:composer disabled ...> <!-- ... --></flux:composer>"
             ]
         },
         {
             "title": "Invalid",
-            "content": "",
+            "content": "When paired with a name or wire:model attribute alongside a label prop, validation errors will automatically apply invalid styling to the composer.",
             "examples": [
                 "<flux:composer wire:model=\"prompt\" label=\"Prompt\" label:sr-only ...> <!-- ... --></flux:composer>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label\nText fields for collecting user input",
             "examples": []
         }
     ],
@@ -81,5 +81,12 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:56+00:00"
+    "components_used": [
+        "button",
+        "composer",
+        "editor",
+        "icon"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:32+00:00"
 }

@@ -8,35 +8,35 @@
     "sections": [
         {
             "title": "Variants",
-            "content": "",
+            "content": "Use the variant prop to change the visual style of the button.",
             "examples": [
                 "<flux:button>Default</flux:button><flux:button variant=\"primary\">Primary</flux:button><flux:button variant=\"filled\">Filled</flux:button><flux:button variant=\"danger\">Danger</flux:button><flux:button variant=\"ghost\">Ghost</flux:button><flux:button variant=\"subtle\">Subtle</flux:button>"
             ]
         },
         {
             "title": "Colors",
-            "content": "",
+            "content": "Use standard Tailwind color names with the color prop to control the color of the primary button.",
             "examples": [
                 "<flux:button variant=\"primary\" color=\"zinc\">Zinc</flux:button><flux:button variant=\"primary\" color=\"red\">Red</flux:button><flux:button variant=\"primary\" color=\"orange\">Orange</flux:button><flux:button variant=\"primary\" color=\"amber\">Amber</flux:button><flux:button variant=\"primary\" color=\"yellow\">Yellow</flux:button><flux:button variant=\"primary\" color=\"lime\">Lime</flux:button><flux:button variant=\"primary\" color=\"green\">Green</flux:button><flux:button variant=\"primary\" color=\"emerald\">Emerald</flux:button><flux:button variant=\"primary\" color=\"teal\">Teal</flux:button><flux:button variant=\"primary\" color=\"cyan\">Cyan</flux:button><flux:button variant=\"primary\" color=\"sky\">Sky</flux:button><flux:button variant=\"primary\" color=\"blue\">Blue</flux:button><flux:button variant=\"primary\" color=\"indigo\">Indigo</flux:button><flux:button variant=\"primary\" color=\"violet\">Violet</flux:button><flux:button variant=\"primary\" color=\"purple\">Purple</flux:button><flux:button variant=\"primary\" color=\"fuchsia\">Fuchsia</flux:button><flux:button variant=\"primary\" color=\"pink\">Pink</flux:button><flux:button variant=\"primary\" color=\"rose\">Rose</flux:button>"
             ]
         },
         {
             "title": "Sizes",
-            "content": "",
+            "content": "The default button size works great for most cases, but here are some additional size options for unique situations.",
             "examples": [
                 "<flux:button>Base</flux:button><flux:button size=\"sm\">Small</flux:button><flux:button size=\"xs\">Extra small</flux:button>"
             ]
         },
         {
             "title": "Icons",
-            "content": "",
+            "content": "Automatically sized and styled icons for your buttons.",
             "examples": [
                 "<flux:button icon=\"ellipsis-horizontal\" /><flux:button icon=\"arrow-down-tray\">Export</flux:button><flux:button icon:trailing=\"chevron-down\">Open</flux:button><flux:button icon=\"x-mark\" variant=\"subtle\" />"
             ]
         },
         {
             "title": "Loading",
-            "content": "",
+            "content": "Buttons with wire:click or type=\"submit\" will automatically show a loading indicator and disable pointer events during network requests.\nYou can disable this behavior using :loading=\"false\".",
             "examples": [
                 "<flux:button wire:click=\"save\"> Save changes</flux:button>",
                 "<flux:button wire:click=\"save\" :loading=\"false\">"
@@ -44,63 +44,63 @@
         },
         {
             "title": "Full width",
-            "content": "",
+            "content": "A button that spans the full width of the container.",
             "examples": [
                 "<flux:button variant=\"primary\" class=\"w-full\">Send invite</flux:button>"
             ]
         },
         {
             "title": "Button groups",
-            "content": "",
+            "content": "Fuse related buttons into a group with shared borders.",
             "examples": [
                 "<flux:button.group> <flux:button>Oldest</flux:button> <flux:button>Newest</flux:button> <flux:button>Top</flux:button></flux:button.group>"
             ]
         },
         {
             "title": "Icon group",
-            "content": "",
+            "content": "Fuse multiple icon buttons into a visually-linked group.",
             "examples": [
                 "<flux:button.group> <flux:button icon=\"bars-3-bottom-left\"></flux:button> <flux:button icon=\"bars-3\"></flux:button> <flux:button icon=\"bars-3-bottom-right\"></flux:button></flux:button.group>"
             ]
         },
         {
             "title": "Attached button",
-            "content": "",
+            "content": "Append or prepend an icon button to another button to add additional functionality.",
             "examples": [
                 "<flux:button.group> <flux:button>New product</flux:button> <flux:button icon=\"chevron-down\"></flux:button></flux:button.group>"
             ]
         },
         {
             "title": "As a link",
-            "content": "",
+            "content": "Display an HTML a tag as a button by passing the href prop.",
             "examples": [
                 "<flux:button href=\"https://google.com\" icon:trailing=\"arrow-up-right\"> Visit Google</flux:button>"
             ]
         },
         {
             "title": "As an input",
-            "content": "",
+            "content": "To display a button as an input, pass as=\"button\" to the input component.",
             "examples": [
                 "<flux:input as=\"button\" placeholder=\"Search...\" icon=\"magnifying-glass\" kbd=\"⌘K\" />"
             ]
         },
         {
             "title": "Square",
-            "content": "",
+            "content": "Make the height and width of a button equal. Flux does this automatically for icon-only buttons.",
             "examples": [
                 "<flux:button square>...</flux:button>"
             ]
         },
         {
             "title": "Inset",
-            "content": "",
+            "content": "When using ghost or subtle button variants, you can use the inset prop to negate any invisible padding for better alignment.",
             "examples": [
                 "<div class=\"flex justify-between\"> <flux:heading>Post successfully created.</flux:heading> <flux:button size=\"sm\" icon=\"x-mark\" variant=\"ghost\" inset /></div>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Display expandable menus for navigational options\nDisplay icons for your application",
             "examples": []
         }
     ],
@@ -117,5 +117,14 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:50+00:00"
+    "components_used": [
+        "button",
+        "button.group",
+        "heading",
+        "input"
+    ],
+    "sub_components": [
+        "button.group"
+    ],
+    "scraped_at": "2025-12-17T11:52:27+00:00"
 }

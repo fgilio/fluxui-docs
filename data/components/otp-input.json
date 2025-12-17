@@ -8,56 +8,56 @@
     "sections": [
         {
             "title": "Example usage",
-            "content": "",
+            "content": "Display a form for verifying one-time passwords.\nPlease enter a one-time password from the authenticator app.",
             "examples": [
                 "<flux:card> <form wire:submit=\"verify\" class=\"space-y-8\"> <div class=\"max-w-64 mx-auto space-y-2\"> <flux:heading size=\"lg\" class=\"text-center\">Verify your account</flux:heading> <flux:text class=\"text-center\">Please enter a one-time password from the authenticator app.</flux:text> </div> <flux:otp wire:model=\"code\" length=\"6\" label=\"OTP Code\" label:sr-only :error:icon=\"false\" error:class=\"text-center\" class=\"mx-auto\" /> <div class=\"space-y-4\"> <flux:button variant=\"primary\" type=\"submit\" class=\"w-full\">Verify</flux:button> <flux:button wire:click=\"resend\" class=\"w-full\">Resend code</flux:button> </div> </form></flux:card>"
             ]
         },
         {
             "title": "Autosubmit",
-            "content": "",
+            "content": "Use the submit=\"auto\" prop to automatically submit the form once all input fields are filled.\nPlease enter a one-time password from the authenticator app.",
             "examples": [
                 "<form wire:submit=\"verify\" class=\"space-y-8\"> <div class=\"max-w-64 mx-auto space-y-2\"> <flux:heading size=\"lg\" class=\"text-center\">Verify your account</flux:heading> <flux:text class=\"text-center\">Please enter a one-time password from the authenticator app.</flux:text> </div> <div class=\"space-y-6\"> <flux:otp wire:model=\"code\" length=\"6\" submit=\"auto\" class=\"mx-auto\" /> </div></form>"
             ]
         },
         {
             "title": "Alphanumeric",
-            "content": "",
+            "content": "Allow non-numeric characters by setting the mode to alphanumeric or alpha.",
             "examples": [
                 "<flux:otp wire:model=\"licenseKey\" length=\"10\" mode=\"alphanumeric\" label=\"License key\" description:trailing=\"Enter the license key printed on the installation disc\" />"
             ]
         },
         {
             "title": "Private",
-            "content": "",
+            "content": "To mask sensitive input values, use the private prop.",
             "examples": [
                 "<flux:otp wire:model=\"pin\" length=\"4\" private label=\"PIN Code\" />"
             ]
         },
         {
             "title": "Separator",
-            "content": "",
+            "content": "Use the default slot to render input fields with a separator in between them.",
             "examples": [
                 "<flux:otp wire:model=\"code\"> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.separator /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /></flux:otp>"
             ]
         },
         {
             "title": "Group",
-            "content": "",
+            "content": "Group all input fields together using the flux:otp.group component.",
             "examples": [
                 "<flux:otp wire:model=\"code\"> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group></flux:otp>"
             ]
         },
         {
             "title": "Group separator",
-            "content": "",
+            "content": "Add a separator between groups of input fields using the flux:otp.separator component.",
             "examples": [
                 "<flux:otp wire:model=\"code\"> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group> <flux:otp.separator /> <flux:otp.group> <flux:otp.input /> <flux:otp.input /> <flux:otp.input /> </flux:otp.group></flux:otp>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label and validation\nText fields for collecting user input",
             "examples": []
         }
     ],
@@ -74,5 +74,16 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:03+00:00"
+    "components_used": [
+        "button",
+        "card",
+        "heading",
+        "otp",
+        "otp.group",
+        "otp.input",
+        "otp.separator",
+        "text"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:38+00:00"
 }

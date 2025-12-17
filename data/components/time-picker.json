@@ -16,7 +16,7 @@
         },
         {
             "title": "Input trigger",
-            "content": "",
+            "content": "Attach the time picker to a time input for more precise time selection control.",
             "examples": [
                 "<flux:time-picker type=\"input\" />",
                 "<flux:time-picker type=\"input\" :dropdown=\"false\" />"
@@ -29,28 +29,28 @@
         },
         {
             "title": "Multiple times",
-            "content": "",
+            "content": "Allow users to select multiple times.",
             "examples": [
                 "<flux:time-picker multiple />"
             ]
         },
         {
             "title": "Time format",
-            "content": "",
+            "content": "By default, the time picker will use the browser's locale to determine the time format.\nYou can override this by setting the time-format attribute to 12-hour or 24-hour.",
             "examples": [
                 "<flux:time-picker time-format=\"12-hour\" /><flux:time-picker time-format=\"24-hour\" />"
             ]
         },
         {
             "title": "Interval",
-            "content": "",
+            "content": "You can set the interval between the displayed time options by setting the interval attribute to a number of minutes. The default is 30 minutes.",
             "examples": [
                 "<flux:time-picker interval=\"60\" />"
             ]
         },
         {
             "title": "Min/max times",
-            "content": "",
+            "content": "Restrict the selectable times by setting minimum and maximum boundaries.",
             "examples": [
                 "<flux:time-picker min=\"09:00\" max=\"17:00\" />",
                 "<!-- Prevent selection before now... --><flux:time-picker min=\"now\" /><!-- Prevent selection after now... --><flux:time-picker max=\"now\" />"
@@ -58,28 +58,28 @@
         },
         {
             "title": "Unavailable times",
-            "content": "",
+            "content": "Disable specific times from being selected. Useful for blocking out appointments, showing booked times, or indicating unavailable time slots.",
             "examples": [
                 "<flux:time-picker unavailable=\"03:00,04:00,05:30-07:29\" />"
             ]
         },
         {
             "title": "Open to",
-            "content": "",
+            "content": "Set the time that the time picker will open to. Otherwise, the time picker defaults to the selected time, or the current time.",
             "examples": [
                 "<flux:time-picker open-to=\"10:00\" />"
             ]
         },
         {
             "title": "Localization",
-            "content": "",
+            "content": "By default, the time picker will use the browser's locale (e.g. navigator.language).\nYou can override this behavior by setting the locale attribute to any valid locale string (e.g. fr for French, en-US for English, etc.):",
             "examples": [
                 "<flux:time-picker locale=\"ja-JP\" />"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Displays a date picker interface for selecting dates\nDisplays a calendar interface for selecting dates\nText fields for collecting user input",
             "examples": []
         }
     ],
@@ -96,5 +96,9 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:11+00:00"
+    "components_used": [
+        "time-picker"
+    ],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:46+00:00"
 }

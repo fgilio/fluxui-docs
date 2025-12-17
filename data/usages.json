@@ -1,14 +1,377 @@
 {
     "version": "1.0",
-    "updated_at": "2025-12-17T11:42:03+00:00",
+    "updated_at": "2025-12-17T11:52:55+00:00",
     "usages": {
+        "accordion": [
+            {
+                "page": "accordion",
+                "category": "components",
+                "sections": [
+                    "Shorthand",
+                    "With transition",
+                    "Disabled",
+                    "Exclusive",
+                    "Expanded",
+                    "Leading icon"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "accordion.heading": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Consistency"
+                ]
+            }
+        ],
+        "accordion.item": [
+            {
+                "page": "accordion",
+                "category": "components",
+                "sections": [
+                    "Shorthand",
+                    "Disabled",
+                    "Expanded"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "autocomplete": [
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "autocomplete.item": [
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "avatar": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Tooltip",
+                    "Initials",
+                    "Size",
+                    "Icon",
+                    "Colors",
+                    "Auto color",
+                    "Circle",
+                    "Badge",
+                    "Groups",
+                    "As button",
+                    "As link",
+                    "Examples",
+                    "Testimonial",
+                    "Grouped feature",
+                    "Members table",
+                    "Assignees list",
+                    "Select options",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Card footer"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "avatar.group": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Groups",
+                    "Examples",
+                    "Grouped feature"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Card footer"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "badge": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Grouped feature",
+                    "Members table",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "badge",
+                "category": "components",
+                "sections": [
+                    "Sizes",
+                    "Icons",
+                    "Pill variant",
+                    "As button",
+                    "With close button",
+                    "Colors",
+                    "Solid variant",
+                    "Inset"
+                ]
+            },
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Engagement prompt"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Card header"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Examples",
+                    "Category picker"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant",
+                    "Icon",
+                    "Size",
+                    "Inset"
+                ]
+            }
+        ],
+        "badge.close": [
+            {
+                "page": "badge",
+                "category": "components",
+                "sections": [
+                    "With close button"
+                ]
+            }
+        ],
+        "brand": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Logo slot",
+                    "Logo only",
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            }
+        ],
+        "breadcrumbs": [
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With slashes",
+                    "With icon",
+                    "With ellipsis",
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "breadcrumbs.item": [
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With slashes",
+                    "With icon",
+                    "With ellipsis",
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Component Groups"
+                ]
+            }
+        ],
         "button": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table",
+                    "Assignees list",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "button",
+                "category": "components",
+                "sections": [
+                    "Variants",
+                    "Colors",
+                    "Sizes",
+                    "Icons",
+                    "Loading",
+                    "Full width",
+                    "Button groups",
+                    "Icon group",
+                    "Attached button",
+                    "As a link",
+                    "Square",
+                    "Inset"
+                ]
+            },
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "With actions",
+                    "Inline actions",
+                    "Dismissible",
+                    "Examples",
+                    "Premium upsell",
+                    "Upgrade offer",
+                    "Engagement prompt"
+                ]
+            },
             {
                 "page": "card",
                 "category": "components",
                 "sections": [
                     "Header actions",
                     "Simple card"
+                ]
+            },
+            {
+                "page": "composer",
+                "category": "components",
+                "sections": [
+                    "Inline",
+                    "Rich text"
+                ]
+            },
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Keyboard hints",
+                    "Checkbox items",
+                    "Radio items",
+                    "Groups",
+                    "Groups with headings",
+                    "Submenus",
+                    "Keep open"
+                ]
+            },
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Livewire integration",
+                    "Single file upload",
+                    "Multiple files upload"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Icon buttons",
+                    "With buttons"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions",
+                    "Column footer"
                 ]
             },
             {
@@ -17,22 +380,203 @@
                 "sections": [
                     "Data binding",
                     "Confirmation",
-                    "Flyout"
+                    "Flyout",
+                    "Floating flyout"
+                ]
+            },
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Example usage"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Position",
+                    "Gap & offset",
+                    "Examples",
+                    "Category picker",
+                    "Feedback"
+                ]
+            },
+            {
+                "page": "tooltip",
+                "category": "components",
+                "sections": [
+                    "Info tooltip",
+                    "Position",
+                    "Disabled buttons"
+                ]
+            },
+            {
+                "page": "customization",
+                "category": "guides",
+                "sections": [
+                    "Tailwind overrides"
+                ]
+            },
+            {
+                "page": "dark-mode",
+                "category": "guides",
+                "sections": [
+                    "JavaScript utilities"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Props vs attributes",
+                    "Class merging",
+                    "Dealing with class merging conflicts",
+                    "Variant",
+                    "Icon",
+                    "Size",
+                    "Keyboard hints",
+                    "Inset",
+                    "Prop forwarding",
+                    "Shorthand props",
+                    "Component Groups",
+                    "Slots"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Composition",
+                    "Brevity",
+                    "We style, you space"
+                ]
+            }
+        ],
+        "button.group": [
+            {
+                "page": "button",
+                "category": "components",
+                "sections": [
+                    "Button groups",
+                    "Icon group",
+                    "Attached button"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "calendar": [
+            {
+                "page": "calendar",
+                "category": "components",
+                "sections": [
+                    "Basic Usage",
+                    "Multiple dates",
+                    "Date range",
+                    "Range Configuration",
+                    "Size",
+                    "Static",
+                    "Min/max dates",
+                    "Unavailable dates",
+                    "With today shortcut",
+                    "Selectable header",
+                    "Fixed weeks",
+                    "Start day",
+                    "Open to",
+                    "Week numbers",
+                    "Localization",
+                    "The DateRange object"
+                ]
+            },
+            {
+                "page": "date-picker",
+                "category": "components",
+                "sections": [
+                    "The DateRange object"
+                ]
+            }
+        ],
+        "callout": [
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Icon inside heading",
+                    "With actions",
+                    "Inline actions",
+                    "Dismissible",
+                    "Variants",
+                    "Colors",
+                    "Custom icon",
+                    "Examples",
+                    "Feature spotlight",
+                    "Premium upsell",
+                    "Upgrade offer",
+                    "Engagement prompt"
+                ]
+            }
+        ],
+        "callout.heading": [
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Icon inside heading",
+                    "With actions",
+                    "Inline actions",
+                    "Dismissible",
+                    "Custom icon",
+                    "Examples",
+                    "Feature spotlight",
+                    "Premium upsell",
+                    "Upgrade offer",
+                    "Engagement prompt"
+                ]
+            }
+        ],
+        "callout.link": [
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Feature spotlight"
+                ]
+            }
+        ],
+        "callout.text": [
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Icon inside heading",
+                    "With actions",
+                    "Inline actions",
+                    "Dismissible",
+                    "Custom icon",
+                    "Examples",
+                    "Feature spotlight",
+                    "Premium upsell",
+                    "Engagement prompt"
                 ]
             }
         ],
         "card": [
             {
-                "page": "card",
+                "page": "avatar",
                 "category": "components",
                 "sections": [
-                    "Small card",
-                    "Header actions",
-                    "Simple card"
+                    "Examples",
+                    "Assignees list"
                 ]
-            }
-        ],
-        "heading": [
+            },
             {
                 "page": "card",
                 "category": "components",
@@ -40,6 +584,965 @@
                     "Small card",
                     "Header actions",
                     "Simple card"
+                ]
+            },
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Example usage"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Chart"
+                ]
+            }
+        ],
+        "chart": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Data structure",
+                    "Chart padding",
+                    "Axis scale",
+                    "Axis lines",
+                    "Zero line",
+                    "Grid lines",
+                    "Ticks",
+                    "Tick frequency",
+                    "Tick formatting",
+                    "Cursor",
+                    "Tooltip",
+                    "Legend",
+                    "Summary",
+                    "Formatting numbers",
+                    "Formatting dates"
+                ]
+            }
+        ],
+        "chart.axis": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Axis scale",
+                    "Axis lines",
+                    "Grid lines",
+                    "Ticks",
+                    "Tick frequency",
+                    "Tick formatting",
+                    "Formatting numbers",
+                    "Formatting dates"
+                ]
+            }
+        ],
+        "chart.axis.grid": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Grid lines"
+                ]
+            }
+        ],
+        "chart.axis.line": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Axis lines"
+                ]
+            }
+        ],
+        "chart.axis.mark": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Ticks"
+                ]
+            }
+        ],
+        "chart.axis.tick": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Ticks",
+                    "Tick formatting"
+                ]
+            }
+        ],
+        "chart.cursor": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Cursor"
+                ]
+            }
+        ],
+        "chart.legend": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Legend"
+                ]
+            }
+        ],
+        "chart.legend.indicator": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Legend"
+                ]
+            }
+        ],
+        "chart.line": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Legend"
+                ]
+            }
+        ],
+        "chart.summary": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Summary"
+                ]
+            }
+        ],
+        "chart.summary.value": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Summary"
+                ]
+            }
+        ],
+        "chart.svg": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Chart padding",
+                    "Axis lines",
+                    "Zero line",
+                    "Grid lines",
+                    "Ticks",
+                    "Tick formatting",
+                    "Cursor",
+                    "Tooltip",
+                    "Legend"
+                ]
+            }
+        ],
+        "chart.tooltip": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Tooltip"
+                ]
+            }
+        ],
+        "chart.tooltip.heading": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Tooltip"
+                ]
+            }
+        ],
+        "chart.tooltip.value": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Tooltip"
+                ]
+            }
+        ],
+        "chart.viewport": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Legend",
+                    "Summary"
+                ]
+            }
+        ],
+        "chart.zero-line": [
+            {
+                "page": "chart",
+                "category": "components",
+                "sections": [
+                    "Zero line"
+                ]
+            }
+        ],
+        "checkbox": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Checkbox group",
+                    "With descriptions",
+                    "Horizontal fieldset",
+                    "Check-all",
+                    "Checked",
+                    "Disabled",
+                    "Checkbox cards",
+                    "Vertical cards",
+                    "Cards with icons",
+                    "Custom card content",
+                    "Pills",
+                    "Buttons"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Category picker"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "checkbox.all": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Check-all"
+                ]
+            }
+        ],
+        "checkbox.group": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Checkbox group",
+                    "With descriptions",
+                    "Check-all",
+                    "Checkbox cards",
+                    "Vertical cards",
+                    "Cards with icons",
+                    "Custom card content",
+                    "Pills",
+                    "Buttons"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Category picker"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "checkbox.indicator": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
+                ]
+            }
+        ],
+        "command": [
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Keyboard hints",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "command.input": [
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Use CSS"
+                ]
+            }
+        ],
+        "command.item": [
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Keyboard hints",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "command.items": [
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            }
+        ],
+        "composer": [
+            {
+                "page": "composer",
+                "category": "components",
+                "sections": [
+                    "With header",
+                    "Inline",
+                    "Input variant",
+                    "Height",
+                    "Submit behavior",
+                    "Rich text",
+                    "Disabled",
+                    "Invalid"
+                ]
+            }
+        ],
+        "context": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Composition"
+                ]
+            }
+        ],
+        "date-picker": [
+            {
+                "page": "date-picker",
+                "category": "components",
+                "sections": [
+                    "Basic usage",
+                    "Input trigger",
+                    "Range picker",
+                    "Range limits",
+                    "Range with inputs",
+                    "Presets",
+                    "Available presets",
+                    "All time",
+                    "Custom range preset",
+                    "Unavailable dates",
+                    "With today shortcut",
+                    "Selectable header",
+                    "Fixed weeks",
+                    "Start day",
+                    "Open to",
+                    "Week numbers",
+                    "Localization"
+                ]
+            }
+        ],
+        "date-picker.input": [
+            {
+                "page": "date-picker",
+                "category": "components",
+                "sections": [
+                    "Input trigger",
+                    "Range with inputs"
+                ]
+            }
+        ],
+        "description": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Horizontal fieldset"
+                ]
+            },
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "With trailing description"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "dropdown": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Navigation menus",
+                    "Positioning",
+                    "Offset & gap",
+                    "Keyboard hints",
+                    "Checkbox items",
+                    "Radio items",
+                    "Groups",
+                    "Groups with headings",
+                    "Submenus",
+                    "Keep open"
+                ]
+            },
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions"
+                ]
+            },
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Dropdown navigation"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Position",
+                    "Gap & offset",
+                    "Examples",
+                    "Category picker",
+                    "Feedback",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Composition",
+                    "Brevity"
+                ]
+            }
+        ],
+        "dropdown-menu": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Brevity"
+                ]
+            }
+        ],
+        "dropdown-menu.button": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Brevity"
+                ]
+            }
+        ],
+        "dropdown-menu.items": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Brevity"
+                ]
+            }
+        ],
+        "editor": [
+            {
+                "page": "composer",
+                "category": "components",
+                "sections": [
+                    "Rich text"
+                ]
+            },
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar",
+                    "Height"
+                ]
+            }
+        ],
+        "editor.align": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.blockquote": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.bold": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.bullet": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.button": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.content": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.heading": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.italic": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.link": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.ordered": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.separator": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.spacer": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.strike": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "editor.toolbar": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "error": [
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "With trailing description",
+                    "With badge"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Input group labels"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Shorthand props",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Complexity"
+                ]
+            }
+        ],
+        "field": [
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "With trailing description",
+                    "With badge",
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Input group labels"
+                ]
+            },
+            {
+                "page": "slider",
+                "category": "components",
+                "sections": [
+                    "Displaying value",
+                    "With input",
+                    "Displaying values"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Shorthand props",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Complexity"
+                ]
+            }
+        ],
+        "fieldset": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Horizontal fieldset"
+                ]
+            },
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "Within fieldset"
+                ]
+            },
+            {
+                "page": "switch",
+                "category": "components",
+                "sections": [
+                    "Fieldset",
+                    "Left align"
+                ]
+            }
+        ],
+        "file-item": [
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Inline layout",
+                    "Livewire integration",
+                    "Single file upload",
+                    "Multiple files upload"
+                ]
+            }
+        ],
+        "file-item.remove": [
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Inline layout",
+                    "Livewire integration",
+                    "Single file upload",
+                    "Multiple files upload"
+                ]
+            }
+        ],
+        "file-upload": [
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Inline layout",
+                    "Progress indicator",
+                    "Disabled state",
+                    "Custom uploader",
+                    "Livewire integration",
+                    "Single file upload",
+                    "Multiple files upload"
+                ]
+            }
+        ],
+        "file-upload.dropzone": [
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Inline layout",
+                    "Progress indicator",
+                    "Disabled state",
+                    "Livewire integration",
+                    "Single file upload",
+                    "Multiple files upload"
+                ]
+            }
+        ],
+        "form.field": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Simplicity"
+                ]
+            }
+        ],
+        "form.field.label": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Simplicity"
+                ]
+            }
+        ],
+        "form.field.text-input": [
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Simplicity"
+                ]
+            }
+        ],
+        "header": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "heading": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Testimonial",
+                    "Grouped feature",
+                    "Members table",
+                    "Assignees list",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "badge",
+                "category": "components",
+                "sections": [
+                    "Inset"
+                ]
+            },
+            {
+                "page": "button",
+                "category": "components",
+                "sections": [
+                    "Inset"
+                ]
+            },
+            {
+                "page": "card",
+                "category": "components",
+                "sections": [
+                    "Small card",
+                    "Header actions",
+                    "Simple card"
+                ]
+            },
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
                 ]
             },
             {
@@ -48,7 +1551,15 @@
                 "sections": [
                     "Sizes",
                     "Heading level",
-                    "Examples"
+                    "Examples",
+                    "Leading subheading"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column footer"
                 ]
             },
             {
@@ -56,16 +1567,154 @@
                 "category": "components",
                 "sections": [
                     "Confirmation",
-                    "Flyout"
+                    "Flyout",
+                    "Floating flyout"
+                ]
+            },
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Example usage",
+                    "Autosubmit"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Examples",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Chart"
+                ]
+            },
+            {
+                "page": "tooltip",
+                "category": "components",
+                "sections": [
+                    "Info tooltip"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Size"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Consistency",
+                    "We style, you space"
                 ]
             }
         ],
         "icon": [
             {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Logo slot"
+                ]
+            },
+            {
                 "page": "card",
                 "category": "components",
                 "sections": [
                     "Small card"
+                ]
+            },
+            {
+                "page": "composer",
+                "category": "components",
+                "sections": [
+                    "With header"
+                ]
+            },
+            {
+                "page": "file-upload",
+                "category": "components",
+                "sections": [
+                    "Custom uploader"
+                ]
+            },
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Variants",
+                    "Sizes",
+                    "Color",
+                    "Loading spinner",
+                    "Dynamic icons",
+                    "Lucide icons",
+                    "Custom icons"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Card footer"
+                ]
+            }
+        ],
+        "icon.arrow-path-rounded-square": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "icon.arrow-right": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
                 ]
             }
         ],
@@ -74,20 +1723,781 @@
                 "page": "heading",
                 "category": "components",
                 "sections": [
-                    "Examples"
+                    "Examples",
+                    "Leading subheading"
+                ]
+            }
+        ],
+        "icon.bell": [
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Prop forwarding"
+                ]
+            }
+        ],
+        "icon.bolt": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Variants",
+                    "Sizes",
+                    "Color"
+                ]
+            }
+        ],
+        "icon.clipboard": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "icon.clipboard-document-check": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            }
+        ],
+        "icon.clock": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "icon.cloud": [
+            {
+                "page": "pillbox",
+                "category": "components",
+                "sections": [
+                    "With icons"
+                ]
+            }
+        ],
+        "icon.code-bracket": [
+            {
+                "page": "pillbox",
+                "category": "components",
+                "sections": [
+                    "With icons"
+                ]
+            }
+        ],
+        "icon.crown": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Lucide icons"
+                ]
+            }
+        ],
+        "icon.eye": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Custom select"
+                ]
+            }
+        ],
+        "icon.github": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Lucide icons"
+                ]
+            }
+        ],
+        "icon.grip-vertical": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Lucide icons"
+                ]
+            }
+        ],
+        "icon.key": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Custom select"
+                ]
+            }
+        ],
+        "icon.loading": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Loading spinner"
+                ]
+            }
+        ],
+        "icon.map-pin": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "icon.server": [
+            {
+                "page": "pillbox",
+                "category": "components",
+                "sections": [
+                    "With icons"
+                ]
+            }
+        ],
+        "icon.shield-check": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Custom select"
+                ]
+            }
+        ],
+        "icon.star": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Testimonial"
+                ]
+            }
+        ],
+        "icon.user": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Custom select"
+                ]
+            }
+        ],
+        "icon.users": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            }
+        ],
+        "icon.wink": [
+            {
+                "page": "icon",
+                "category": "components",
+                "sections": [
+                    "Custom icons"
                 ]
             }
         ],
         "input": [
             {
+                "page": "button",
+                "category": "components",
+                "sections": [
+                    "As an input"
+                ]
+            },
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "Shorthand props",
+                    "With trailing description",
+                    "With badge",
+                    "Split layout",
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Shorthand",
+                    "Class targeting",
+                    "Types",
+                    "File",
+                    "Smaller",
+                    "Disabled",
+                    "Readonly",
+                    "Invalid",
+                    "Input masking",
+                    "Icons",
+                    "Icon buttons",
+                    "Clearable, copyable, and viewable inputs",
+                    "Keyboard hint",
+                    "As a button",
+                    "With buttons",
+                    "Text prefixes and suffixes",
+                    "Input group labels"
+                ]
+            },
+            {
                 "page": "modal",
                 "category": "components",
                 "sections": [
-                    "Flyout"
+                    "Flyout",
+                    "Floating flyout"
+                ]
+            },
+            {
+                "page": "slider",
+                "category": "components",
+                "sections": [
+                    "With input"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Split attribute forwarding",
+                    "Variant",
+                    "Icon",
+                    "Size",
+                    "Keyboard hints",
+                    "Shorthand props",
+                    "Data binding",
+                    "Component Groups",
+                    "Slots",
+                    "Blade components vs HTML elements"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Simplicity",
+                    "Complexity",
+                    "Brevity",
+                    "We style, you space"
+                ]
+            }
+        ],
+        "input.group": [
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "With buttons",
+                    "Text prefixes and suffixes",
+                    "Input group labels"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "input.group.prefix": [
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Text prefixes and suffixes",
+                    "Input group labels"
+                ]
+            }
+        ],
+        "input.group.suffix": [
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Text prefixes and suffixes"
+                ]
+            }
+        ],
+        "kanban.card": [
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column footer",
+                    "Card as button",
+                    "Card header",
+                    "Card footer"
+                ]
+            }
+        ],
+        "kanban.column": [
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions",
+                    "Column subheading",
+                    "Column footer"
+                ]
+            }
+        ],
+        "kanban.column.cards": [
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions",
+                    "Column subheading",
+                    "Column footer"
+                ]
+            }
+        ],
+        "kanban.column.footer": [
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column footer"
+                ]
+            }
+        ],
+        "kanban.column.header": [
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions",
+                    "Column subheading",
+                    "Column footer"
+                ]
+            }
+        ],
+        "label": [
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "With trailing description",
+                    "With badge"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "Input group labels"
+                ]
+            },
+            {
+                "page": "slider",
+                "category": "components",
+                "sections": [
+                    "Displaying value",
+                    "With input",
+                    "Displaying values"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Shorthand props",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Complexity"
+                ]
+            }
+        ],
+        "legend": [
+            {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Horizontal fieldset"
+                ]
+            },
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "Within fieldset"
+                ]
+            },
+            {
+                "page": "switch",
+                "category": "components",
+                "sections": [
+                    "Fieldset",
+                    "Left align"
+                ]
+            }
+        ],
+        "link": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "text",
+                "category": "components",
+                "sections": [
+                    "Link",
+                    "Link variants",
+                    "Link as button"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "main": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "menu": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Keyboard hints",
+                    "Checkbox items",
+                    "Radio items",
+                    "Groups",
+                    "Groups with headings",
+                    "Submenus",
+                    "Keep open"
+                ]
+            },
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Keyboard hints",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Composition",
+                    "Consistency",
+                    "Brevity"
+                ]
+            }
+        ],
+        "menu.checkbox": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Checkbox items",
+                    "Submenus",
+                    "Keep open"
+                ]
+            }
+        ],
+        "menu.group": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Groups with headings"
+                ]
+            }
+        ],
+        "menu.item": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Keyboard hints",
+                    "Groups",
+                    "Groups with headings",
+                    "Submenus",
+                    "Keep open"
+                ]
+            },
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Keyboard hints",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "menu.radio": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Radio items",
+                    "Submenus"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "menu.radio.group": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Radio items"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "menu.separator": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Groups",
+                    "Submenus",
+                    "Keep open"
+                ]
+            },
+            {
+                "page": "kanban",
+                "category": "components",
+                "sections": [
+                    "Column actions"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "menu.submenu": [
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Submenus"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Consistency"
                 ]
             }
         ],
         "modal": [
+            {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
             {
                 "page": "modal",
                 "category": "components",
@@ -100,7 +2510,15 @@
                     "Disable click outside",
                     "Confirmation",
                     "Flyout",
-                    "Flyout positioning"
+                    "Flyout positioning",
+                    "Floating flyout"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant"
                 ]
             }
         ],
@@ -109,21 +2527,981 @@
                 "page": "modal",
                 "category": "components",
                 "sections": [
-                    "Confirmation"
+                    "Confirmation",
+                    "Floating flyout"
                 ]
             }
         ],
         "modal.trigger": [
             {
+                "page": "command",
+                "category": "components",
+                "sections": [
+                    "As a modal"
+                ]
+            },
+            {
                 "page": "modal",
                 "category": "components",
                 "sections": [
                     "Confirmation",
-                    "Flyout"
+                    "Flyout",
+                    "Floating flyout"
+                ]
+            }
+        ],
+        "navbar": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Detecting the current page",
+                    "With icons",
+                    "With badges",
+                    "Dropdown navigation"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Opt-out props",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "navbar.item": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Detecting the current page",
+                    "With icons",
+                    "With badges",
+                    "Dropdown navigation"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Opt-out props",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "navlist": [
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Navlist (sidebar)",
+                    "Navlist group",
+                    "Collapsible groups",
+                    "Navlist badges"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "navlist.group": [
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Navlist group",
+                    "Collapsible groups"
+                ]
+            }
+        ],
+        "navlist.item": [
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Navlist (sidebar)",
+                    "Navlist group",
+                    "Collapsible groups",
+                    "Navlist badges"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Icon",
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "navmenu": [
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Navigation menus"
+                ]
+            },
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Dropdown navigation"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "Composition"
+                ]
+            }
+        ],
+        "navmenu.item": [
+            {
+                "page": "breadcrumbs",
+                "category": "components",
+                "sections": [
+                    "With ellipsis dropdown"
+                ]
+            },
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Navigation menus"
+                ]
+            },
+            {
+                "page": "navbar",
+                "category": "components",
+                "sections": [
+                    "Dropdown navigation"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Component Groups"
+                ]
+            }
+        ],
+        "navmenu.separator": [
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu"
+                ]
+            }
+        ],
+        "otp": [
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Example usage",
+                    "Autosubmit",
+                    "Alphanumeric",
+                    "Private",
+                    "Separator",
+                    "Group",
+                    "Group separator"
+                ]
+            }
+        ],
+        "otp.group": [
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Group",
+                    "Group separator"
+                ]
+            }
+        ],
+        "otp.input": [
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Separator",
+                    "Group",
+                    "Group separator"
+                ]
+            }
+        ],
+        "otp.separator": [
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Separator",
+                    "Group separator"
+                ]
+            }
+        ],
+        "pagination": [
+            {
+                "page": "pagination",
+                "category": "components",
+                "sections": [
+                    "Simple paginator",
+                    "Large result set"
+                ]
+            }
+        ],
+        "pillbox": [
+            {
+                "page": "pillbox",
+                "category": "components",
+                "sections": [
+                    "Small",
+                    "Searchable",
+                    "Custom search placeholder",
+                    "With icons"
+                ]
+            }
+        ],
+        "pillbox.option": [
+            {
+                "page": "pillbox",
+                "category": "components",
+                "sections": [
+                    "Small",
+                    "Searchable",
+                    "With icons"
+                ]
+            }
+        ],
+        "popover": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Position",
+                    "Gap & offset",
+                    "Examples",
+                    "Category picker",
+                    "Feedback",
+                    "Event details"
+                ]
+            }
+        ],
+        "profile": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
+            {
+                "page": "dropdown",
+                "category": "components",
+                "sections": [
+                    "Navigation menus"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "With name",
+                    "Without chevron",
+                    "Circle avatar",
+                    "Avatar with initials",
+                    "Custom trailing icon",
+                    "Examples",
+                    "Profile menu",
+                    "Profile switcher"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "radio": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Feedback",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "With descriptions",
+                    "Within fieldset",
+                    "Segmented",
+                    "Segmented with icons",
+                    "Radio cards",
+                    "Vertical cards",
+                    "Cards with icons",
+                    "Cards without indicators",
+                    "Custom card content",
+                    "Pills",
+                    "Buttons"
+                ]
+            },
+            {
+                "page": "dark-mode",
+                "category": "guides",
+                "sections": [
+                    "JavaScript utilities"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "radio.group": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Feedback",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "With descriptions",
+                    "Within fieldset",
+                    "Segmented",
+                    "Segmented with icons",
+                    "Radio cards",
+                    "Vertical cards",
+                    "Cards with icons",
+                    "Cards without indicators",
+                    "Custom card content",
+                    "Pills",
+                    "Buttons"
+                ]
+            },
+            {
+                "page": "dark-mode",
+                "category": "guides",
+                "sections": [
+                    "JavaScript utilities"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding",
+                    "Component Groups"
+                ]
+            }
+        ],
+        "radio.indicator": [
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
+                ]
+            }
+        ],
+        "select": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table",
+                    "Select options"
+                ]
+            },
+            {
+                "page": "field",
+                "category": "components",
+                "sections": [
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "With buttons"
+                ]
+            },
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Small",
+                    "Custom select",
+                    "The button slot",
+                    "Clearable",
+                    "Searchable select",
+                    "The search slot",
+                    "Multiple select",
+                    "Selected suffix",
+                    "Checkbox indicator",
+                    "Clearing search",
+                    "Combobox",
+                    "The input slot",
+                    "Dynamic options"
+                ]
+            },
+            {
+                "page": "customization",
+                "category": "guides",
+                "sections": [
+                    "Tailwind overrides"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant",
+                    "Size",
+                    "Data binding"
+                ]
+            }
+        ],
+        "select.button": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Custom select",
+                    "The button slot"
+                ]
+            }
+        ],
+        "select.input": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Combobox",
+                    "The input slot",
+                    "Dynamic options"
+                ]
+            }
+        ],
+        "select.option": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table",
+                    "Select options"
+                ]
+            },
+            {
+                "page": "input",
+                "category": "components",
+                "sections": [
+                    "With buttons"
+                ]
+            },
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Small",
+                    "Custom select",
+                    "The button slot",
+                    "Searchable select",
+                    "Multiple select",
+                    "Combobox",
+                    "Dynamic options"
+                ]
+            }
+        ],
+        "select.search": [
+            {
+                "page": "select",
+                "category": "components",
+                "sections": [
+                    "Searchable select",
+                    "The search slot"
+                ]
+            }
+        ],
+        "separator": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Assignees list"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Category picker",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "separator",
+                "category": "components",
+                "sections": [
+                    "With text",
+                    "Vertical",
+                    "Limited height",
+                    "Subtle"
+                ]
+            },
+            {
+                "page": "switch",
+                "category": "components",
+                "sections": [
+                    "Fieldset"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant"
+                ]
+            }
+        ],
+        "sidebar": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.brand": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.collapse": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.group": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.header": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.item": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.nav": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.profile": [
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.search": [
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header"
+                ]
+            }
+        ],
+        "sidebar.spacer": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "sidebar.toggle": [
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "skeleton": [
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Line of text",
+                    "Animation",
+                    "Table",
+                    "Chart"
+                ]
+            }
+        ],
+        "skeleton.group": [
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Line of text",
+                    "Table"
+                ]
+            }
+        ],
+        "skeleton.line": [
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Line of text",
+                    "Table"
+                ]
+            }
+        ],
+        "slider": [
+            {
+                "page": "slider",
+                "category": "components",
+                "sections": [
+                    "Min/max/step",
+                    "Displaying value",
+                    "With input",
+                    "Big steps",
+                    "Step marks",
+                    "Numbered steps",
+                    "Custom steps",
+                    "Range slider",
+                    "Basic usage",
+                    "Min steps between",
+                    "Displaying values",
+                    "Custom styles"
+                ]
+            }
+        ],
+        "slider.tick": [
+            {
+                "page": "slider",
+                "category": "components",
+                "sections": [
+                    "Step marks",
+                    "Numbered steps",
+                    "Custom steps"
                 ]
             }
         ],
         "spacer": [
+            {
+                "page": "brand",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Header with brand"
+                ]
+            },
             {
                 "page": "card",
                 "category": "components",
@@ -138,9 +3516,323 @@
                     "Confirmation",
                     "Flyout"
                 ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            }
+        ],
+        "subheading": [
+            {
+                "page": "modal",
+                "category": "components",
+                "sections": [
+                    "Floating flyout"
+                ]
+            }
+        ],
+        "switch": [
+            {
+                "page": "switch",
+                "category": "components",
+                "sections": [
+                    "Fieldset",
+                    "Left align"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding"
+                ]
+            }
+        ],
+        "tab": [
+            {
+                "page": "tabs",
+                "category": "components",
+                "sections": [
+                    "With icons",
+                    "Padded edges",
+                    "Scrollable tabs",
+                    "Faded edge",
+                    "Segmented tabs",
+                    "Segmented with icons",
+                    "Small segmented tabs",
+                    "Pill tabs",
+                    "Dynamic tabs"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant",
+                    "Icon",
+                    "Size",
+                    "Data binding",
+                    "Anomalies"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
+            }
+        ],
+        "tab.group": [
+            {
+                "page": "tabs",
+                "category": "components",
+                "sections": [
+                    "With icons",
+                    "Scrollable tabs",
+                    "Faded edge",
+                    "Dynamic tabs"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Anomalies"
+                ]
+            }
+        ],
+        "tab.panel": [
+            {
+                "page": "tabs",
+                "category": "components",
+                "sections": [
+                    "With icons",
+                    "Scrollable tabs",
+                    "Faded edge",
+                    "Dynamic tabs"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Anomalies"
+                ]
+            }
+        ],
+        "table": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Pagination",
+                    "Sortable",
+                    "Sticky header",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "table.cell": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "table.column": [
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Sortable",
+                    "Sticky header",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "table.columns": [
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Sortable",
+                    "Sticky header",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "table.row": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "table.rows": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Members table"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Table"
+                ]
+            },
+            {
+                "page": "table",
+                "category": "components",
+                "sections": [
+                    "Simple",
+                    "Sticky columns"
+                ]
+            }
+        ],
+        "tabs": [
+            {
+                "page": "tabs",
+                "category": "components",
+                "sections": [
+                    "With icons",
+                    "Padded edges",
+                    "Scrollable tabs",
+                    "Faded edge",
+                    "Segmented tabs",
+                    "Segmented with icons",
+                    "Small segmented tabs",
+                    "Pill tabs",
+                    "Dynamic tabs"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Variant",
+                    "Size",
+                    "Data binding",
+                    "Anomalies"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Accent props"
+                ]
             }
         ],
         "text": [
+            {
+                "page": "avatar",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Testimonial",
+                    "Grouped feature",
+                    "Members table",
+                    "User popover"
+                ]
+            },
+            {
+                "page": "badge",
+                "category": "components",
+                "sections": [
+                    "Inset"
+                ]
+            },
+            {
+                "page": "callout",
+                "category": "components",
+                "sections": [
+                    "Dismissible"
+                ]
+            },
             {
                 "page": "card",
                 "category": "components",
@@ -151,11 +3843,19 @@
                 ]
             },
             {
+                "page": "checkbox",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
+                ]
+            },
+            {
                 "page": "heading",
                 "category": "components",
                 "sections": [
                     "Heading level",
-                    "Examples"
+                    "Examples",
+                    "Leading subheading"
                 ]
             },
             {
@@ -164,6 +3864,182 @@
                 "sections": [
                     "Confirmation",
                     "Flyout"
+                ]
+            },
+            {
+                "page": "otp-input",
+                "category": "components",
+                "sections": [
+                    "Example usage",
+                    "Autosubmit"
+                ]
+            },
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Hover trigger",
+                    "Examples",
+                    "Feedback",
+                    "Event details"
+                ]
+            },
+            {
+                "page": "profile",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Profile menu"
+                ]
+            },
+            {
+                "page": "radio",
+                "category": "components",
+                "sections": [
+                    "Custom card content"
+                ]
+            },
+            {
+                "page": "skeleton",
+                "category": "components",
+                "sections": [
+                    "Chart"
+                ]
+            },
+            {
+                "page": "text",
+                "category": "components",
+                "sections": [
+                    "Size",
+                    "Color",
+                    "Link"
+                ]
+            },
+            {
+                "page": "header",
+                "category": "layouts",
+                "sections": [
+                    "Secondary sidebar"
+                ]
+            },
+            {
+                "page": "sidebar",
+                "category": "layouts",
+                "sections": [
+                    "Secondary header",
+                    "Collapsible sidebar"
+                ]
+            },
+            {
+                "page": "principles",
+                "category": "guides",
+                "sections": [
+                    "We style, you space"
+                ]
+            },
+            {
+                "page": "theming",
+                "category": "guides",
+                "sections": [
+                    "Base color"
+                ]
+            }
+        ],
+        "textarea": [
+            {
+                "page": "popover",
+                "category": "components",
+                "sections": [
+                    "Examples",
+                    "Feedback"
+                ]
+            },
+            {
+                "page": "textarea",
+                "category": "components",
+                "sections": [
+                    "With placeholder",
+                    "Fixed row height",
+                    "Auto-sizing textarea",
+                    "Configure resize"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Data binding"
+                ]
+            }
+        ],
+        "time-picker": [
+            {
+                "page": "time-picker",
+                "category": "components",
+                "sections": [
+                    "Basic usage",
+                    "Input trigger",
+                    "Multiple times",
+                    "Time format",
+                    "Interval",
+                    "Min/max times",
+                    "Unavailable times",
+                    "Open to",
+                    "Localization"
+                ]
+            }
+        ],
+        "toast": [
+            {
+                "page": "toast",
+                "category": "components",
+                "sections": [
+                    "Positioning",
+                    "Stack"
+                ]
+            }
+        ],
+        "toast.group": [
+            {
+                "page": "toast",
+                "category": "components",
+                "sections": [
+                    "Stack"
+                ]
+            }
+        ],
+        "tooltip": [
+            {
+                "page": "editor",
+                "category": "components",
+                "sections": [
+                    "Toolbar"
+                ]
+            },
+            {
+                "page": "tooltip",
+                "category": "components",
+                "sections": [
+                    "Info tooltip",
+                    "Position",
+                    "Disabled buttons"
+                ]
+            },
+            {
+                "page": "patterns",
+                "category": "guides",
+                "sections": [
+                    "Keyboard hints",
+                    "Shorthand props"
+                ]
+            }
+        ],
+        "tooltip.content": [
+            {
+                "page": "tooltip",
+                "category": "components",
+                "sections": [
+                    "Info tooltip"
                 ]
             }
         ]

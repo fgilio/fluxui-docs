@@ -10,21 +10,21 @@
             "title": "Basic usage",
             "content": "",
             "examples": [
-                "<flux:date-picker value=\"2025-12-16\" />",
+                "<flux:date-picker value=\"2025-12-17\" />",
                 "<flux:date-picker wire:model=\"date\" />",
                 "<?phpuse Illuminate\\Support\\Carbon;use Livewire\\Component;use App\\Models\\Post;class CreatePost extends Component { public ?Carbon $date; public function save() { Post::create([ // ... 'published_at' => $this->date, ]) // ... }}"
             ]
         },
         {
             "title": "Input trigger",
-            "content": "",
+            "content": "Attach the date picker to a date input for more precise date selection control.",
             "examples": [
                 "<flux:date-picker wire:model=\"date\"> <x-slot name=\"trigger\"> <flux:date-picker.input /> </x-slot></flux:date-picker>"
             ]
         },
         {
             "title": "Range picker",
-            "content": "",
+            "content": "Enable selection of date ranges for reporting, booking systems, or any scenario requiring a start and end date.",
             "examples": [
                 "<flux:date-picker mode=\"range\" />",
                 "<flux:date-picker mode=\"range\" value=\"2025-12-02/2025-12-06\" />",
@@ -35,7 +35,7 @@
         },
         {
             "title": "Range limits",
-            "content": "",
+            "content": "Control the allowed range of dates that can be selected.",
             "examples": [
                 "<flux:date-picker mode=\"range\" min-range=\"3\" />",
                 "<flux:date-picker mode=\"range\" max-range=\"10\" />"
@@ -43,14 +43,14 @@
         },
         {
             "title": "Range with inputs",
-            "content": "",
+            "content": "Use separate inputs for start and end dates to provide a clearer interface for date range selection.",
             "examples": [
                 "<flux:date-picker mode=\"range\"> <x-slot name=\"trigger\"> <div class=\"flex flex-col sm:flex-row gap-6 sm:gap-4\"> <flux:date-picker.input label=\"Start\" /> <flux:date-picker.input label=\"End\" /> </div> </x-slot></flux:date-picker>"
             ]
         },
         {
             "title": "Presets",
-            "content": "",
+            "content": "Allow users to select from frequently used ranges like \"Last 7 days\" or \"This month\".",
             "examples": [
                 "<flux:date-picker mode=\"range\" with-presets />",
                 "<flux:date-picker mode=\"range\" presets=\"today yesterday thisWeek last7Days thisMonth yearToDate allTime\"/>",
@@ -63,7 +63,9 @@
         {
             "title": "Available presets",
             "content": "",
-            "examples": []
+            "examples": [
+                "<flux:date-picker mode=\"range\" presets=\"today yesterday thisWeek last7Days thisMonth yearToDate allTime\"/>"
+            ]
         },
         {
             "title": "All time",
@@ -83,42 +85,42 @@
         },
         {
             "title": "Unavailable dates",
-            "content": "",
+            "content": "Disable specific dates from being selected. Useful for blocking out holidays, showing booked dates, or indicating unavailable time slots.",
             "examples": [
-                "<flux:date-picker unavailable=\"2025-12-15,2025-12-17\" />"
+                "<flux:date-picker unavailable=\"2025-12-16,2025-12-18\" />"
             ]
         },
         {
             "title": "With today shortcut",
-            "content": "",
+            "content": "Add a shortcut button to quickly navigate to today's date. When viewing a different month, it jumps to the current month. When already viewing the current month, it selects today's date.",
             "examples": [
                 "<flux:date-picker with-today />"
             ]
         },
         {
             "title": "Selectable header",
-            "content": "",
+            "content": "Enable quick navigation by making the month and year in the header selectable.",
             "examples": [
                 "<flux:date-picker selectable-header />"
             ]
         },
         {
             "title": "Fixed weeks",
-            "content": "",
+            "content": "Display a consistent number of weeks in every month. Prevents layout shifts when navigating between months with different numbers of weeks.",
             "examples": [
                 "<flux:date-picker fixed-weeks />"
             ]
         },
         {
             "title": "Start day",
-            "content": "",
+            "content": "By deafult the first day of the week will be automatically set based on the user's locale. You can override this by setting the start-day attribute to any day of the week.",
             "examples": [
                 "<flux:date-picker start-day=\"1\" />"
             ]
         },
         {
             "title": "Open to",
-            "content": "",
+            "content": "Set the date that the date picker will open to, if there is no selected date.",
             "examples": [
                 "<flux:date-picker open-to=\"2027-01-01\" />",
                 "<flux:date-picker open-to=\"2027-01-01\" force-open-to />"
@@ -126,14 +128,14 @@
         },
         {
             "title": "Week numbers",
-            "content": "",
+            "content": "Display the week number for each week.",
             "examples": [
                 "<flux:date-picker week-numbers />"
             ]
         },
         {
             "title": "Localization",
-            "content": "",
+            "content": "By default, the date picker will use the browser's locale (e.g. navigator.language).\nYou can override this behavior by setting the locale attribute to any valid locale string (e.g. fr for French, en-US for English, etc.):",
             "examples": [
                 "<flux:date-picker locale=\"ja-JP\" />"
             ]
@@ -187,7 +189,12 @@
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Displays a calendar interface for selecting dates\nText fields for collecting user input",
+            "examples": []
+        },
+        {
+            "title": "DateRange Object",
+            "content": "A specialized object for handling date ranges when using mode=\"range\".",
             "examples": []
         }
     ],
@@ -204,5 +211,13 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:56+00:00"
+    "components_used": [
+        "calendar",
+        "date-picker",
+        "date-picker.input"
+    ],
+    "sub_components": [
+        "date-picker.input"
+    ],
+    "scraped_at": "2025-12-17T11:52:33+00:00"
 }

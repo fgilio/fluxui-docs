@@ -8,21 +8,21 @@
     "sections": [
         {
             "title": "With descriptions",
-            "content": "",
+            "content": "Align descriptions for each radio directly below its label.",
             "examples": [
                 "<flux:radio.group label=\"Role\"> <flux:radio name=\"role\" value=\"administrator\" label=\"Administrator\" description=\"Administrator users can perform any action.\" checked /> <flux:radio name=\"role\" value=\"editor\" label=\"Editor\" description=\"Editor users have the ability to read, create, and update.\" /> <flux:radio name=\"role\" value=\"viewer\" label=\"Viewer\" description=\"Viewer users only have the ability to read. Create, and update are restricted.\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Within fieldset",
-            "content": "",
+            "content": "Group radio inputs inside a fieldset and provide more context with descriptions for each radio option.",
             "examples": [
                 "<flux:fieldset> <flux:legend>Role</flux:legend> <flux:radio.group> <flux:radio value=\"administrator\" label=\"Administrator\" description=\"Administrator users can perform any action.\" checked /> <flux:radio value=\"editor\" label=\"Editor\" description=\"Editor users have the ability to read, create, and update.\" /> <flux:radio value=\"viewer\" label=\"Viewer\" description=\"Viewer users only have the ability to read. Create, and update are restricted.\" /> </flux:radio.group></flux:fieldset>"
             ]
         },
         {
             "title": "Segmented",
-            "content": "",
+            "content": "A more compact alternative to standard radio buttons.\nYou can also use the size=\"sm\" prop to make the radios smaller.",
             "examples": [
                 "<flux:radio.group wire:model=\"role\" label=\"Role\" variant=\"segmented\"> <flux:radio label=\"Admin\" /> <flux:radio label=\"Editor\" /> <flux:radio label=\"Viewer\" /></flux:radio.group>",
                 "<flux:radio.group wire:model=\"role\" label=\"Role\" variant=\"segmented\" size=\"sm\"> <flux:radio label=\"Admin\" /> <flux:radio label=\"Editor\" /> <flux:radio label=\"Viewer\" /></flux:radio.group>"
@@ -30,14 +30,14 @@
         },
         {
             "title": "Segmented with icons",
-            "content": "",
+            "content": "Combine segmented radio buttons with icon prefixes.",
             "examples": [
                 "<flux:radio.group wire:model=\"role\" variant=\"segmented\"> <flux:radio label=\"Admin\" icon=\"wrench\" /> <flux:radio label=\"Editor\" icon=\"pencil-square\" /> <flux:radio label=\"Viewer\" icon=\"eye\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Radio cards",
-            "content": "",
+            "content": "A bordered alternative to standard radio buttons.\nYou can swap between vertical and horizontal card layouts by conditionally applying flex-col based on the viewport.",
             "examples": [
                 "<flux:radio.group wire:model=\"shipping\" label=\"Shipping\" variant=\"cards\" class=\"max-sm:flex-col\"> <flux:radio value=\"standard\" label=\"Standard\" description=\"4-10 business days\" checked /> <flux:radio value=\"fast\" label=\"Fast\" description=\"2-5 business days\" /> <flux:radio value=\"next-day\" label=\"Next day\" description=\"1 business day\" /></flux:radio.group>",
                 "<flux:radio.group ... class=\"max-sm:flex-col\"> <!-- ... --></flux:radio.group>"
@@ -45,49 +45,49 @@
         },
         {
             "title": "Vertical cards",
-            "content": "",
+            "content": "You can arrange a set of radio cards vertically by simply adding the flex-col class to the group container.",
             "examples": [
                 "<flux:radio.group label=\"Shipping\" variant=\"cards\" class=\"flex-col\"> <flux:radio value=\"standard\" label=\"Standard\" description=\"4-10 business days\" /> <flux:radio value=\"fast\" label=\"Fast\" description=\"2-5 business days\" /> <flux:radio value=\"next-day\" label=\"Next day\" description=\"1 business day\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Cards with icons",
-            "content": "",
+            "content": "You can arrange a set of radio cards vertically by simply adding the flex-col class to the group container.",
             "examples": [
                 "<flux:radio.group label=\"Shipping\" variant=\"cards\" class=\"max-sm:flex-col\"> <flux:radio value=\"standard\" icon=\"truck\" label=\"Standard\" description=\"4-10 business days\" /> <flux:radio value=\"fast\" icon=\"cube\" label=\"Fast\" description=\"2-5 business days\" /> <flux:radio value=\"next-day\" icon=\"clock\" label=\"Next day\" description=\"1 business day\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Cards without indicators",
-            "content": "",
+            "content": "For a cleaner look, you can remove the radio indicator using :indicator=\"false\".",
             "examples": [
                 "<flux:radio.group label=\"Shipping\" variant=\"cards\" :indicator=\"false\" class=\"max-sm:flex-col\"> <flux:radio value=\"standard\" icon=\"truck\" label=\"Standard\" description=\"4-10 business days\" /> <flux:radio value=\"fast\" icon=\"cube\" label=\"Fast\" description=\"2-5 business days\" /> <flux:radio value=\"next-day\" icon=\"clock\" label=\"Next day\" description=\"1 business day\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Custom card content",
-            "content": "",
+            "content": "You can compose your own custom cards through the flux:radio component slot.\n4-10 business days\n2-5 business days\n1 business day",
             "examples": [
                 "<flux:radio.group label=\"Shipping\" variant=\"cards\" class=\"max-sm:flex-col\"> <flux:radio value=\"standard\" checked> <flux:radio.indicator /> <div class=\"flex-1\"> <flux:heading class=\"leading-4\">Standard</flux:heading> <flux:text size=\"sm\" class=\"mt-2\">4-10 business days</flux:text> </div> </flux:radio> <flux:radio value=\"fast\"> <flux:radio.indicator /> <div class=\"flex-1\"> <flux:heading class=\"leading-4\">Fast</flux:heading> <flux:text size=\"sm\" class=\"mt-2\">2-5 business days</flux:text> </div> </flux:radio> <flux:radio value=\"next-day\"> <flux:radio.indicator /> <div class=\"flex-1\"> <flux:heading class=\"leading-4\">Next day</flux:heading> <flux:text size=\"sm\" class=\"mt-2\">1 business day</flux:text> </div> </flux:radio></flux:radio.group>"
             ]
         },
         {
             "title": "Pills",
-            "content": "",
+            "content": "Compact, rounded radio buttons that look like tags or badges. Perfect for filters, categories, and any time you want lightweight selectable options.",
             "examples": [
                 "<flux:radio.group wire:model=\"priority\" label=\"Priority\" variant=\"pills\"> <flux:radio value=\"low\" label=\"Low\" /> <flux:radio value=\"medium\" label=\"Medium\" /> <flux:radio value=\"high\" label=\"High\" /> <flux:radio value=\"critical\" label=\"Critical\" /></flux:radio.group>"
             ]
         },
         {
             "title": "Buttons",
-            "content": "",
+            "content": "Button-style radio options that look like a toolbar. Perfect for action selections and grouped controls where you want a more prominent visual style.",
             "examples": [
                 "<flux:radio.group variant=\"buttons\" class=\"w-full *:flex-1\" label=\"Feedback type\"> <flux:radio icon=\"bug-ant\" checked>Bug report</flux:radio> <flux:radio icon=\"light-bulb\">Suggestion</flux:radio> <flux:radio icon=\"question-mark-circle\">Question</flux:radio></flux:radio.group>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label and validation states\nToggleable input control for making multiple selections\nDropdown selection menus for choosing from options",
             "examples": []
         }
     ],
@@ -104,5 +104,18 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:06+00:00"
+    "components_used": [
+        "fieldset",
+        "heading",
+        "legend",
+        "radio",
+        "radio.group",
+        "radio.indicator",
+        "text"
+    ],
+    "sub_components": [
+        "radio.group",
+        "radio.indicator"
+    ],
+    "scraped_at": "2025-12-17T11:52:41+00:00"
 }

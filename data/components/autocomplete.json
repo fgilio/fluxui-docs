@@ -8,7 +8,7 @@
     "sections": [
         {
             "title": "Related components",
-            "content": "",
+            "content": "Text fields for collecting user input\nDisplay a dropdown menu for selecting one option from many",
             "examples": []
         }
     ],
@@ -25,5 +25,7 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:47+00:00"
+    "components_used": [],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:25+00:00"
 }

@@ -7,8 +7,13 @@
     "pro": true,
     "sections": [
         {
-            "title": "Toolbar",
+            "title": "What's changed",
             "content": "",
+            "examples": []
+        },
+        {
+            "title": "Toolbar",
+            "content": "Flux's editor toolbar is both keyboard/screen-reader accessible and completely customizable to suit your application's needs.\nThe following toolbar items are available:\nHere's an example of what a custom \"Copy to clipboard\" item in a blade file might look like:\nNow you can reference your new component by name in any toolbar configuration like so:",
             "examples": [
                 "<flux:editor toolbar=\"heading | bold italic underline | align ~ undo redo\" />",
                 "- resources - views - flux - editor - copy.blade.php",
@@ -34,31 +39,31 @@
         },
         {
             "title": "Height",
-            "content": "",
+            "content": "By default, the editor will have a minimum height of 200px, and a maximum height of 500px. If you want to customize this behavior, you can use Tailwind utilties to target the content slot and set your own min/max height and overflow behavior.\nThe [&_[data-slot=content]]: selector targets a child element with a data-slot=\"content\" attribute.\nThis is an advanced Tailwind technique used to style a nested element inline without needing direct access to it.",
             "examples": [
                 "<flux:editor class=\"**:data-[slot=content]:min-h-[100px]!\" />"
             ]
         },
         {
             "title": "Shortcut keys",
-            "content": "",
+            "content": "Flux's editor uses Tiptap's default shortcut keys which are common amongst most rich text editors.",
             "examples": []
         },
         {
             "title": "Markdown syntax",
-            "content": "",
+            "content": "Although Flux's editor isn't a markdown editor itself, it allows you to use markdown syntax to trigger styling changes while authoring your content.",
             "examples": []
         },
         {
             "title": "Localization",
-            "content": "",
+            "content": "If you need to localize the editor's aria-label or tooltip copy, you'll need to register the following translation keys in one of your app's lang files.\nHere's an example of supporting Spanish localization:",
             "examples": [
                 "// lang/es.json{ \"Rich text editor\": \"Editor de texto enriquecido\", \"Formatting\": \"Formato\", \"Text\": \"Texto\", \"Heading 1\": \"Encabezado 1\", \"Heading 2\": \"Encabezado 2\", \"Heading 3\": \"Encabezado 3\", \"Styles\": \"Estilos\", \"Bold\": \"Negrita\", \"Italic\": \"Cursiva\", \"Underline\": \"Subrayado\", \"Strikethrough\": \"Tachado\", \"Subscript\": \"Subíndice\", \"Superscript\": \"Superíndice\", \"Highlight\": \"Resaltar\", \"Code\": \"Código\", \"Bullet list\": \"Lista con viñetas\", \"Ordered list\": \"Lista numerada\", \"Blockquote\": \"Cita\", \"Insert link\": \"Insertar enlace\", \"Unlink\": \"Quitar enlace\", \"Align\": \"Alinear\", \"Left\": \"Izquierda\", \"Center\": \"Centro\", \"Right\": \"Derecha\", \"Undo\": \"Deshacer\", \"Redo\": \"Rehacer\"}"
             ]
         },
         {
             "title": "Extensions",
-            "content": "",
+            "content": "Tiptap has a wide range of extensions that can be used to add custom functionality to the editor.\nThe following extensions are already installed:",
             "examples": [
                 "<head> ... <script type=\"module\"> document.addEventListener('flux:editor', (e) => { ... }) </script></head>",
                 "...document.addEventListener('flux:editor', (e) => { ...})",
@@ -89,7 +94,12 @@
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Structured form field with label\nMulti-line text input areas for longer form content",
+            "examples": []
+        },
+        {
+            "title": "Toolbar Items",
+            "content": "Available toolbar items that can be referenced in the `toolbar` prop or used directly in a custom toolbar.",
             "examples": []
         }
     ],
@@ -106,5 +116,44 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:37:58+00:00"
+    "components_used": [
+        "dropdown",
+        "editor",
+        "editor.align",
+        "editor.blockquote",
+        "editor.bold",
+        "editor.bullet",
+        "editor.button",
+        "editor.content",
+        "editor.heading",
+        "editor.italic",
+        "editor.link",
+        "editor.ordered",
+        "editor.separator",
+        "editor.spacer",
+        "editor.strike",
+        "editor.toolbar",
+        "icon.clipboard",
+        "icon.clipboard-document-check",
+        "menu",
+        "menu.item",
+        "tooltip"
+    ],
+    "sub_components": [
+        "editor.align",
+        "editor.blockquote",
+        "editor.bold",
+        "editor.bullet",
+        "editor.button",
+        "editor.content",
+        "editor.heading",
+        "editor.italic",
+        "editor.link",
+        "editor.ordered",
+        "editor.separator",
+        "editor.spacer",
+        "editor.strike",
+        "editor.toolbar"
+    ],
+    "scraped_at": "2025-12-17T11:52:34+00:00"
 }

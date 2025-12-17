@@ -8,12 +8,12 @@
     "sections": [
         {
             "title": "Prerequisites",
-            "content": "",
+            "content": "Laravel\nVersion 10 or later\nLivewire\nVersion 3.7.0 or later\nTailwind CSS\nVersion 4.1 or later",
             "examples": []
         },
         {
             "title": "Getting started",
-            "content": "",
+            "content": "Install Flux\nInstall Flux Pro (optional)\nInclude Flux assets\nSet up Tailwind CSS\nUse the Inter font family",
             "examples": [
                 "composer require livewire/flux",
                 "php artisan flux:activate",
@@ -103,5 +103,7 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:14+00:00"
+    "components_used": [],
+    "sub_components": [],
+    "scraped_at": "2025-12-17T11:52:50+00:00"
 }

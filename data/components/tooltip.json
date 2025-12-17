@@ -8,28 +8,28 @@
     "sections": [
         {
             "title": "Info tooltip",
-            "content": "",
+            "content": "In cases where a tooltip's content is essential, you should make it toggleable. This way, users on touch devices will be able to trigger it on click/press rather than hover.\nFor US businesses, enter your 9-digit Employer Identification Number (EIN) without hyphens.\nFor European companies, enter your VAT number including the country prefix (e.g., DE123456789).",
             "examples": [
                 "<flux:heading class=\"flex items-center gap-2\"> Tax identification number <flux:tooltip toggleable> <flux:button icon=\"information-circle\" size=\"sm\" variant=\"ghost\" /> <flux:tooltip.content class=\"max-w-[20rem] space-y-2\"> <p>For US businesses, enter your 9-digit Employer Identification Number (EIN) without hyphens.</p> <p>For European companies, enter your VAT number including the country prefix (e.g., DE123456789).</p> </flux:tooltip.content> </flux:tooltip></flux:heading>"
             ]
         },
         {
             "title": "Position",
-            "content": "",
+            "content": "Position tooltips around the element for optimal visibility. Choose from top, right, bottom, or left.",
             "examples": [
                 "<flux:tooltip content=\"Settings\" position=\"top\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"right\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"bottom\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip><flux:tooltip content=\"Settings\" position=\"left\"> <flux:button icon=\"cog-6-tooth\" icon:variant=\"outline\" /></flux:tooltip>"
             ]
         },
         {
             "title": "Disabled buttons",
-            "content": "",
+            "content": "By default, tooltips on disabled buttons won't be triggered because pointer events are disabled as well. However, as a workaround, you can target a wrapping element instead of the button directly.",
             "examples": [
                 "<flux:tooltip content=\"Cannot merge until reviewed by a team member\"> <div> <flux:button disabled icon=\"arrow-turn-down-right\">Merge pull request</flux:button> </div></flux:tooltip>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Interactive elements for user actions\nVisual symbols and metaphors for UI elements",
             "examples": []
         }
     ],
@@ -46,5 +46,14 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:12+00:00"
+    "components_used": [
+        "button",
+        "heading",
+        "tooltip",
+        "tooltip.content"
+    ],
+    "sub_components": [
+        "tooltip.content"
+    ],
+    "scraped_at": "2025-12-17T11:52:48+00:00"
 }

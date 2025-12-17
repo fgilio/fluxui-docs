@@ -8,42 +8,42 @@
     "sections": [
         {
             "title": "Simple",
-            "content": "",
+            "content": "The primary table example above is a full-featured table with sorting, pagination, etc. Here's a clean example of a simple data table that you can use as a simpler starting point.",
             "examples": [
                 "<flux:table> <flux:table.columns> <flux:table.column>Customer</flux:table.column> <flux:table.column>Date</flux:table.column> <flux:table.column>Status</flux:table.column> <flux:table.column>Amount</flux:table.column> </flux:table.columns> <flux:table.rows> <flux:table.row> <flux:table.cell>Lindsey Aminoff</flux:table.cell> <flux:table.cell>Jul 29, 10:45 AM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$49.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Hanna Lubin</flux:table.cell> <flux:table.cell>Jul 28, 2:15 PM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$312.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Kianna Bushevi</flux:table.cell> <flux:table.cell>Jul 30, 4:05 PM</flux:table.cell> <flux:table.cell><flux:badge color=\"zinc\" size=\"sm\" inset=\"top bottom\">Refunded</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$132.00</flux:table.cell> </flux:table.row> <flux:table.row> <flux:table.cell>Gustavo Geidt</flux:table.cell> <flux:table.cell>Jul 27, 9:30 AM</flux:table.cell> <flux:table.cell><flux:badge color=\"green\" size=\"sm\" inset=\"top bottom\">Paid</flux:badge></flux:table.cell> <flux:table.cell variant=\"strong\">$31.00</flux:table.cell> </flux:table.row> </flux:table.rows></flux:table>"
             ]
         },
         {
             "title": "Pagination",
-            "content": "",
+            "content": "Allow users to navigate through different pages of data by passing in any model paginator to the paginate prop.",
             "examples": [
                 "<!-- $orders = \\App\\Models\\Order::paginate(5) --><flux:table :paginate=\"$orders\"> <!-- ... --></flux:table>"
             ]
         },
         {
             "title": "Sortable",
-            "content": "",
+            "content": "Allow users to sort rows by specific columns using a combination of the sortable, sorted, and direction props.",
             "examples": [
                 "<flux:table> <flux:table.columns> <flux:table.column>Customer</flux:table.column> <flux:table.column sortable sorted direction=\"desc\">Date</flux:table.column> <flux:table.column sortable>Amount</flux:table.column> </flux:table.columns> <!-- ... --></flux:table>"
             ]
         },
         {
             "title": "Sticky header",
-            "content": "",
+            "content": "Keep the header visible during vertical scrolling by adding the sticky prop to the table.columns component.\nMake sure to set a background color on the header row to prevent content overlap.",
             "examples": [
                 "<!-- Set the height of the table container... --><flux:table container:class=\"max-h-80\"> <flux:table.columns sticky class=\"bg-white dark:bg-zinc-900\"> <!-- ... --> </flux:table.columns> <!-- ... --></flux:table>"
             ]
         },
         {
             "title": "Sticky columns",
-            "content": "",
+            "content": "Keep important info visible during horizontal scrolling by adding the sticky prop to table.column and table.cell components.\nMake sure to set a background color on columns and cells to prevent content overlap.",
             "examples": [
                 "<flux:table container:class=\"max-h-80\"> <flux:table.columns sticky class=\"bg-white dark:bg-zinc-900\"> <flux:table.column sticky class=\"bg-white dark:bg-zinc-900\">ID</flux:table.column> <!-- ... --> </flux:table.columns> <flux:table.rows> @foreach ($this->orders as $order) <flux:table.row :key=\"$order->id\"> <flux:table.cell sticky class=\"bg-white dark:bg-zinc-900\">{{ $order->id }}</flux:table.cell> <!-- ... --> </flux:table.row> @endforeach </flux:table.rows></flux:table>"
             ]
         },
         {
             "title": "Related components",
-            "content": "",
+            "content": "Display user profile images or fallback initials\nDisplay small counts, status indicators, or labels\nDisplay expandable menus for row actions",
             "examples": []
         }
     ],
@@ -60,5 +60,21 @@
         "callout",
         "card"
     ],
-    "scraped_at": "2025-12-16T20:38:09+00:00"
+    "components_used": [
+        "badge",
+        "table",
+        "table.cell",
+        "table.column",
+        "table.columns",
+        "table.row",
+        "table.rows"
+    ],
+    "sub_components": [
+        "table.cell",
+        "table.column",
+        "table.columns",
+        "table.row",
+        "table.rows"
+    ],
+    "scraped_at": "2025-12-17T11:52:44+00:00"
 }
