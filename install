@@ -1,0 +1,5 @@
+#!/bin/bash
+TARGET="${1:-$HOME/.local/bin}"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ln -sf "$SCRIPT_DIR/fluxui-docs" "$TARGET/fluxui-docs"
+echo "Installed: $TARGET/fluxui-docs"
