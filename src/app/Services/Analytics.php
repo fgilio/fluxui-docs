@@ -7,39 +7,41 @@ use Illuminate\Support\Facades\Storage;
 /**
  * Local analytics for tracking command usage.
  *
- * Stores data in analytics.jsonl alongside the skill binary.
- * No remote telemetry - all data stays local.
+ * Only active when running as built binary (PHAR).
+ * Disabled during development. No remote telemetry.
  */
 class Analytics
 {
     public function track(string $command, int $exitCode, array $context, float $startTime): void
     {
-        $entry = json_encode([
-            'command' => $command,
-            'timestamp' => date('c'),
-            'success' => $exitCode === 0,
-            'exit_code' => $exitCode,
-            'duration_ms' => (int) ((microtime(true) - $startTime) * 1000),
-            'context' => $context,
-        ]);
+        // Only track when running as PHAR (built binary)
+        if (! \Phar::running()) {
+            return;
+        }
 
-        $this->disk()->append('analytics.jsonl', $entry);
+        try {
+            $entry = json_encode([
+                'command' => $command,
+                'timestamp' => date('c'),
+                'success' => $exitCode === 0,
+                'exit_code' => $exitCode,
+                'duration_ms' => (int) ((microtime(true) - $startTime) * 1000),
+                'context' => $context,
+            ], JSON_THROW_ON_ERROR);
+
+            $this->disk()->append('analytics.jsonl', $entry);
+        } catch (\Throwable) {
+            // Silently fail - analytics should never break the command
+        }
     }
 
     private function disk(): \Illuminate\Filesystem\FilesystemAdapter
     {
+        $root = realpath(dirname(\Phar::running(false))) ?: dirname(\Phar::running(false));
+
         return Storage::build([
             'driver' => 'local',
-            'root' => $this->getSkillRoot(),
+            'root' => $root,
         ]);
-    }
-
-    private function getSkillRoot(): string
-    {
-        if (\Phar::running()) {
-            return dirname(\Phar::running(false));
-        }
-
-        return dirname(__DIR__, 3);
     }
 }
