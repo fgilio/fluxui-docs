@@ -1,5 +1,9 @@
 # Flux UI CLI - Development
 
+## Built With
+
+This skill was created using [php-cli-builder](../php-cli-builder/SKILL.md).
+
 ## Setup
 
 ```bash
@@ -45,8 +49,8 @@ php fluxui-docs update --dry-run              # Preview only
 ### First-time setup (builds PHP + micro.sfx)
 
 ```bash
-phpcli-spc-setup --doctor
-phpcli-spc-build --extensions "ctype,fileinfo,filter,iconv,mbstring,mbregex,phar,tokenizer,zlib"
+php-cli-builder-spc-setup --doctor
+php-cli-builder-spc-build --extensions "ctype,fileinfo,filter,iconv,mbstring,mbregex,phar,tokenizer,zlib"
 ```
 
 > **Note:** Optimized extension set (9 vs 18). Removed: bcmath, curl, dom, openssl, pcntl, pdo, posix, session, simplexml, sockets, sodium, xml. Scraping deps (guzzle, dom-crawler) moved to require-dev and stripped during build.
