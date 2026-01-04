@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "fgilio/agent-skill-foundation": "^0.2",
         "laravel-zero/framework": "^12.0.2"
     },
     "require-dev": {

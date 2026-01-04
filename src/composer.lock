@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17bf2df674b325df6f7ffd07f244f0bc",
+    "content-hash": "a6c5f22992e2f3f06f36bcfd767d86ac",
     "packages": [
         {
             "name": "brick/math",
@@ -288,6 +288,64 @@
                 }
             ],
             "time": "2025-10-31T18:51:33+00:00"
+        },
+        {
+            "name": "fgilio/agent-skill-foundation",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgilio/agent-skill-foundation",
+                "reference": "369ebcad3f15af341c3a64e12075612151012d35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgilio/agent-skill-foundation/zipball/369ebcad3f15af341c3a64e12075612151012d35",
+                "reference": "369ebcad3f15af341c3a64e12075612151012d35",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^12.0",
+                "illuminate/support": "^12.0",
+                "php": "^8.3",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "laravel-zero/framework": "^12.0",
+                "pestphp/pest": "^3.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fgilio\\AgentSkillFoundation\\AgentSkillFoundationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fgilio\\AgentSkillFoundation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Franco Gilio"
+                }
+            ],
+            "description": "Foundation package for PHP CLI skills: routing, analytics, docs, testing",
+            "keywords": [
+                "Agent",
+                "analytics",
+                "cli",
+                "laravel-zero",
+                "routing",
+                "skills"
+            ],
+            "time": "2026-01-04T12:20:43+00:00"
         },
         {
             "name": "filp/whoops",

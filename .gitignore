@@ -5,6 +5,9 @@
 /.idea
 /.vscode
 
+# Secrets
+.env
+
 # Build artifacts in src/
 /src/vendor/
 /src/buildroot/
