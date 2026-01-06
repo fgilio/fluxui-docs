@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => App\Commands\DefaultCommand::class,
+    'default' => NunoMaduro\LaravelConsoleSummary\SummaryCommand::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -63,6 +63,7 @@ return [
         Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
         Illuminate\Foundation\Console\VendorPublishCommand::class,
         LaravelZero\Framework\Commands\StubPublishCommand::class,
+        App\Commands\BuildCommand::class,
     ],
 
     /*
