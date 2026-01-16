@@ -157,6 +157,23 @@ class BuildCommand extends Command
 
             chmod($installPath, 0755);
             $this->line("  Installed: {$installPath}");
+
+            // On macOS, trigger Gatekeeper check and guide user to approve
+            if (PHP_OS_FAMILY === 'Darwin') {
+                // Try running the binary to trigger Gatekeeper
+                exec(sprintf('%s --version 2>&1', escapeshellarg($installPath)), $testOutput, $testExit);
+
+                if ($testExit === 137) {
+                    $this->newLine();
+                    $this->warn('Binary needs Gatekeeper approval.');
+                    $this->line('  1. Run: '.$installPath);
+                    $this->line('  2. Open System Settings > Privacy & Security');
+                    $this->line('  3. Click "Allow Anyway" for '.$name);
+
+                    // Open System Settings to the right pane
+                    exec('open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles" 2>/dev/null');
+                }
+            }
         }
 
         $this->newLine();
