@@ -1,2 +1,2 @@
-*.phar filter=lfs diff=lfs merge=lfs -text
-fluxui-docs filter=lfs diff=lfs merge=lfs -text
+skill/*.phar filter=lfs diff=lfs merge=lfs -text
+skill/fluxui-docs filter=lfs diff=lfs merge=lfs -text

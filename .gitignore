@@ -26,3 +26,5 @@ analytics.jsonl
 # Keep these tracked
 !/flux
 !/data/
+skill/analytics.jsonl
+skill/*.jsonl

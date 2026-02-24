@@ -23,7 +23,10 @@ class BuildCommand extends Command
     public function handle(): int
     {
         $this->projectDir = dirname(__DIR__, 2);
-        $skillRoot = dirname($this->projectDir);
+        $skillRoot = dirname($this->projectDir).'/skill';
+        if (! is_dir($skillRoot)) {
+            mkdir($skillRoot, 0755, true);
+        }
         $microPath = $this->projectDir.'/buildroot/bin/micro.sfx';
         $name = config('app.name');
 
