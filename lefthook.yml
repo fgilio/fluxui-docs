@@ -8,5 +8,4 @@ pre-commit:
 pre-push:
   commands:
     phpstan:
-      root: "src/"
-      run: 'if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi'
+      run: 'cd src && if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi'
