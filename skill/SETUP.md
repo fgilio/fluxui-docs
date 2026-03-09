@@ -8,7 +8,7 @@
 
 Or manually:
 ```bash
-ln -sf ~/.claude/skills/fluxui-docs/fluxui-docs ~/.local/bin/fluxui-docs
+ln -sf $AGENT_HOME/skills/fluxui-docs/fluxui-docs ~/.local/bin/fluxui-docs
 ```
 
 ## Verify

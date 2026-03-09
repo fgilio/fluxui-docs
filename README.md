@@ -30,7 +30,7 @@ See [src/README.md](src/README.md) for building from source and updating documen
 Usage data is stored locally in `analytics.jsonl` (no remote telemetry). Analyze with jq:
 
 ```bash
-FILE=~/.claude/skills/fluxui-docs/analytics.jsonl
+FILE=$AGENT_HOME/skills/fluxui-docs/analytics.jsonl
 
 # Command usage counts
 cat $FILE | jq -s 'group_by(.command) | map({command: .[0].command, count: length})'

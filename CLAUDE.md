@@ -4,7 +4,7 @@ Build: `cd src && ./fluxui-docs build`
 
 Copy from another PHP CLI skill:
 ```bash
-cp -f ~/.claude/skills/OTHER-SKILL/src/spc src/
+cp -f $AGENT_HOME/skills/OTHER-SKILL/src/spc src/
 mkdir -p src/buildroot/bin
-cp -f ~/.claude/skills/OTHER-SKILL/src/buildroot/bin/micro.sfx src/buildroot/bin/
+cp -f $AGENT_HOME/skills/OTHER-SKILL/src/buildroot/bin/micro.sfx src/buildroot/bin/
 ```

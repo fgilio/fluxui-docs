@@ -34,8 +34,8 @@ class BuildCommand extends Command
             $this->error('micro.sfx not found at: '.$microPath);
             $this->line('');
             $this->line('Run these commands first:');
-            $this->line('  phpcli-spc-setup --doctor');
-            $this->line('  phpcli-spc-build --extensions "ctype,filter,mbstring,mbregex,phar,zlib"');
+            $this->line('  php-cli-skill-runtime-setup --doctor');
+            $this->line('  php-cli-skill-runtime-build --extensions "ctype,filter,mbstring,mbregex,phar,zlib"');
 
             return self::FAILURE;
         }
