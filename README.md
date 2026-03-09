@@ -19,7 +19,7 @@ Self-contained CLI for accessing Flux UI documentation offline. No PHP required.
 
 ## Install
 
-See [SETUP.md](SETUP.md) or run `./install`
+See [skill/SETUP.md](skill/SETUP.md) or run `./skill/install`
 
 ## Development
 
