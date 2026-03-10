@@ -3,11 +3,14 @@ pre-commit:
     pint:
       glob: "*.php"
       root: "src/"
-      run: 'if command -v herd &>/dev/null; then herd php ./vendor/bin/pint {staged_files}; else ./vendor/bin/pint {staged_files}; fi && git add {staged_files}'
+      stage_fixed: true
+      run: 'if command -v herd &>/dev/null; then herd php ./vendor/bin/pint {staged_files}; else ./vendor/bin/pint {staged_files}; fi'
 
 pre-push:
+  parallel: true
   commands:
     phpstan:
-      run: 'cd src && if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi'
+      root: "src/"
+      run: 'if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi'
     php-cli-skill-validate:
       run: 'php-cli-skill-validate fluxui-docs'
