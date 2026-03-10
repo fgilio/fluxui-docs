@@ -65,7 +65,6 @@ return [
         Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
         Illuminate\Foundation\Console\VendorPublishCommand::class,
         LaravelZero\Framework\Commands\StubPublishCommand::class,
-        Fgilio\AgentSkillFoundation\Console\BuildCommand::class,
     ],
 
     /*

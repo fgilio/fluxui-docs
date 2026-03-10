@@ -57,6 +57,7 @@ return [
 
     'providers' => [
         App\Providers\AppServiceProvider::class,
+        Fgilio\AgentSkillFoundation\AgentSkillFoundationServiceProvider::class,
     ],
 
 ];
