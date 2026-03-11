@@ -13,6 +13,22 @@ pre-commit:
       stage_fixed: true
       run: 'if command -v herd &>/dev/null; then herd php ./vendor/bin/pint {staged_files}; else ./vendor/bin/pint {staged_files}; fi'
 
+    agents-symlinks:
+      run: |
+        status=0
+        for claude in $(find . -name CLAUDE.md -not -path './.git/*' -not -path '*/vendor/*'); do
+          dir=$(dirname "$claude")
+          agents="$dir/AGENTS.md"
+          if [ ! -L "$agents" ]; then
+            echo "Missing AGENTS.md symlink for $claude"
+            status=1
+          elif [ "$(readlink "$agents")" != "CLAUDE.md" ]; then
+            echo "AGENTS.md in $dir is not a symlink to CLAUDE.md"
+            status=1
+          fi
+        done
+        exit $status
+
 pre-push:
   parallel: true
   commands:
