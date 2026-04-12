@@ -44,7 +44,9 @@
                 "symfony/service-contracts/Test",
                 "symfony/translation/Test",
                 "symfony/translation-contracts/Test",
-                "symfony/var-dumper/Test"
+                "symfony/var-dumper/Test",
+                "nunomaduro/pao",
+                "shipfastlabs/agent-detector"
             ],
             "notName": [
                 "*.exe",
