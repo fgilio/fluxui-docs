@@ -7,6 +7,7 @@
 ```
 
 Or manually:
+
 ```bash
 ln -sf $AGENT_HOME/skills/fluxui-docs/fluxui-docs ~/.local/bin/fluxui-docs
 ```

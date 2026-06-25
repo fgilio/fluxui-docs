@@ -7,11 +7,16 @@ output:
 
 pre-commit:
   commands:
+    format:
+      glob: "*.{md,mdx,yml,yaml}"
+      run: npx --yes prettier@3 --write {staged_files}
+      stage_fixed: true
+
     pint:
       glob: "*.php"
       root: "src/"
       stage_fixed: true
-      run: 'if command -v herd &>/dev/null; then herd php ./vendor/bin/pint {staged_files}; else ./vendor/bin/pint {staged_files}; fi'
+      run: "if command -v herd &>/dev/null; then herd php ./vendor/bin/pint {staged_files}; else ./vendor/bin/pint {staged_files}; fi"
 
     agents-symlinks:
       run: |
@@ -34,6 +39,6 @@ pre-push:
   commands:
     phpstan:
       root: "src/"
-      run: 'if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi'
+      run: "if command -v herd &>/dev/null; then herd php vendor/bin/phpstan analyse --memory-limit=512M; else composer test:types; fi"
     php-cli-skill-validate:
-      run: 'php-cli-skill-validate fluxui-docs'
+      run: "php-cli-skill-validate fluxui-docs"

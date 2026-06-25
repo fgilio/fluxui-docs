@@ -9,6 +9,7 @@ Local usage tracking for development insights. No telemetry.
 ## Format
 
 JSONL with one entry per command:
+
 ```json
 {"command":"show","timestamp":"...","success":true,"exit_code":0,"duration_ms":25,"context":{...}}
 ```

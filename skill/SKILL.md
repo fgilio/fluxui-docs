@@ -15,18 +15,17 @@ Offline Flux UI documentation with JSON output for Claude Code integration.
 
 ## Execution
 
-`fluxui-docs` is a self-contained binary available on PATH.
-Run it directly - never prefix with `bun`, `node`, `php`, or any runtime.
+`fluxui-docs` is a self-contained binary available on PATH. Run it directly - never prefix with `bun`, `node`, `php`, or any runtime.
 
 ## Quick Reference
 
-| Command | Purpose |
-|---------|---------|
-| `fluxui-docs docs` | List all components, layouts, guides |
-| `fluxui-docs search <query>` | Fuzzy search documentation |
-| `fluxui-docs show <name>` | Display full documentation |
-| `fluxui-docs usages <component>` | Find where a component is used |
-| `fluxui-docs discover` | List undocumented components |
+| Command                          | Purpose                              |
+| -------------------------------- | ------------------------------------ |
+| `fluxui-docs docs`               | List all components, layouts, guides |
+| `fluxui-docs search <query>`     | Fuzzy search documentation           |
+| `fluxui-docs show <name>`        | Display full documentation           |
+| `fluxui-docs usages <component>` | Find where a component is used       |
+| `fluxui-docs discover`           | List undocumented components         |
 
 ## Commands
 
@@ -71,6 +70,7 @@ fluxui-docs usages button --json          # JSON output
 ```
 
 Example output:
+
 ```
 flux:subheading is used in:
 
@@ -91,6 +91,7 @@ fluxui-docs discover --json               # JSON output
 ```
 
 Example output:
+
 ```
 Sub-components (documented via parent):
 
@@ -131,6 +132,7 @@ fluxui-docs docs --category=components
 ## Data Location
 
 Documentation is stored in `data/` directory (versioned in git):
+
 - `data/components/` - Component JSON files
 - `data/layouts/` - Layout JSON files
 - `data/guides/` - Guide JSON files

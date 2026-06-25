@@ -1,0 +1,4 @@
+node_modules
+vendor
+src/vendor
+.claude/plans

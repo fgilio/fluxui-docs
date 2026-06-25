@@ -16,7 +16,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.5'
+          php-version: "8.5"
           extensions: mbstring, xml
           coverage: none
 
@@ -37,7 +37,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.5'
+          php-version: "8.5"
 
       - name: Install dependencies
         working-directory: src
@@ -50,3 +50,14 @@ jobs:
       - name: Run static analysis
         working-directory: src
         run: composer test:types
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      # Prettier gate for authored Markdown and YAML only. The bundled JSON doc
+      # corpus and src/vendor are excluded on purpose (see .prettierignore).
+      - run: npx --yes prettier@3 --check "**/*.{md,mdx,yml,yaml}"
