@@ -1,0 +1,129 @@
+{
+    "name": "timeline",
+    "title": "Timeline",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/timeline",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Large",
+            "content": "Use the size=\"lg\" prop to make timeline indicators larger. This works well for numbered steps or when you want the indicators to be more prominent.\nComplete the form and provide all necessary assets.\nVerify your data and approve the final draft for accuracy.\nFinalize your settings and push your content live.",
+            "examples": [
+                "<flux:timeline size=\"lg\"> <flux:timeline.item> <flux:timeline.indicator>1</flux:timeline.indicator> <flux:timeline.content> <flux:heading>Submit</flux:heading> <flux:text>Complete the form and provide all necessary assets.</flux:text> </flux:timeline.content> </flux:timeline.item> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Horizontal",
+            "content": "Use the horizontal prop to render the timeline horizontally instead of vertically.",
+            "examples": [
+                "<flux:timeline horizontal> <flux:timeline.item> <flux:timeline.indicator> <flux:icon.credit-card variant=\"micro\" /> </flux:timeline.indicator> <flux:timeline.content> <flux:heading>Order confirmed</flux:heading> </flux:timeline.content> </flux:timeline.item> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Status",
+            "content": "Use the status prop on timeline items to visually indicate progress. Items can be complete, current, or incomplete. Status controls both the indicator styling and the connector lines between items.",
+            "examples": [
+                "<flux:timeline horizontal> <flux:timeline.item status=\"complete\"> <flux:timeline.indicator> <flux:icon.credit-card variant=\"micro\" /> </flux:timeline.indicator> <flux:timeline.content> <flux:heading>Order confirmed</flux:heading> </flux:timeline.content> </flux:timeline.item> <flux:timeline.item status=\"current\"> <flux:timeline.indicator> <flux:icon.truck variant=\"micro\" /> </flux:timeline.indicator> <flux:timeline.content> <flux:heading>On its way</flux:heading> </flux:timeline.content> </flux:timeline.item> <flux:timeline.item status=\"incomplete\"> <flux:timeline.indicator> <flux:icon.home variant=\"micro\" /> </flux:timeline.indicator> <flux:timeline.content> <flux:heading>Delivered</flux:heading> </flux:timeline.content> </flux:timeline.item></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Indicator color",
+            "content": "Use the color prop on flux:timeline.indicator to set a colored background. Supports all standard Flux colors.",
+            "examples": [
+                "<flux:timeline.indicator color=\"red\"> <flux:icon.x-mark variant=\"micro\" /></flux:timeline.indicator><flux:timeline.indicator color=\"amber\"> <flux:icon.exclamation-triangle variant=\"micro\" /></flux:timeline.indicator><flux:timeline.indicator color=\"green\"> <flux:icon.check variant=\"micro\" /></flux:timeline.indicator>"
+            ]
+        },
+        {
+            "title": "Bare indicator",
+            "content": "Use variant=\"bare\" on an indicator to strip its default sizing and background, allowing you to use larger standalone icons as indicators.",
+            "examples": [
+                "<flux:timeline> <flux:timeline.item> <flux:timeline.indicator variant=\"bare\"> <flux:icon.document-text class=\"size-6 text-zinc-400\" /> </flux:timeline.indicator> <flux:timeline.content> <flux:heading>Draft created</flux:heading> </flux:timeline.content> </flux:timeline.item> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Block item",
+            "content": "Use the flux:timeline.block component to display a single block element as a timeline item.\nreplied to your message · 4 days ago",
+            "examples": [
+                "<flux:timeline> <!-- ... --> <flux:timeline.item> <flux:timeline.block> <flux:callout variant=\"secondary\"> <flux:callout.heading>james_rob<flux:text>replied to your message · 4 days ago</flux:text></flux:callout.heading> <x-slot name=\"actions\"> <flux:button>View message -></flux:button> <flux:button variant=\"ghost\">Reply</flux:button> </x-slot> </flux:callout> </flux:timeline.block> </flux:timeline.item> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Block subgrid",
+            "content": "When using flux:timeline.block, you can nest flux:timeline.subgrid components to maintain the timeline's column structure within the block.\nThis ensures content within the block stays properly aligned with the timeline's indicator column and content column, rather than spanning the full width. Perfect for comment threads, nested content, or multi-part block items.\nContrast slider goes a bit wild at the top end...",
+            "examples": [
+                "<flux:timeline> <!-- ... --> <flux:timeline.item> <flux:timeline.block class=\"bg-zinc-50 dark:bg-zinc-800 border dark:border-zinc-700 rounded-xl overflow-hidden\"> <flux:timeline.subgrid class=\"p-3 bg-zinc-50 dark:bg-zinc-800\"> <flux:avatar size=\"xs\" circle src=\"https://github.com/joshhanley.png\" /> <div class=\"space-y-1\"> <flux:heading>james_rob <flux:text class=\"font-medium\" inline>commented · 4 days ago</flux:text></flux:heading> <flux:text class=\"text-zinc-800 dark:text-white\">Contrast slider goes a bit wild at the top end...</flux:text> <div class=\"mt-2\"> <div class=\"size-6 rounded-full border border-zinc-200 dark:border-zinc-600 hover:bg-white dark:hover:bg-zinc-700 text-zinc-300 dark:text-zinc-500 hover:text-zinc-400 dark:hover:text-zinc-300 shadow-xs grid place-items-center\"> <flux:icon.face-smile variant=\"micro\" /> </div> </div> </div> </flux:timeline.subgrid> <div class=\"border-t border-zinc-200 dark:border-zinc-700\"></div> <flux:timeline.subgrid class=\"p-3 bg-white dark:bg-zinc-900\"> <flux:avatar size=\"xs\" circle src=\"https://github.com/calebporzio.png\" /> <div> <flux:composer variant=\"input\" placeholder=\"Leave a reply...\" label=\"Prompt\" label:sr-only description=\"Enter your prompt here\" description:sr-only> <x-slot name=\"actionsLeading\"> <flux:button size=\"sm\" variant=\"subtle\" icon=\"paper-clip\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"slash\" /> <flux:button size=\"sm\" variant=\"subtle\" icon=\"adjustments-horizontal\" /> </x-slot> <x-slot name=\"actionsTrailing\"> <flux:button size=\"sm\" variant=\"filled\" icon=\"microphone\" /> <flux:button type=\"submit\" size=\"sm\" variant=\"primary\" icon=\"paper-airplane\" /> </x-slot> </flux:composer> </div> </flux:timeline.subgrid> </flux:timeline.block> </flux:timeline.item> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Alignment",
+            "content": "Use the align prop to align the timeline items.\nAlignment can be applied to the entire timeline or to individual items.\nAlign indicator and content to the top/start\nAlign indicator and content to the baseline of the first line of text\nAlign indicator and content to the center\nAlign indicator and content to the bottom/end",
+            "examples": [
+                "<flux:timeline align=\"start|baseline|center|end\"> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Baseline adjustment",
+            "content": "When using align=\"baseline\" with large text sizes, you may need to adjust the baseline reference point to achieve proper alignment.\nTarget the [data-flux-timeline-baseline] attribute to set a custom font size that matches your content, ensuring the indicator aligns correctly with the first line of text.\nThe indicator may not align perfectly with large text\nThe indicator aligns precisely with the heading baseline",
+            "examples": [
+                "<flux:timeline.item class=\"[&_[data-flux-timeline-baseline]]:text-2xl\" align=\"baseline\"> <flux:timeline.indicator>2</flux:timeline.indicator> <flux:timeline.content> <flux:heading size=\"xl\">With baseline adjustment</flux:heading> </flux:timeline.content></flux:timeline.item>"
+            ]
+        },
+        {
+            "title": "Spacing",
+            "content": "The --flux-timeline-item-gap CSS variable controls the space between each timeline item, while --flux-timeline-content-gap sets the spacing between the indicator and the content within an item.\nBoth of these variables affect timelines rendered in either vertical or horizontal layouts, allowing you to easily adjust spacing for any orientation.",
+            "examples": [
+                "<flux:timeline class=\"[--flux-timeline-item-gap:3rem] [--flux-timeline-content-gap:1rem]\"> <!-- ... --></flux:timeline>"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "Display progress toward a goal or completion\nOrganize content into switchable panels",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "components_used": [
+        "avatar",
+        "button",
+        "callout",
+        "callout.heading",
+        "composer",
+        "heading",
+        "icon.check",
+        "icon.credit-card",
+        "icon.document-text",
+        "icon.exclamation-triangle",
+        "icon.face-smile",
+        "icon.home",
+        "icon.truck",
+        "icon.x-mark",
+        "text",
+        "timeline",
+        "timeline.block",
+        "timeline.content",
+        "timeline.indicator",
+        "timeline.item",
+        "timeline.subgrid"
+    ],
+    "sub_components": [
+        "timeline.block",
+        "timeline.content",
+        "timeline.indicator",
+        "timeline.item",
+        "timeline.subgrid"
+    ],
+    "scraped_at": "2026-07-22T16:18:35+00:00"
+}

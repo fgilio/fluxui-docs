@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "updated_at": "2026-02-11T03:25:30+00:00",
+    "updated_at": "2026-07-22T16:18:48+00:00",
     "usages": {
         "accordion": [
             {
@@ -107,6 +107,13 @@
                     "Hover trigger",
                     "Examples",
                     "Event details"
+                ]
+            },
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block subgrid"
                 ]
             }
         ],
@@ -418,6 +425,14 @@
                 ]
             },
             {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block item",
+                    "Block subgrid"
+                ]
+            },
+            {
                 "page": "tooltip",
                 "category": "components",
                 "sections": [
@@ -535,6 +550,13 @@
                     "Upgrade offer",
                     "Engagement prompt"
                 ]
+            },
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block item"
+                ]
             }
         ],
         "callout.heading": [
@@ -552,6 +574,13 @@
                     "Premium upsell",
                     "Upgrade offer",
                     "Engagement prompt"
+                ]
+            },
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block item"
                 ]
             }
         ],
@@ -612,6 +641,39 @@
                 "category": "components",
                 "sections": [
                     "Chart"
+                ]
+            }
+        ],
+        "carousel": [
+            {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "Indicators",
+                    "Autoplay",
+                    "External controls",
+                    "Arrow position",
+                    "Fade",
+                    "Page advance"
+                ]
+            }
+        ],
+        "carousel.controls": [
+            {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "External controls"
+                ]
+            }
+        ],
+        "carousel.slide": [
+            {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "Indicators",
+                    "External controls"
                 ]
             }
         ],
@@ -895,6 +957,51 @@
                 ]
             }
         ],
+        "color-picker": [
+            {
+                "page": "color-picker",
+                "category": "components",
+                "sections": [
+                    "Format",
+                    "Sizes",
+                    "Button trigger",
+                    "Custom swatches",
+                    "No swatches",
+                    "Custom layout",
+                    "Dropper",
+                    "Clearable",
+                    "Copyable",
+                    "Disabled"
+                ]
+            }
+        ],
+        "color-picker.area": [
+            {
+                "page": "color-picker",
+                "category": "components",
+                "sections": [
+                    "Custom layout"
+                ]
+            }
+        ],
+        "color-picker.input": [
+            {
+                "page": "color-picker",
+                "category": "components",
+                "sections": [
+                    "Custom layout"
+                ]
+            }
+        ],
+        "color-picker.slider": [
+            {
+                "page": "color-picker",
+                "category": "components",
+                "sections": [
+                    "Custom layout"
+                ]
+            }
+        ],
         "command": [
             {
                 "page": "command",
@@ -968,6 +1075,13 @@
                     "Disabled",
                     "Invalid"
                 ]
+            },
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block subgrid"
+                ]
             }
         ],
         "context": [
@@ -1009,7 +1123,6 @@
                 "page": "date-picker",
                 "category": "components",
                 "sections": [
-                    "Input trigger",
                     "Range with inputs"
                 ]
             }
@@ -1027,6 +1140,13 @@
                 "category": "components",
                 "sections": [
                     "With trailing description"
+                ]
+            },
+            {
+                "page": "progress",
+                "category": "components",
+                "sections": [
+                    "With label"
                 ]
             },
             {
@@ -1356,6 +1476,14 @@
                 ]
             },
             {
+                "page": "progress",
+                "category": "components",
+                "sections": [
+                    "With label",
+                    "Display value"
+                ]
+            },
+            {
                 "page": "slider",
                 "category": "components",
                 "sections": [
@@ -1553,6 +1681,13 @@
                 ]
             },
             {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "External controls"
+                ]
+            },
+            {
                 "page": "checkbox",
                 "category": "components",
                 "sections": [
@@ -1639,6 +1774,18 @@
                 ]
             },
             {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Horizontal",
+                    "Status",
+                    "Bare indicator",
+                    "Block subgrid",
+                    "Baseline adjustment"
+                ]
+            },
+            {
                 "page": "tooltip",
                 "category": "components",
                 "sections": [
@@ -1689,6 +1836,13 @@
                 "category": "components",
                 "sections": [
                     "Small card"
+                ]
+            },
+            {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "External controls"
                 ]
             },
             {
@@ -1776,6 +1930,15 @@
                 ]
             }
         ],
+        "icon.check": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Indicator color"
+                ]
+            }
+        ],
         "icon.clipboard": [
             {
                 "page": "editor",
@@ -1822,6 +1985,16 @@
                 ]
             }
         ],
+        "icon.credit-card": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Horizontal",
+                    "Status"
+                ]
+            }
+        ],
         "icon.crown": [
             {
                 "page": "icon",
@@ -1831,12 +2004,39 @@
                 ]
             }
         ],
+        "icon.document-text": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Bare indicator"
+                ]
+            }
+        ],
+        "icon.exclamation-triangle": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Indicator color"
+                ]
+            }
+        ],
         "icon.eye": [
             {
                 "page": "select",
                 "category": "components",
                 "sections": [
                     "Custom select"
+                ]
+            }
+        ],
+        "icon.face-smile": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block subgrid"
                 ]
             }
         ],
@@ -1855,6 +2055,15 @@
                 "category": "components",
                 "sections": [
                     "Lucide icons"
+                ]
+            }
+        ],
+        "icon.home": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Status"
                 ]
             }
         ],
@@ -1914,6 +2123,15 @@
                 ]
             }
         ],
+        "icon.truck": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Status"
+                ]
+            }
+        ],
         "icon.user": [
             {
                 "page": "select",
@@ -1939,6 +2157,15 @@
                 "category": "components",
                 "sections": [
                     "Custom icons"
+                ]
+            }
+        ],
+        "icon.x-mark": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Indicator color"
                 ]
             }
         ],
@@ -2155,6 +2382,14 @@
                 ]
             },
             {
+                "page": "progress",
+                "category": "components",
+                "sections": [
+                    "With label",
+                    "Display value"
+                ]
+            },
+            {
                 "page": "slider",
                 "category": "components",
                 "sections": [
@@ -2217,6 +2452,13 @@
                 "sections": [
                     "Examples",
                     "User popover"
+                ]
+            },
+            {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "External controls"
                 ]
             },
             {
@@ -2550,6 +2792,7 @@
                     "Close events",
                     "Cancel events",
                     "Disable click outside",
+                    "Scrolling long content",
                     "Confirmation",
                     "Flyout",
                     "Flyout positioning",
@@ -2943,7 +3186,8 @@
                 "category": "components",
                 "sections": [
                     "Simple paginator",
-                    "Large result set"
+                    "Large result set",
+                    "Scroll to top"
                 ]
             }
         ],
@@ -3081,6 +3325,20 @@
                 "sections": [
                     "Secondary header",
                     "Collapsible sidebar"
+                ]
+            }
+        ],
+        "progress": [
+            {
+                "page": "progress",
+                "category": "components",
+                "sections": [
+                    "Max",
+                    "Color",
+                    "Height",
+                    "With label",
+                    "Display value",
+                    "Controlled"
                 ]
             }
         ],
@@ -3346,6 +3604,13 @@
                 ]
             },
             {
+                "page": "color-picker",
+                "category": "components",
+                "sections": [
+                    "Custom layout"
+                ]
+            },
+            {
                 "page": "popover",
                 "category": "components",
                 "sections": [
@@ -3600,6 +3865,13 @@
         ],
         "slider": [
             {
+                "page": "progress",
+                "category": "components",
+                "sections": [
+                    "Controlled"
+                ]
+            },
+            {
                 "page": "slider",
                 "category": "components",
                 "sections": [
@@ -3804,6 +4076,7 @@
                 "sections": [
                     "Simple",
                     "Pagination",
+                    "Scroll to top",
                     "Sortable",
                     "Sticky header",
                     "Sticky columns"
@@ -3993,6 +4266,13 @@
                 ]
             },
             {
+                "page": "carousel",
+                "category": "components",
+                "sections": [
+                    "External controls"
+                ]
+            },
+            {
                 "page": "checkbox",
                 "category": "components",
                 "sections": [
@@ -4080,6 +4360,15 @@
                 ]
             },
             {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Block item",
+                    "Block subgrid"
+                ]
+            },
+            {
                 "page": "header",
                 "category": "layouts",
                 "sections": [
@@ -4150,6 +4439,85 @@
                     "Unavailable times",
                     "Open to",
                     "Localization"
+                ]
+            }
+        ],
+        "timeline": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Horizontal",
+                    "Status",
+                    "Indicator color",
+                    "Bare indicator",
+                    "Block item",
+                    "Block subgrid",
+                    "Alignment",
+                    "Baseline adjustment",
+                    "Spacing"
+                ]
+            }
+        ],
+        "timeline.block": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block item",
+                    "Block subgrid"
+                ]
+            }
+        ],
+        "timeline.content": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Horizontal",
+                    "Status",
+                    "Bare indicator",
+                    "Baseline adjustment"
+                ]
+            }
+        ],
+        "timeline.indicator": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Horizontal",
+                    "Status",
+                    "Indicator color",
+                    "Bare indicator",
+                    "Baseline adjustment"
+                ]
+            }
+        ],
+        "timeline.item": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Large",
+                    "Horizontal",
+                    "Status",
+                    "Bare indicator",
+                    "Block item",
+                    "Block subgrid",
+                    "Baseline adjustment"
+                ]
+            }
+        ],
+        "timeline.subgrid": [
+            {
+                "page": "timeline",
+                "category": "components",
+                "sections": [
+                    "Block subgrid"
                 ]
             }
         ],

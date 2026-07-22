@@ -21,6 +21,14 @@
             ]
         },
         {
+            "title": "Scroll to top",
+            "content": "",
+            "examples": [
+                "<flux:pagination :paginator=\"$orders\" scroll-to />",
+                "<flux:pagination :paginator=\"$orders\" scroll-to=\"#table\" />"
+            ]
+        },
+        {
             "title": "Related components",
             "content": "Display tabular data",
             "examples": []
@@ -43,5 +51,5 @@
         "pagination"
     ],
     "sub_components": [],
-    "scraped_at": "2026-02-11T03:25:05+00:00"
+    "scraped_at": "2026-07-22T16:18:15+00:00"
 }

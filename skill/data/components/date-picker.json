@@ -10,7 +10,7 @@
             "title": "Basic usage",
             "content": "",
             "examples": [
-                "<flux:date-picker value=\"2026-02-11\" />",
+                "<flux:date-picker value=\"2026-07-22\" />",
                 "<flux:date-picker wire:model=\"date\" />",
                 "<?phpuse Illuminate\\Support\\Carbon;use Livewire\\Component;use App\\Models\\Post;class CreatePost extends Component { public ?Carbon $date; public function save() { Post::create([ // ... 'published_at' => $this->date, ]) // ... }}"
             ]
@@ -19,7 +19,7 @@
             "title": "Input trigger",
             "content": "Attach the date picker to a date input for more precise date selection control.",
             "examples": [
-                "<flux:date-picker wire:model=\"date\"> <x-slot name=\"trigger\"> <flux:date-picker.input /> </x-slot></flux:date-picker>"
+                "<flux:date-picker type=\"input\" />"
             ]
         },
         {
@@ -27,7 +27,7 @@
             "content": "Enable selection of date ranges for reporting, booking systems, or any scenario requiring a start and end date.",
             "examples": [
                 "<flux:date-picker mode=\"range\" />",
-                "<flux:date-picker mode=\"range\" value=\"2026-02-02/2026-02-06\" />",
+                "<flux:date-picker mode=\"range\" value=\"2026-07-02/2026-07-06\" />",
                 "<flux:date-picker mode=\"range\" wire:model=\"range\" />",
                 "<?phpuse Illuminate\\Support\\Carbon;use Livewire\\Component;class Dashboard extends Component { public array $range; public function mount() { $this->range = [ 'start' => now()->subMonth()->format('Y-m-d'), 'end' => now()->format('Y-m-d'), ]; }}",
                 "<?phpuse Livewire\\Component;use Flux\\DateRange;class Dashboard extends Component { public DateRange $range; public function mount() { $this->range = new DateRange(now()->subMonth(), now()); }}"
@@ -45,7 +45,7 @@
             "title": "Range with inputs",
             "content": "Use separate inputs for start and end dates to provide a clearer interface for date range selection.",
             "examples": [
-                "<flux:date-picker mode=\"range\"> <x-slot name=\"trigger\"> <div class=\"flex flex-col sm:flex-row gap-6 sm:gap-4\"> <flux:date-picker.input label=\"Start\" /> <flux:date-picker.input label=\"End\" /> </div> </x-slot></flux:date-picker>"
+                "<flux:date-picker mode=\"range\"> <x-slot name=\"trigger\"> <div class=\"flex flex-col sm:flex-row gap-6 sm:gap-4\"> <flux:date-picker.input variant=\"custom\" label=\"Start\" /> <flux:date-picker.input variant=\"custom\" label=\"End\" /> </div> </x-slot></flux:date-picker>"
             ]
         },
         {
@@ -87,7 +87,7 @@
             "title": "Unavailable dates",
             "content": "Disable specific dates from being selected. Useful for blocking out holidays, showing booked dates, or indicating unavailable time slots.",
             "examples": [
-                "<flux:date-picker unavailable=\"2026-02-10,2026-02-12\" />"
+                "<flux:date-picker unavailable=\"2026-07-21,2026-07-23\" />"
             ]
         },
         {
@@ -113,7 +113,7 @@
         },
         {
             "title": "Start day",
-            "content": "By deafult the first day of the week will be automatically set based on the user's locale. You can override this by setting the start-day attribute to any day of the week.",
+            "content": "By default the first day of the week will be automatically set based on the user's locale. You can override this by setting the start-day attribute to any day of the week.",
             "examples": [
                 "<flux:date-picker start-day=\"1\" />"
             ]
@@ -122,8 +122,8 @@
             "title": "Open to",
             "content": "Set the date that the date picker will open to, if there is no selected date.",
             "examples": [
-                "<flux:date-picker open-to=\"2027-03-01\" />",
-                "<flux:date-picker open-to=\"2027-03-01\" force-open-to />"
+                "<flux:date-picker open-to=\"2027-08-01\" />",
+                "<flux:date-picker open-to=\"2027-08-01\" force-open-to />"
             ]
         },
         {
@@ -219,5 +219,5 @@
     "sub_components": [
         "date-picker.input"
     ],
-    "scraped_at": "2026-02-11T03:24:54+00:00"
+    "scraped_at": "2026-07-22T16:18:00+00:00"
 }

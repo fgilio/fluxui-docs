@@ -1,0 +1,106 @@
+{
+    "name": "color-picker",
+    "title": "Color picker",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/color-picker",
+    "pro": true,
+    "sections": [
+        {
+            "title": "Format",
+            "content": "Pick the output format using the format prop. Supported values: hex (default), hexa (hex with alpha), rgb, rgba (RGB with alpha), hsl, hsla (HSL with alpha). Alpha-aware formats automatically render an alpha slider in the popover.",
+            "examples": [
+                "<flux:color-picker format=\"hex\" /><flux:color-picker format=\"hexa\" /><flux:color-picker format=\"rgb\" /><flux:color-picker format=\"rgba\" /><flux:color-picker format=\"hsl\" /><flux:color-picker format=\"hsla\" />"
+            ]
+        },
+        {
+            "title": "Sizes",
+            "content": "The color picker supports three sizes that match other form components.",
+            "examples": [
+                "<flux:color-picker /><flux:color-picker size=\"sm\" /><flux:color-picker size=\"xs\" />"
+            ]
+        },
+        {
+            "title": "Button trigger",
+            "content": "Use type=\"button\" for a simpler trigger that displays the selected color and opens the popover on click. Useful for compact toolbars or swatches-only pickers where typing isn't needed.",
+            "examples": [
+                "<flux:color-picker type=\"button\" />"
+            ]
+        },
+        {
+            "title": "Custom swatches",
+            "content": "Replace the default 24-color Tailwind palette with your own brand colors. Pass an array of hex strings to the :swatches prop. You can also pass [value, label] pairs for accessible swatch labels.",
+            "examples": [
+                "<flux:color-picker :swatches=\"['#ef4444', '#22c55e', '#3b82f6', '#f59e0b', '#a855f7']\" /><!-- With [value, label] pairs for accessible swatch labels --><flux:color-picker :swatches=\"[['#ef4444', 'Red'], ['#22c55e', 'Green'], ['#3b82f6', 'Blue']]\" />"
+            ]
+        },
+        {
+            "title": "No swatches",
+            "content": "Pass :swatches=\"false\" to hide the default swatch grid entirely. The popover will only show the SV area, hue slider, and hex input.",
+            "examples": [
+                "<flux:color-picker :swatches=\"false\" />"
+            ]
+        },
+        {
+            "title": "Custom layout",
+            "content": "Compose flux:color-picker.area, flux:color-picker.slider, flux:color-picker.input, and flux:color-picker.swatches in any order to build a fully custom popover layout.",
+            "examples": [
+                "<flux:color-picker> <div class=\"flex flex-col gap-3\"> <flux:color-picker.input placeholder=\"#000000\" /> <flux:separator /> <flux:color-picker.area /> <flux:color-picker.slider channel=\"hue\" /> </div></flux:color-picker>"
+            ]
+        },
+        {
+            "title": "Dropper",
+            "content": "Add the dropper prop to render a button that lets users pick a color from anywhere on the screen. Uses the browser's EyeDropper API — automatically disabled in unsupported browsers.",
+            "examples": [
+                "<flux:color-picker dropper />"
+            ]
+        },
+        {
+            "title": "Clearable",
+            "content": "Add the clearable prop to render a clear (X) button on the trigger when a value is set.",
+            "examples": [
+                "<flux:color-picker clearable />"
+            ]
+        },
+        {
+            "title": "Copyable",
+            "content": "Add the copyable prop to render a clipboard-copy button on the trigger. One click copies the color value in the configured format. Only available with the default input trigger.",
+            "examples": [
+                "<flux:color-picker copyable />"
+            ]
+        },
+        {
+            "title": "Disabled",
+            "content": "Prevent interaction and visually dim the trigger.",
+            "examples": [
+                "<flux:color-picker disabled />"
+            ]
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "components_used": [
+        "color-picker",
+        "color-picker.area",
+        "color-picker.input",
+        "color-picker.slider",
+        "separator"
+    ],
+    "sub_components": [
+        "color-picker.area",
+        "color-picker.input",
+        "color-picker.slider"
+    ],
+    "scraped_at": "2026-07-22T16:17:56+00:00"
+}

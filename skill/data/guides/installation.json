@@ -8,7 +8,7 @@
     "sections": [
         {
             "title": "Prerequisites",
-            "content": "Laravel\nVersion 10 or later\nLivewire\nVersion 3.7.0 or later\nTailwind CSS\nVersion 4.1 or later",
+            "content": "Laravel\nVersion 10 or later\nLivewire\nVersion 3.7.0 or later\nTailwind CSS\nVersion 4.2 or later",
             "examples": []
         },
         {
@@ -17,7 +17,7 @@
             "examples": [
                 "composer require livewire/flux",
                 "php artisan flux:activate",
-                "<head> ... @fluxAppearance</head><body> ... @fluxScripts</body>",
+                "<head> ... @fluxAppearance</head><body> ... @livewireScripts @fluxScripts</body>",
                 "@import 'tailwindcss';@import '../../vendor/livewire/flux/dist/flux.css';@custom-variant dark (&:where(.dark, .dark *));",
                 "<head> ... <link rel=\"preconnect\" href=\"https://fonts.bunny.net\"> <link href=\"https://fonts.bunny.net/css?family=inter:400,500,600&display=swap\" rel=\"stylesheet\" /></head>",
                 "@import 'tailwindcss';@import '../../vendor/livewire/flux/dist/flux.css';...@theme { --font-sans: Inter, sans-serif;}"
@@ -86,7 +86,7 @@
             "title": "Configuring nginx",
             "content": "",
             "examples": [
-                "location ~* ^/flux/flux(\\.min)?\\.(js|css)$ { expires off; try_files $uri $uri/ /index.php?$query_string;}"
+                "location ~* ^/flux/(flux|editor)(\\.min)?\\.(js|css)$ { expires off; try_files $uri $uri/ /index.php?$query_string;}"
             ]
         }
     ],
@@ -105,5 +105,5 @@
     ],
     "components_used": [],
     "sub_components": [],
-    "scraped_at": "2026-02-11T03:25:23+00:00"
+    "scraped_at": "2026-07-22T16:18:40+00:00"
 }

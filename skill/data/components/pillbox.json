@@ -46,7 +46,7 @@
             "title": "Create option",
             "content": "Allow users to the create new options using the <flux:pillbox.option.create> component.\nFlux will automatically hide the create option when the search input matches an existing item in the list. You can also specify the minimum number of characters required for the create option to appear using the min-length prop.",
             "examples": [
-                "<flux:pillbox wire:model=\"selectedTags\" variant=\"combobox\" multiple> <x-slot name=\"input\"> <flux:pillbox.input wire:model=\"search\" placeholder=\"Choose tags...\" /> </x-slot> @foreach ($this->tags as $tag) <flux:pillbox.option :value=\"$tag->id\">{{ $tag->name }}</flux:pillbox.option> @endforeach <flux:pillbox.option.create wire:click=\"createTag\" min-length=\"2\"> Create new \"<span wire:text=\"search\"></span>\" </flux:pillbox.option.create></flux:pillbox><!--public $search = '';public $selectedTags = [];public function createProject(){ $tag = Tag::create([ 'name' => $this->search, ]); $this->selectedTags[] = $tag->id; $this->search = '';}-->"
+                "<flux:pillbox wire:model=\"selectedTags\" variant=\"combobox\" multiple> <x-slot name=\"input\"> <flux:pillbox.input wire:model=\"search\" placeholder=\"Choose tags...\" /> </x-slot> @foreach ($this->tags as $tag) <flux:pillbox.option :value=\"$tag->id\">{{ $tag->name }}</flux:pillbox.option> @endforeach <flux:pillbox.option.create wire:click=\"createTag\" min-length=\"2\"> Create new \"<span wire:text=\"search\"></span>\" </flux:pillbox.option.create></flux:pillbox><!--public $search = '';public $selectedTags = [];public function createTag(){ $tag = Tag::create([ 'name' => $this->search, ]); $this->selectedTags[] = $tag->id; $this->search = '';}-->"
             ]
         },
         {
@@ -119,5 +119,5 @@
         "pillbox.option.create",
         "pillbox.option.empty"
     ],
-    "scraped_at": "2026-02-11T03:25:06+00:00"
+    "scraped_at": "2026-07-22T16:18:17+00:00"
 }

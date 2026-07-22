@@ -4,13 +4,21 @@
     "description": "",
     "category": "component",
     "url": "https://fluxui.dev/components/toast",
-    "pro": true,
+    "pro": false,
     "sections": [
         {
             "title": "With heading",
             "content": "Use a heading to provide additional context for the toast.",
             "examples": [
                 "Flux::toast( heading: 'Changes saved.', text: 'You can always update this in your settings.',);"
+            ]
+        },
+        {
+            "title": "Links",
+            "content": "Add a link to a toast to give users a clear next step.\nThe same link options are available when triggering a toast from JavaScript.",
+            "examples": [
+                "Flux::toast( text: 'Invoice created.', link: [ 'text' => 'View invoice', 'href' => route('invoices.show', $invoice), 'navigate' => true, ],);",
+                "$flux.toast('Invoice created.', { link: { text: 'View invoice', href: '/invoices/123', navigate: true, },})"
             ]
         },
         {
@@ -83,5 +91,5 @@
     "sub_components": [
         "toast.group"
     ],
-    "scraped_at": "2026-02-11T03:25:20+00:00"
+    "scraped_at": "2026-07-22T16:18:36+00:00"
 }

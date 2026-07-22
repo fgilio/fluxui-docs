@@ -15,9 +15,9 @@
         },
         {
             "title": "Class targeting",
-            "content": "Unlike other form components, Flux's input component is composed of two underlying elements: an input element and a wrapper div. The wrapper div is there to add padding where icons should go.\nThis is typically fine, however, if you need to pass classes into the input component and have them directly applied to the input element, you can do so using the class:input attribute instead of simply class:",
+            "content": "Unlike other form components, Flux's input component is composed of two underlying elements: an input element and a wrapper div. The wrapper div is there to add padding where icons should go.\nThis is typically fine, however, if you need to pass classes into the input component and have them directly applied to the input element, you can do so using the input:class attribute instead of simply class:",
             "examples": [
-                "<flux:input class=\"max-w-xs\" class:input=\"font-mono\" />"
+                "<flux:input class=\"max-w-xs\" input:class=\"font-mono\" />"
             ]
         },
         {
@@ -161,5 +161,5 @@
         "input.group.prefix",
         "input.group.suffix"
     ],
-    "scraped_at": "2026-02-11T03:25:01+00:00"
+    "scraped_at": "2026-07-22T16:18:08+00:00"
 }

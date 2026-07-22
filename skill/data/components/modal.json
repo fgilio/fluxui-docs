@@ -60,6 +60,13 @@
             ]
         },
         {
+            "title": "Scrolling long content",
+            "content": "By default, long modal content scrolls within the modal itself, making it easy to miss content below the fold. Set scroll=\"body\" to let the modal extend beyond the viewport, making it obvious that content continues below.",
+            "examples": [
+                "<flux:modal name=\"terms\" scroll=\"body\"> <!-- Long-form content like terms of service... --></flux:modal>"
+            ]
+        },
+        {
             "title": "Confirmation",
             "content": "Prompt a user for confirmation before performing a dangerous action.\nYou're about to delete this project. This action cannot be reversed.",
             "examples": [
@@ -127,5 +134,5 @@
         "modal.close",
         "modal.trigger"
     ],
-    "scraped_at": "2026-02-11T03:25:03+00:00"
+    "scraped_at": "2026-07-22T16:18:10+00:00"
 }

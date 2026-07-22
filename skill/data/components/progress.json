@@ -1,0 +1,79 @@
+{
+    "name": "progress",
+    "title": "Progress",
+    "description": "",
+    "category": "component",
+    "url": "https://fluxui.dev/components/progress",
+    "pro": false,
+    "sections": [
+        {
+            "title": "Max",
+            "content": "Set a custom maximum value with the max prop for non-percentage scales.",
+            "examples": [
+                "<flux:progress value=\"3\" max=\"7\" />"
+            ]
+        },
+        {
+            "title": "Color",
+            "content": "Override the default accent color with the color prop.",
+            "examples": [
+                "<flux:progress value=\"75\" color=\"purple\" />"
+            ]
+        },
+        {
+            "title": "Height",
+            "content": "Customize the height of the progress bar using the class prop.",
+            "examples": [
+                "<flux:progress value=\"75\" class=\"h-3\" />"
+            ]
+        },
+        {
+            "title": "With label",
+            "content": "Wrap the progress bar in a flux:field to add a label and description. When used without a visible label, use sr-only on the label for screen reader accessibility.",
+            "examples": [
+                "<flux:field> <flux:label>Upload progress</flux:label> <flux:progress value=\"42\" color=\"blue\" /> <flux:description>Uploading 3 of 7 files...</flux:description></flux:field>"
+            ]
+        },
+        {
+            "title": "Display value",
+            "content": "Display the current value in the label or inline next to the bar.",
+            "examples": [
+                "<flux:field> <flux:label> Storage <x-slot name=\"trailing\"> <span class=\"tabular-nums\">75%</span> </x-slot> </flux:label> <flux:progress value=\"75\" /></flux:field><flux:field> <flux:label>Storage</flux:label> <div class=\"flex items-center gap-4 -mt-2\"> <flux:progress value=\"75\" /> <span class=\"text-sm tabular-nums ...\">75%</span> </div></flux:field>"
+            ]
+        },
+        {
+            "title": "Controlled",
+            "content": "Bind the progress value to a property using wire:model to control it dynamically.",
+            "examples": [
+                "<flux:slider wire:model=\"progress\" /><flux:progress wire:model=\"progress\" />"
+            ]
+        },
+        {
+            "title": "Related components",
+            "content": "Select a value using a horizontal slider control\nShow placeholder content while loading",
+            "examples": []
+        }
+    ],
+    "reference": [],
+    "related": [
+        "accordion",
+        "autocomplete",
+        "avatar",
+        "badge",
+        "brand",
+        "button",
+        "breadcrumbs",
+        "calendar",
+        "callout",
+        "card"
+    ],
+    "components_used": [
+        "description",
+        "field",
+        "label",
+        "progress",
+        "slider"
+    ],
+    "sub_components": [],
+    "scraped_at": "2026-07-22T16:18:20+00:00"
+}
