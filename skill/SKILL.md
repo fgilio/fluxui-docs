@@ -1,15 +1,22 @@
 ---
 name: fluxui-docs
 description: >
+  DEPRECATED - do not use. Superseded by fluxui.dev's own .md pages and llms.txt.
   Livewire Flux UI component documentation lookup.
   Provides offline access to fluxui.dev documentation via CLI.
   Use for: component props, usage examples, code snippets, Livewire components.
   Keywords: Flux, Flux UI, fluxui, blade component.
 user-invocable: true
-disable-model-invocation: false
+disable-model-invocation: true
 ---
 
 # Flux UI CLI
+
+> [!WARNING] **Deprecated and archived (2026-09-08).** Flux UI now serves its own machine-readable documentation: every page on [fluxui.dev](https://fluxui.dev) supports a `.md` extension (for example `https://fluxui.dev/components/button.md`), plus `llms.txt` and content negotiation. Fetch the docs from the source instead of using this skill.
+>
+> Announcement: https://x.com/calebporzio/status/2097331733125317092
+>
+> This repository is archived and no longer maintained.
 
 Offline Flux UI documentation with JSON output for Claude Code integration.
 
